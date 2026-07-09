@@ -1,0 +1,5 @@
+# 這個 repo 只用來發布 D:\stock_agents\index.html 到 GitHub Pages。
+# 其他所有檔案（爬蟲原始碼、設定檔、樣板、報告等）都不進版本控制。
+*
+!.gitignore
+!index.html

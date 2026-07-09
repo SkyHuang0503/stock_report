@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4338ca">
+<title>市場日報｜2026-07-10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2f3f8;
+    --bg-soft: #e8eaf3;
+    --card: #ffffff;
+    --border: #e7e8f0;
+    --text: #1a1c29;
+    --text-2: #4c4f63;
+    --muted: #8b8fa3;
+    --accent: #4f46e5;
+    --accent-2: #6366f1;
+    --accent-soft: #eef0fd;
+    --up: #16a34a;
+    --up-soft: #e9f9ef;
+    --down: #dc2626;
+    --down-soft: #fdeeed;
+    --warn: #d97706;
+    --warn-soft: #fff6e6;
+    --shadow: 0 1px 2px rgba(24,24,40,.04), 0 8px 24px -12px rgba(24,24,40,.10);
+    --shadow-lg: 0 4px 8px rgba(24,24,40,.05), 0 16px 40px -12px rgba(24,24,40,.16);
+    --radius: 16px;
+  }
+  [data-theme="dark"] {
+    --bg: #0d0e14;
+    --bg-soft: #14151f;
+    --card: #171825;
+    --border: #262838;
+    --text: #eceef5;
+    --text-2: #b7bacb;
+    --muted: #7c7f95;
+    --accent: #818cf8;
+    --accent-2: #a5b4fc;
+    --accent-soft: #1e1f38;
+    --up: #4ade80;
+    --up-soft: #103321;
+    --down: #f87171;
+    --down-soft: #3a1414;
+    --warn: #fbbf24;
+    --warn-soft: #332a0d;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+    --shadow-lg: 0 4px 8px rgba(0,0,0,.35), 0 16px 40px -12px rgba(0,0,0,.6);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "tnum" 1;
+    transition: background .3s ease, color .3s ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+
+  /* ---- hero ---- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 34px 18px 84px;
+    text-align: center;
+    color: #fff;
+    background:
+      radial-gradient(120% 140% at 15% -20%, #6366f1 0%, transparent 55%),
+      radial-gradient(120% 140% at 100% 0%, #4338ca 0%, transparent 60%),
+      linear-gradient(160deg, #312e81, #1e1b4b 70%);
+  }
+  .hero::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,.10) 1px, transparent 1px);
+    background-size: 22px 22px;
+    opacity: .5;
+    pointer-events: none;
+  }
+  .hero-top { display: flex; justify-content: flex-end; position: relative; z-index: 2; margin-bottom: 6px; }
+  .theme-btn {
+    background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2);
+    color: #fff; width: 34px; height: 34px; border-radius: 999px; cursor: pointer;
+    font-size: 15px; display: flex; align-items: center; justify-content: center;
+    backdrop-filter: blur(6px);
+  }
+  .hero h1 {
+    position: relative; z-index: 2;
+    font-size: 23px; font-weight: 800; margin: 6px 0 10px; letter-spacing: -.01em;
+  }
+  .hero .meta {
+    position: relative; z-index: 2;
+    font-size: 12.5px; opacity: .82; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 12px; margin-bottom: 16px;
+  }
+  .hero .badges { position: relative; z-index: 2; display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+  .pill-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.22);
+    padding: 6px 13px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
+    backdrop-filter: blur(6px);
+  }
+  .pill-badge.riskon { background: rgba(74,222,128,.18); border-color: rgba(74,222,128,.35); }
+
+  /* ---- sticky nav ---- */
+  .quicknav-wrap { position: sticky; top: 0; z-index: 30; margin-top: -50px; padding: 0 12px; }
+  .quicknav {
+    max-width: 760px; margin: 0 auto;
+    background: color-mix(in srgb, var(--card) 82%, transparent);
+    backdrop-filter: blur(14px) saturate(1.4);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-lg);
+    padding: 7px; overflow-x: auto; white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: flex; gap: 4px;
+  }
+  .quicknav::-webkit-scrollbar { display: none; }
+  .quicknav a {
+    flex: 0 0 auto;
+    display: inline-block; font-size: 12.5px; color: var(--text-2);
+    border-radius: 10px; padding: 7px 13px;
+    text-decoration: none; font-weight: 600;
+    transition: background .2s ease, color .2s ease;
+  }
+  .quicknav a.active { background: var(--accent); color: #fff; }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 22px 12px 48px; }
+  section { margin-bottom: 16px; scroll-margin-top: 68px; }
+
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px;
+    box-shadow: var(--shadow);
+  }
+  .card h2 {
+    font-size: 16px; margin: 0 0 14px; color: var(--text);
+    display: flex; align-items: center; gap: 9px; font-weight: 700;
+  }
+  .card h2 .dot { width: 7px; height: 22px; border-radius: 3px; background: var(--accent); flex: none; }
+  .card h3 { font-size: 13px; margin: 16px 0 9px; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+
+  .exec-box {
+    background: var(--accent-soft); border-radius: 12px; padding: 15px;
+    font-size: 14.5px; color: var(--text);
+    border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+  .exec-sub { font-size: 12.5px; color: var(--muted); margin-top: 10px; line-height: 1.8; }
+
+  .alert-card { background: var(--warn-soft); border-color: color-mix(in srgb, var(--warn) 30%, var(--border)); }
+  .alert-card h2 .dot { background: var(--warn); }
+
+  .event-card {
+    background: var(--warn-soft); border-radius: 12px; padding: 13px 14px; margin: 9px 0;
+    border-left: 4px solid var(--down);
+  }
+  .score-badge { background: var(--warn); color: #fff; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .event-card b { display: block; margin: 5px 0; font-size: 14px; }
+  .event-card small { color: var(--muted); }
+
+  .outlook-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 2px 2px 6px; -webkit-overflow-scrolling: touch; }
+  .outlook-item {
+    flex: 0 0 132px; background: var(--bg-soft); border: 1px solid var(--border); border-radius: 12px; padding: 13px; text-align: center;
+    transition: transform .2s ease;
+  }
+  .outlook-item .name { font-weight: 700; font-size: 13.5px; display: block; }
+  .outlook-item .dir { font-size: 12.5px; margin: 6px 0; display: inline-flex; align-items: center; gap: 3px; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
+  .outlook-item .dir.up { color: var(--up); background: var(--up-soft); }
+  .outlook-item .dir.down { color: var(--down); background: var(--down-soft); }
+  .outlook-item p { font-size: 11.5px; color: var(--muted); margin: 4px 0 0; }
+
+  .advice-box {
+    margin-top: 13px; font-size: 13.5px; background: var(--accent-soft);
+    padding: 13px; border-radius: 10px; border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+
+  .risk-tag {
+    display: flex; gap: 8px; align-items: baseline; padding: 10px 13px; border-radius: 10px; margin: 7px 0; font-size: 13px;
+  }
+  .risk-高 { background: var(--down-soft); color: var(--down); }
+  .risk-中 { background: var(--warn-soft); color: var(--warn); }
+  .risk-tag b { flex: none; }
+
+  .badge { padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .badge-high { background: var(--down-soft); color: var(--down); }
+  .badge-medium { background: var(--warn-soft); color: var(--warn); }
+
+  .abn-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 12px; padding: 13px; margin: 9px 0; }
+  .abn-card .top { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; flex-wrap: wrap; }
+  .abn-card .code { font-weight: 700; }
+  .abn-card .pct { font-weight: 700; }
+  .abn-card p { margin: 0; font-size: 12.5px; color: var(--text-2); }
+
+  .tabs { display: flex; gap: 6px; overflow-x: auto; margin-bottom: 11px; -webkit-overflow-scrolling: touch; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs button {
+    flex: 0 0 auto; font-size: 12.5px; padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--bg-soft); color: var(--text-2); cursor: pointer; font-weight: 600;
+    transition: all .2s ease;
+  }
+  .tabs button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .search-wrap { position: relative; margin-bottom: 11px; }
+  .search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: .45; }
+  .search-input {
+    width: 100%; padding: 10px 12px 10px 34px; border-radius: 10px; border: 1px solid var(--border);
+    font-size: 13.5px; background: var(--bg-soft); color: var(--text);
+  }
+  .search-input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .stock-list { display: flex; flex-direction: column; gap: 7px; }
+  .stock-row {
+    display: grid; grid-template-columns: 1.3fr 0.85fr 0.75fr; gap: 3px 10px;
+    align-items: center; background: var(--bg-soft); border: 1px solid var(--border);
+    border-radius: 12px; padding: 10px 13px; font-size: 13px;
+  }
+  .stock-row .nm { font-weight: 700; }
+  .stock-row .code { font-size: 11px; color: var(--muted); display: block; }
+  .stock-row .mkt { font-size: 10.5px; color: var(--muted); }
+  .stock-row .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .stock-row .pct { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stock-row .bar-track { grid-column: 1 / -1; height: 4px; border-radius: 3px; background: var(--border); overflow: hidden; margin-top: 2px; }
+  .stock-row .bar-fill { height: 100%; border-radius: 3px; }
+  .stock-row .range { font-size: 10.5px; color: var(--muted); text-align: right; grid-column: 1 / -1; padding-top: 2px; }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--text-2); }
+
+  .yield-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 4px; }
+  .yield-table th { background: var(--accent-soft); color: var(--accent); padding: 8px 9px; text-align: left; font-size: 11.5px; border-radius: 8px 8px 0 0; }
+  .yield-table td { padding: 8px 9px; border-bottom: 1px solid var(--border); }
+  .yield-table tr.ffr { background: var(--warn-soft); }
+  .curve-box { background: var(--accent-soft); border-radius: 10px; padding: 12px; margin-top: 9px; font-size: 12.5px; }
+  .ffr-box { background: var(--warn-soft); border-radius: 10px; padding: 12px; margin-top: 7px; font-size: 12.5px; }
+  .fx-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .fx-chip { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 9px 13px; font-size: 13px; flex: 1; min-width: 150px; }
+  .fx-chip b { display: block; font-size: 11px; color: var(--muted); font-weight: 600; margin-bottom: 2px; }
+
+  /* RRP section */
+  .rrp-title { font-size: 15px; font-weight: 700; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 13px; }
+  .pill { border-radius: 999px; padding: 3px 11px; font-size: 12px; color: #fff; font-weight: 600; }
+  .gemini-banner {
+    background: linear-gradient(135deg,#1e1b4b,#0f0f24); border: 1px solid rgba(129,140,248,.25);
+    border-radius: 14px; padding: 15px 17px; margin-bottom: 14px;
+  }
+  .gemini-banner .row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; flex-wrap: wrap; }
+  .gemini-banner .tag { color: #a5b4fc; font-weight: 700; font-size: 13px; }
+  .gemini-banner .stance { background: #16a34a; color: #fff; border-radius: 999px; padding: 3px 12px; font-size: 12.5px; font-weight: 700; }
+  .gemini-banner .body { color: #eef0fd; font-size: 13.5px; font-weight: 500; line-height: 1.75; }
+  .gemini-banner .footnote { color: #9497b8; font-size: 11.5px; margin-top: 9px; line-height: 1.7; }
+
+  .metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 13px; }
+  .metric-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 11px 13px; }
+  .metric-card .lbl { font-size: 10.5px; color: var(--muted); }
+  .metric-card .val { font-size: 17px; font-weight: 800; letter-spacing: -.01em; }
+  .metric-card .sub { font-size: 10.5px; color: var(--muted); }
+
+  .dim-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 13px; }
+  .dim-card { border-radius: 10px; padding: 10px 11px; text-align: center; border: 1.5px solid; }
+  .dim-card.ok { background: var(--up-soft); border-color: color-mix(in srgb, var(--up) 45%, transparent); }
+  .dim-card.watch { background: var(--warn-soft); border-color: color-mix(in srgb, var(--warn) 45%, transparent); }
+  .dim-card .lbl { font-size: 10.5px; color: var(--muted); margin-bottom: 3px; }
+  .dim-card .val { font-size: 16px; font-weight: 800; }
+
+  .signal-list { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; font-size: 12.5px; line-height: 2; }
+  .source-note { font-size: 10.5px; color: var(--muted); margin-top: 7px; padding: 0 2px; }
+
+  .pe-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 11px; }
+  .pe-card { border-radius: 10px; padding: 11px 13px; font-size: 12px; border: 1px solid var(--border); }
+  .pe-card.forecast { background: color-mix(in srgb, #3b82f6 10%, var(--bg-soft)); }
+  .pe-card.eval { background: color-mix(in srgb, #ec4899 10%, var(--bg-soft)); }
+  .pe-card b { display: block; font-size: 13px; margin-bottom: 5px; }
+
+  .lowwater-box { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 13px 15px; margin-top: 13px; }
+  .lowwater-box .ttl { font-weight: 700; margin-bottom: 9px; font-size: 12.5px; }
+  .lowwater-row { display: grid; grid-template-columns: 78px 1fr; gap: 4px; font-size: 12px; margin-bottom: 7px; }
+  .lowwater-row .k { color: var(--muted); }
+  .lowwater-sig { background: var(--up-soft); border-radius: 6px; padding: 4px 9px; display: inline-block; }
+  .lowwater-note { font-size: 10.5px; color: var(--muted); margin-top: 9px; border-top: 1px solid var(--border); padding-top: 7px; line-height: 1.7; }
+
+  .news-item { padding: 11px 0; border-bottom: 1px solid var(--border); }
+  .news-item:last-child { border-bottom: none; }
+  .news-score { background: var(--accent); color: #fff; padding: 1px 7px; border-radius: 6px; font-size: 11px; margin-right: 5px; font-weight: 700; }
+  .news-cat { color: var(--muted); font-size: 11.5px; margin-right: 4px; }
+  .news-item a { color: var(--accent); text-decoration: none; font-size: 13.5px; font-weight: 700; }
+  .news-item p { font-size: 12px; color: var(--text-2); margin-top: 5px; }
+
+  .watch-list { padding-left: 0; margin: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .watch-list li { font-size: 13.5px; padding: 10px 13px; background: var(--bg-soft); border-radius: 10px; border-left: 3px solid var(--accent); }
+
+  footer.note { text-align: center; color: var(--muted); padding: 26px 10px 10px; font-size: 11.5px; }
+
+  .scrolltop {
+    position: fixed; right: 16px; bottom: 20px; z-index: 40;
+    width: 42px; height: 42px; border-radius: 999px;
+    background: var(--accent); color: #fff; border: none; cursor: pointer;
+    box-shadow: var(--shadow-lg); font-size: 17px;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transform: translateY(8px) scale(.9); pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease;
+  }
+  .scrolltop.show { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-top">
+    <button class="theme-btn" id="themeBtn" aria-label="切換深色模式">🌙</button>
+  </div>
+  <h1>📊 Multi-Agent 市場日報</h1>
+  <div class="meta">
+    <span id="genRelative">計算中…</span>
+    <span>｜生成時間 2026-07-10 00:46:41</span>
+  </div>
+  <div class="badges">
+    <span class="pill-badge">🌍 地緣風險：N/A</span>
+    <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
+  </div>
+</div>
+
+<div class="quicknav-wrap">
+  <nav class="quicknav" id="quicknav">
+    <a href="#summary" data-id="summary">摘要</a>
+    <a href="#events" data-id="events">事件</a>
+    <a href="#outlook" data-id="outlook">展望</a>
+    <a href="#risk" data-id="risk">風險</a>
+    <a href="#stocks" data-id="stocks">個股</a>
+    <a href="#yield" data-id="yield">殖利率</a>
+    <a href="#rrp" data-id="rrp">流動性</a>
+    <a href="#news" data-id="news">新聞</a>
+    <a href="#watch" data-id="watch">明日關注</a>
+  </nav>
+</div>
+
+<div class="wrap">
+
+  <section id="summary">
+    <div class="card reveal">
+      <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
+      <div class="exec-box">今日市場核心動能受制於外資在台股的猛烈提款（單日賣超471億）與台幣續貶，導致加權指數與防禦型權值股全面承壓。然而，美股費半大漲與TSM（台積電ADR） ADR收紅，顯示全球科技股情緒依然偏向risk-on，為台股次日帶來權值修復契機。資金面上，短端利率維持高檔反映Fed偏鷹預期，但核心利差為負顯示底層資金動能充沛。地緣政治方面，美伊衝突推升黃金避險需求，但原油逆勢下跌凸顯市場對實體經濟需求的隱憂。操作上，須警惕中小型股追高風險，優先關注半導體權值股的補漲效應與外資動向。</div>
+      <div class="exec-sub">全球市場情緒偏risk-on，美科技股強勢，但台股呈現「外資提款權值、內資點火中小」的外冷內熱格局。台幣續貶印證資金匯出，高利率環境持續壓抑資產估值，後續端看台積電ADR溢價能否帶動現貨修復。</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card alert-card reveal">
+      <h2><span class="dot"></span>⚡ 數據與消息面出現背離</h2>
+      <p style="margin:0;font-size:13.5px">存在顯著背離。台股半導體(如聯電、台積電現貨)與費半大漲4.5%及TSM ADR收紅背離，主因外資單日提款471億壓抑權值；此外，美伊衝突升級但原油逆勢下跌，顯示市場更擔憂實體經濟需求衰退而非短期供給干擾。</p>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="card reveal">
+      <h2><span class="dot"></span>🚨 重大事件偵測（News Agent）</h2>
+      <div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">4分</span>
+        <b>U.S. Begins Second Day of Strikes Against Iran</b>
+        <p style="font-size:13px;margin:4px 0">美伊衝突升級加劇地緣政治風險，引發市場避險情緒與油價波動。</p>
+        <small>影響資產／分類：川普動態</small>
+      </div><div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">4分</span>
+        <b>Pakistan Rushes to Buy Emergency LNG After Qatar Cargo Is Canceled</b>
+        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽局勢升級威脅能源運輸，推升地緣溢價。</p>
+        <small>影響資產／分類：油價/能源</small>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card reveal">
+      <h2><span class="dot"></span>📑 法人報告（外資評等/目標價變動）</h2>
+      <div class="event-card" style="border-left-color:var(--up)">
+        <span class="score-badge">3分</span>
+        <span class="badge badge-high">總經</span>
+        <b>台股收跌379點！法人認無泡沫跡象　建議這樣佈局</b>
+        <p style="font-size:13px;margin:4px 0">法人認台股無泡沫跡象並建議佈局，有助穩定市場信心。</p>
+        <small>方向：利多</small>
+      </div><div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">3分</span>
+        <span class="badge badge-medium">籌碼</span>
+        <b>外資賣超471億元連6賣 光是台積電就提款310億元</b>
+        <p style="font-size:13px;margin:4px 0">外資持續提款台股，單日賣超471億元，壓抑大盤與權值股表現。</p>
+        <small>方向：利空</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="outlook">
+    <div class="card reveal">
+      <h2><span class="dot"></span>📐 各類資產展望</h2>
+      <div class="outlook-scroll">
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>外資大賣與台幣貶值屬中期壓力，但費半大漲及TSM ADR收紅將直接驅動次日台股強勢修復反彈。短線（次日）採納規則系統看多觀點，聚焦權值補漲。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>費半與那指期貨走強，市場情緒risk-on，資金在充沛環境下持續擁抱科技巨頭。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir up">🟢 看多</span><p>聯準會維持高利率更久，美債殖利率具吸引力，台幣等亞幣持續承壓。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir down">🔴 看空</span><p>中東地緣衝突升溫但油價不漲反跌，反映市場對全球景氣與需求衰退的擔憂更甚。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir up">🟢 看多</span><p>美伊衝突加劇地緣政治風險，避險資金推升金價突破4100美元。</p></div>
+      </div>
+      <div class="advice-box">💼 <b>操作建議：</b>台股現階段呈現「權值承壓、中小活躍」的兩極化走勢。考量外資大舉賣超且台幣走貶，操作上不宜過度追高已發動的中小型題材股（如德微已現跌停警訊）。建議利用費半大漲與TSM（台積電ADR） ADR正向溢價的契機，逢低佈局錯殺的半導體權值股。同時，防禦型標的（如中華電）亦遭提款，顯示資金純粹在調整配置，短期應保留適度現金，靜待外資賣壓減輕與匯率止貶訊號。</div>
+    </div>
+  </section>
+
+  <section id="risk">
+    <div class="card reveal">
+      <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
+      <span class="risk-tag risk-高"><b>外資持續匯出與賣超</b>｜外資單日賣超471億且台幣貶至32.173，持續壓抑大型權值股與大盤表現。</span><span class="risk-tag risk-中"><b>中小型股籌碼鬆動</b>｜櫃買指數雖漲，但指標股德微跌停，顯示內部資金分化與獲利了結賣壓加劇。</span><span class="risk-tag risk-中"><b>實體經濟需求衰退疑慮</b>｜美伊衝突升級但油價與台塑等傳產權值重挫，反映市場對景氣循環下行的擔憂。</span>
+    </div>
+  </section>
+
+  <section id="stocks">
+    <div class="card reveal">
+      <h2><span class="dot"></span>📈 股市數據（Stock Agent）</h2>
+      <h3 style="color:var(--down)">⚠️ 異常個股</h3>
+      <div id="abnormalList"></div>
+
+      <h3>📊 全部個股</h3>
+      <div class="tabs" id="marketTabs"></div>
+      <div class="search-wrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input" id="stockSearch" placeholder="搜尋代號或名稱…">
+      </div>
+      <div class="stock-list" id="stockList"></div>
+    </div>
+  </section>
+
+  <section id="yield">
+    <div class="card reveal">
+      <h2><span class="dot"></span>📊 殖利率 & 利差</h2>
+      <h3>各天期殖利率</h3>
+      <table class="yield-table">
+        <thead><tr><th>天期</th><th>殖利率</th></tr></thead>
+        <tbody>
+          <tr><td>3個月（3M）</td><td><b>3.86%</b></td></tr>
+          <tr><td>2年（2Y）</td><td><b>4.19%</b></td></tr>
+          <tr><td>5年（5Y）</td><td><b>4.27%</b></td></tr>
+          <tr><td>10年（10Y）</td><td><b>4.55%</b></td></tr>
+          <tr><td>30年（30Y）</td><td><b>5.05%</b></td></tr>
+          
+          <tr class="ffr"><td><b>FFR 目標區間</b></td><td><b>3.5% ~ 3.75%</b></td></tr>
+        </tbody>
+      </table>
+
+      <h3>關鍵利差</h3>
+      <table class="yield-table">
+        <thead><tr><th>利差</th><th>數值</th><th>狀態</th></tr></thead>
+        <tbody>
+          <tr><td>2Y－10Y</td><td class="up"><b>+0.36%</b></td><td>🟢 正常</td></tr>
+          <tr><td>3M－10Y</td><td class="up"><b>+0.69%</b></td><td>🟢 正常</td></tr>
+        </tbody>
+      </table>
+
+      <div class="curve-box"><b>曲線形狀：</b>正斜率<br>目前10年美債4.55%明確高於2年美債4.19%，2Y-10Y利差為+0.36%，殖利率曲線屬正斜率；3M-10Y亦為+0.69%，代表短端並未高於長端。這種結構通常反映市場要求較高的長天期期限溢酬，同時也顯示經濟並未陷入典型衰退前的深度倒掛狀態。結合FFR中位3.625%與2年債高於政策利率44bp來看，市場對未來利率路徑仍偏保守，傾向認為聯準會將維持高利率更久，甚至不排除再偏鷹，故曲線健康但並非寬鬆交易環境。</div>
+      <div class="ffr-box"><b>FFR 判讀：</b>FFR維持在3.5%~3.75%，而2年債高於FFR中位，代表市場對短中期政策利率的定價仍偏鷹，隱含降息次數為0次。這使短天期債券殖利率維持高檔，壓抑高估值資產的折現優勢；同時10年與30年殖利率更高，表示長端還承受期限溢酬與財政供給壓力。整體而言，聯準會方向是高利率維持更久，而非快速轉鴿。</div>
+
+      <div class="fx-row">
+        <div class="fx-chip"><b>台幣/美元 (USDTWD)</b>32.173（0.202%）</div>
+        <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>162.361（-0.121%）</div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="rrp">
+    <div class="card reveal">
+      <div class="rrp-title">
+        💧 ON RRP + 流動性監控
+        <span class="pill" style="background:var(--warn)">🟡 觀察</span>
+        <span class="pill" style="background:#7c3aed">🪨 岩盤模式</span>
+      </div>
+
+      <div class="gemini-banner">
+        <div class="row">
+          <span class="tag">🤖 Gemini 綜合研判</span>
+          <span class="stance" style="background:#16a34a">📈 看多</span>
+        </div>
+        <div class="body">今日轉向下降｜本次ON RRP下降1.137B，且當前水位低於50B，屬岩盤模式下的正常波動。依規則，這代表資金從Fed停泊工具流出，轉往實體市場與更高收益資產配置，而非回流避險。由於同時沒有VIX上升或費半下跌的恐慌組合，故不能解讀為流動性排擠；相反地，這是偏樂觀的單日risk-on訊號，但仍需後續連續性確認。</div>
+        <div class="footnote">📌 外資大賣與台幣貶值屬中期壓力，但費半大漲及TSM ADR收紅將直接驅動次日台股強勢修復反彈。短線（次日）採納規則系統看多觀點，聚焦權值補漲。</div>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric-card"><div class="lbl">今日 RRP</div><div class="val down">$3.347B</div><div class="sub">2026-07-08</div></div><div class="metric-card"><div class="lbl">昨日 RRP</div><div class="val">$4.484B</div><div class="sub">2026-07-07</div></div><div class="metric-card"><div class="lbl">1日變化</div><div class="val down">-25.4%</div><div class="sub">↓ 持續下降</div></div><div class="metric-card"><div class="lbl">SOFR</div><div class="val">3.58%</div><div class="sub">2026-07-08</div></div><div class="metric-card"><div class="lbl">IORB</div><div class="val">3.65%</div><div class="sub">2026-07-09</div></div><div class="metric-card"><div class="lbl">SOFR－IORB</div><div class="val up">-7.0bp</div><div class="sub">距SRF天花板 17.0bp</div></div>
+      </div>
+
+      <div class="dim-grid">
+        <div class="dim-card ok"><div class="lbl">D1 廣義融資</div><div class="val up">-7.0bp</div><div style="font-size:11px">🟢 正常</div></div><div class="dim-card ok"><div class="lbl">D2 銀行準備金</div><div class="val up">-3.0bp</div><div style="font-size:11px">🟡 觀察</div></div><div class="dim-card ok"><div class="lbl">D3 RRP緩衝</div><div class="val up">$3.347B</div><div style="font-size:11px">🟢 正常</div></div><div class="dim-card ok"><div class="lbl">D4 SRF距離</div><div class="val up">17.0bp</div><div style="font-size:11px">🟢 正常</div></div>
+      </div>
+
+      <div class="signal-list">
+        <div>✅ [D1廣義融資] SOFR-IORB -7.0bp，正常</div><div>🟡 [D2銀行準備金] EFFR-IORB -3.0bp，利差縮小中，留意是否持續收窄</div><div>✅ [D3RRP緩衝] ON RRP $3.347B (岩盤常態)，低水位屬後QE正常現象</div><div>✅ [D4SRF距離] SOFR(3.58%) 未高於 IORB（SOFR-IORB -7.0bp），距 SRF(3.75%) 17.0bp 屬走廊結構寬度，無動態壓力  [SRF = FFR upper (3.75%) + 0bp]</div>
+      </div>
+      <div class="source-note">📅 📅 資料來源：SOFR=NY Fed API（一手） ／ EFFR=NY Fed API（一手） ／ SRF=derived_from_FFR_upper ／ RRP=FRED（備援，T+1）</div>
+
+      <div class="pe-grid">
+        <div class="pe-card forecast"><b>🔮 預測</b>ON RRP由4.484B降至3.347B，屬今日轉向下降，代表資金離開Fed體系、流向實體市場與風險資產尋求收益。由於VIX下跌、費半大漲，未觸發流動性排擠條件，因此此訊號偏向risk-on延伸，若後續續降，對台股次日情緒仍有支撐。</div>
+        <div class="pe-card eval"><b>📊 評估</b>目前SOFR-IORB為-7bp、EFFR-IORB為-3bp，兩項核心利差皆為負值，必須明確定義為流動性充裕，且屬極度安全區間。ON RRP僅3.347B，已是後QE時代的岩盤常態，代表資金高效運轉於實體市場與金融體系，不能解讀為緩衝耗盡。再加上SOFR距離SRF仍有17bp安全空間，顯示走廊機制運作順暢。整體來看，資金面不是市場主要風險來源，真正影響股市的是風格輪動、外資配置與高利率估值約束。</div>
+      </div>
+
+      <div class="lowwater-box">
+        <div class="ttl">🧭 ON RRP 低水位信號分析</div>
+        <div class="lowwater-row"><span class="k">模式</span><span><b>岩盤模式</b>（水位決定靈敏度）</span></div>
+        <div class="lowwater-row"><span class="k">方向</span><span><b>今日轉向下降</b>　今日 vs 前兩日絕對變化</span></div>
+        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">🟡 單日 risk-on｜單日資金流出 Fed，偏樂觀但需確認</span></div>
+        <div class="lowwater-note">※ 系統判斷 = 純數字邏輯；Gemini解讀 = 交叉比對VIX+費半後的綜合判斷<br>※ 後QE時代 ON RRP 長期低位屬正常；真正警訊為 SOFR-IORB 利差 &gt; 15bp</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="card reveal">
+      <h2><span class="dot"></span>🌐 今日高分新聞（≥4分）</h2>
+      <div class="news-item">
+        <span class="news-score">4分</span><span class="news-cat">[川普動態]</span>
+        <a href="https://www.nytimes.com/2026/07/08/us/politics/us-iran-strikes.html" target="_blank" rel="noopener">U.S. Begins Second Day of Strikes Against Iran</a>
+        <p>美伊衝突升級加劇地緣政治風險，引發市場避險情緒與油價波動。</p>
+      </div><div class="news-item">
+        <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span>
+        <a href="https://oilprice.com/Latest-Energy-News/World-News/Pakistan-Rushes-to-Buy-Emergency-LNG-After-Qatar-Cargo-Is-Canceled.html" target="_blank" rel="noopener">Pakistan Rushes to Buy Emergency LNG After Qatar Cargo Is Canceled</a>
+        <p>霍爾木茲海峽局勢升級威脅能源運輸，推升地緣溢價。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="watch">
+    <div class="card reveal">
+      <h2><span class="dot"></span>🔭 明日重點關注</h2>
+      <ul class="watch-list">
+        <li>【3675德微】單日跌停背離櫃買走勢，關注中小型股獲利了結賣壓是否擴散。</li>
+        <li>【2330台積電】ADR逆勢上漲1.58%，關注次日現貨能否發揮正向折溢價修復帶動大盤。</li>
+        <li>【匯率USDTWD】台幣續貶至32.173，關注外資賣超是否收斂以確認資金外流止穩。</li>
+        <li>【黃金/原油】美伊衝突升級，關注金價避險動能及油價是否持續反映需求衰退。</li>
+        
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-10 00:46:41</footer>
+
+<button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
+
+<script>
+  // ---- theme toggle ----
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  function applyTheme(mode) {
+    if (mode === 'dark') { root.setAttribute('data-theme', 'dark'); themeBtn.textContent = '☀️'; }
+    else { root.removeAttribute('data-theme'); themeBtn.textContent = '🌙'; }
+  }
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved || (prefersDark ? 'dark' : 'light'));
+  themeBtn.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+    applyTheme(next);
+    localStorage.setItem('theme', next);
+  });
+
+  // ---- relative time ----
+  const genDate = new Date('2026-07-10T00:46:41');
+  function updateRelative() {
+    const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
+    let txt;
+    if (diffMin < 1) txt = '剛剛更新';
+    else if (diffMin < 60) txt = `${diffMin} 分鐘前更新`;
+    else if (diffMin < 1440) txt = `${Math.round(diffMin/60)} 小時前更新`;
+    else txt = `${Math.round(diffMin/1440)} 天前更新`;
+    document.getElementById('genRelative').textContent = '🕒 ' + txt;
+  }
+  updateRelative();
+  setInterval(updateRelative, 60000);
+
+  // ---- scroll reveal ----
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); revealObserver.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ---- active nav highlight ----
+  const navLinks = Array.from(document.querySelectorAll('#quicknav a'));
+  const sections = navLinks.map(a => document.getElementById(a.dataset.id)).filter(Boolean);
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = navLinks.find(a => a.dataset.id === entry.target.id);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        link.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  sections.forEach(s => navObserver.observe(s));
+
+  // ---- scroll to top ----
+  const scrollBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('show', window.scrollY > 500);
+  });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ---- 異常個股 ----
+  const abnormal = [{"code": "8027.TWO", "name": "鈦昇", "pct": 10.0, "level": "high", "reason": "鈦昇單日漲停，明顯強於加權指數下跌與櫃買整體走強的背景，屬中小型股資金集中點火。此類走勢通常反映內資短線偏好升溫，但在權值股走弱下，續航力需觀察是否能擴散至同族群。"}, {"code": "3675.TWO", "name": "德微", "pct": -10.0, "level": "high", "reason": "德微單日跌停，與櫃買指數上漲形成強烈背離，顯示個股籌碼鬆動或獲利了結壓力集中釋放。當中小型股內部出現極端分化時，代表題材輪動雖熱，但追價風險同步升高，不宜視為全面性強勢。"}, {"code": "1301.TW", "name": "台塑", "pct": -5.52, "level": "high", "reason": "台塑重挫逾5%，但國際油價期貨同步下跌，顯示市場更在意景氣循環與需求端疑慮，而非單純成本因素。傳產權值走弱拖累加權表現，也反映資金風格偏向成長與題材股，非全面回流舊經濟。"}, {"code": "2412.TW", "name": "中華電信", "pct": -4.3, "level": "medium", "reason": "中華電信屬防禦型權值股卻出現明顯下跌，代表市場並非單純避險切換，而是權值結構內部調整。若連防禦權值都承壓，顯示指數面仍受外資與大型資金配置影響，短線不宜只看題材股熱度。"}, {"code": "2303.TW", "name": "聯電", "pct": -4.29, "level": "medium", "reason": "聯電跌幅顯著大於多數電子權值，與費半大漲4.49%形成反差，顯示台股半導體內部評價與資金偏好分化。這種背離常見於外資在不同製程與景氣敏感度間重新配置，對次日族群輪動有指標意義。"}];
+  document.getElementById('abnormalList').innerHTML = abnormal.map(s => `
+    <div class="abn-card">
+      <div class="top">
+        <span class="code">${s.code}</span>
+        <span>${s.name}</span>
+        <span class="pct ${s.pct >= 0 ? 'up' : 'down'}">${s.pct >= 0 ? '+' : ''}${s.pct.toFixed(2)}%</span>
+        <span class="badge badge-${s.level}">${s.level}</span>
+      </div>
+      <p>${s.reason}</p>
+    </div>`).join('');
+
+  // ---- 全部個股 ----
+  const stocks = [{"mkt": "台股上市", "code": "2330.TW", "name": "台積電", "price": 2415.0, "pct": -2.03, "hi": 2460.0, "lo": 2415.0, "hi52": 2535.0}, {"mkt": "台股上市", "code": "8162.TW", "name": "微矽電子", "price": 78.1, "pct": -1.88, "hi": 80.3, "lo": 78.0, "hi52": 89.9}, {"mkt": "台股上市", "code": "00642U.TW", "name": "西德原油期貨EFT(TW)", "price": 24.28, "pct": 2.15, "hi": 24.36, "lo": 24.14, "hi52": 33.53}, {"mkt": "台股上市", "code": "2449.TW", "name": "京元電子", "price": 308.5, "pct": 0.98, "hi": 317.0, "lo": 304.0, "hi52": 367.5}, {"mkt": "台股上市", "code": "6139.TW", "name": "亞翔", "price": 875.0, "pct": 1.04, "hi": 906.0, "lo": 860.0, "hi52": 987.0}, {"mkt": "台股上市", "code": "2454.TW", "name": "聯發科", "price": 3925.0, "pct": -1.75, "hi": 4050.0, "lo": 3925.0, "hi52": 4970.0}, {"mkt": "台股上市", "code": "2308.TW", "name": "台達電", "price": 1880.0, "pct": -0.27, "hi": 1935.0, "lo": 1870.0, "hi52": 2585.0}, {"mkt": "台股上市", "code": "2317.TW", "name": "鴻海", "price": 237.5, "pct": 0.0, "hi": 240.0, "lo": 234.5, "hi52": 314.0}, {"mkt": "台股上市", "code": "2303.TW", "name": "聯電", "price": 156.0, "pct": -4.29, "hi": 161.0, "lo": 154.0, "hi52": 185.5}, {"mkt": "台股上市", "code": "2383.TW", "name": "台光電", "price": 5295.0, "pct": -0.38, "hi": 5500.0, "lo": 5270.0, "hi52": 6250.0}, {"mkt": "台股上市", "code": "3037.TW", "name": "欣興", "price": 875.0, "pct": 1.39, "hi": 925.0, "lo": 867.0, "hi52": 1130.0}, {"mkt": "台股上市", "code": "2881.TW", "name": "富邦金", "price": 124.5, "pct": -1.19, "hi": 129.0, "lo": 122.5, "hi52": 141.0}, {"mkt": "台股上市", "code": "2327.TW", "name": "國巨", "price": 900.0, "pct": 1.01, "hi": 948.0, "lo": 900.0, "hi52": 1220.0}, {"mkt": "台股上市", "code": "2412.TW", "name": "中華電信", "price": 133.5, "pct": -4.3, "hi": 135.0, "lo": 133.0, "hi52": 147.0}, {"mkt": "台股上市", "code": "2891.TW", "name": "中信金", "price": 69.9, "pct": -1.96, "hi": 71.7, "lo": 69.9, "hi52": 73.6}, {"mkt": "台股上市", "code": "2882.TW", "name": "國泰金", "price": 96.3, "pct": -1.73, "hi": 98.3, "lo": 94.4, "hi52": 117.5}, {"mkt": "台股上市", "code": "1301.TW", "name": "台塑", "price": 54.8, "pct": -5.52, "hi": 58.4, "lo": 54.7, "hi52": 64.0}, {"mkt": "台股上市", "code": "2002.TW", "name": "中鋼", "price": 18.55, "pct": -0.8, "hi": 18.75, "lo": 18.55, "hi52": 21.6}, {"mkt": "台股上櫃", "code": "8027.TWO", "name": "鈦昇", "price": 242.0, "pct": 10.0, "hi": 242.0, "lo": 220.5, "hi52": 297.0}, {"mkt": "台股上櫃", "code": "6693.TWO", "name": "廣閎科", "price": 236.5, "pct": -3.07, "hi": 257.0, "lo": 224.5, "hi52": 280.0}, {"mkt": "台股上櫃", "code": "5425.TWO", "name": "台半", "price": 130.5, "pct": -4.04, "hi": 138.0, "lo": 130.0, "hi52": 144.0}, {"mkt": "台股上櫃", "code": "3675.TWO", "name": "德微", "price": 396.0, "pct": -10.0, "hi": 423.0, "lo": 396.0, "hi52": 459.0}, {"mkt": "台灣大盤", "code": "^TWII", "name": "加權指數", "price": 45354.61, "pct": -0.83, "hi": 46064.06, "lo": 45352.41, "hi52": null}, {"mkt": "台灣大盤", "code": "^TWOII", "name": "櫃買指數", "price": 424.99, "pct": 0.85, "hi": 432.04, "lo": 423.45, "hi52": null}, {"mkt": "美股/指數", "code": "TSM", "name": "台積電ADR", "price": 443.885, "pct": 1.58, "hi": 447.69, "lo": 437.47, "hi52": 479.0}, {"mkt": "美股/指數", "code": "NQ=F", "name": "那斯達克100期貨", "price": 29837.75, "pct": 1.25, "hi": 29931.25, "lo": 29395.0, "hi52": 30968.0}, {"mkt": "美股/指數", "code": "BZ=F", "name": "布蘭特原油期貨", "price": 76.97, "pct": -1.35, "hi": 79.38, "lo": 76.77, "hi52": 126.1}, {"mkt": "美股/指數", "code": "CL=F", "name": "西德原油期貨", "price": 72.37, "pct": -1.56, "hi": 75.13, "lo": 72.16, "hi52": 119.48}, {"mkt": "美股/指數", "code": "GC=F", "name": "黃金期貨", "price": 4136.7, "pct": 1.33, "hi": 4147.4, "lo": 4063.4, "hi52": 5586.2}, {"mkt": "美股/指數", "code": "NVDA", "name": "輝達", "price": 201.72, "pct": -1.18, "hi": 204.46, "lo": 198.97, "hi52": 236.54}, {"mkt": "美股/指數", "code": "ORCL", "name": "甲骨文", "price": 146.47, "pct": 4.26, "hi": 149.07, "lo": 140.94, "hi52": 345.72}, {"mkt": "美股/指數", "code": "GOOGL", "name": "Alphabet", "price": 353.6, "pct": -2.3, "hi": 359.65, "lo": 351.08, "hi52": 408.61}, {"mkt": "美股/指數", "code": "TXN", "name": "德州儀器", "price": 312.39, "pct": 3.67, "hi": 313.75, "lo": 305.5, "hi52": 334.03}, {"mkt": "美股/指數", "code": "^SOX", "name": "費半", "price": 13140.177, "pct": 4.49, "hi": 13249.067, "lo": 12926.878, "hi52": 14655.29}, {"mkt": "美股/指數", "code": "^VIX", "name": "VIX恐慌指數", "price": 16.3, "pct": -3.55, "hi": 17.27, "lo": 16.25, "hi52": 35.3}, {"mkt": "美股/指數", "code": "HYG", "name": "高收益債ETF", "price": 79.805, "pct": 0.18, "hi": 79.82, "lo": 79.665, "hi52": 81.36}, {"mkt": "美股/指數", "code": "AMZN", "name": "亞馬遜", "price": 241.84, "pct": -0.73, "hi": 243.22, "lo": 238.25, "hi52": 278.56}, {"mkt": "美股/指數", "code": "MSFT", "name": "微軟", "price": 380.24, "pct": -0.81, "hi": 380.28, "lo": 373.35, "hi52": 555.45}, {"mkt": "美股/指數", "code": "AAPL", "name": "蘋果", "price": 314.461, "pct": 0.34, "hi": 314.85, "lo": 308.16, "hi52": 317.4}, {"mkt": "美股/指數", "code": "META", "name": "Meta", "price": 604.04, "pct": 0.15, "hi": 604.1, "lo": 577.07, "hi52": 796.25}, {"mkt": "美股/指數", "code": "TSLA", "name": "特斯拉", "price": 395.7, "pct": 0.45, "hi": 398.46, "lo": 390.863, "hi52": 498.83}];
+
+  const markets = ['全部', ...Array.from(new Set(stocks.map(s => s.mkt)))];
+  let activeMarket = '全部';
+  let searchTerm = '';
+
+  document.getElementById('marketTabs').innerHTML = markets.map(m =>
+    `<button data-mkt="${m}" class="${m === '全部' ? 'active' : ''}">${m}</button>`
+  ).join('');
+
+  function fmtNum(n) {
+    if (n === null || n === undefined) return '—';
+    return n.toLocaleString('zh-TW', { maximumFractionDigits: 3 });
+  }
+
+  function renderStocks() {
+    const filtered = stocks.filter(s => {
+      const mktOk = activeMarket === '全部' || s.mkt === activeMarket;
+      const term = searchTerm.trim().toLowerCase();
+      const searchOk = !term || s.code.toLowerCase().includes(term) || s.name.toLowerCase().includes(term);
+      return mktOk && searchOk;
+    });
+    const list = document.getElementById('stockList');
+    if (!filtered.length) {
+      list.innerHTML = '<div style="text-align:center;color:var(--muted);padding:18px;font-size:13px">沒有符合條件的個股</div>';
+      return;
+    }
+    list.innerHTML = filtered.map(s => {
+      const cls = s.pct > 0 ? 'up' : (s.pct < 0 ? 'down' : 'flat');
+      const sign = s.pct > 0 ? '+' : '';
+      const barPct = Math.min(Math.abs(s.pct) / 12 * 100, 100);
+      const barColor = s.pct > 0 ? 'var(--up)' : (s.pct < 0 ? 'var(--down)' : 'var(--muted)');
+      return `
+        <div class="stock-row">
+          <div>
+            <span class="nm">${s.name}</span>
+            <span class="code">${s.code}｜<span class="mkt">${s.mkt}</span></span>
+          </div>
+          <div class="num">${fmtNum(s.price)}</div>
+          <div class="pct ${cls}">${sign}${s.pct.toFixed(2)}%</div>
+          <div class="bar-track"><div class="bar-fill" style="width:${barPct}%;background:${barColor}"></div></div>
+          <div class="range">今日 ${fmtNum(s.lo)}–${fmtNum(s.hi)}　52週高 ${fmtNum(s.hi52)}</div>
+        </div>`;
+    }).join('');
+  }
+
+  document.getElementById('marketTabs').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    activeMarket = btn.dataset.mkt;
+    document.querySelectorAll('#marketTabs button').forEach(b => b.classList.toggle('active', b === btn));
+    renderStocks();
+  });
+  document.getElementById('stockSearch').addEventListener('input', e => {
+    searchTerm = e.target.value;
+    renderStocks();
+  });
+
+  renderStocks();
+</script>
+</body>
+</html>
