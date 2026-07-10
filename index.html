@@ -92,13 +92,15 @@
     opacity: .5;
     pointer-events: none;
   }
-  .hero-top { display: flex; justify-content: flex-end; position: relative; z-index: 2; margin-bottom: 6px; }
-  .theme-btn {
+  .hero-top { display: flex; justify-content: flex-end; gap: 8px; position: relative; z-index: 2; margin-bottom: 6px; }
+  .theme-btn, .refresh-btn {
     background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2);
     color: #fff; width: 34px; height: 34px; border-radius: 999px; cursor: pointer;
     font-size: 15px; display: flex; align-items: center; justify-content: center;
     backdrop-filter: blur(6px);
   }
+  .refresh-btn.spinning { animation: spin .7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
   .hero h1 {
     position: relative; z-index: 2;
     font-size: 23px; font-weight: 800; margin: 6px 0 10px; letter-spacing: -.01em;
@@ -325,6 +327,7 @@
 
 <div class="hero">
   <div class="hero-top">
+    <button class="refresh-btn" id="refreshBtn" aria-label="刷新頁面">🔄</button>
     <button class="theme-btn" id="themeBtn" aria-label="切換深色模式">🌙</button>
   </div>
   <h1>📊 Multi-Agent 市場日報</h1>
@@ -570,6 +573,15 @@
     const next = isDark ? 'light' : 'dark';
     applyTheme(next);
     localStorage.setItem('theme', next);
+  });
+
+  // ---- refresh button（繞過快取，強制拉最新版本）----
+  const refreshBtn = document.getElementById('refreshBtn');
+  refreshBtn.addEventListener('click', () => {
+    refreshBtn.classList.add('spinning');
+    const url = new URL(location.href);
+    url.searchParams.set('_r', Date.now());
+    location.href = url.toString();
   });
 
   // ---- relative time ----
