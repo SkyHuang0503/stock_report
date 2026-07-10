@@ -24,6 +24,8 @@
     --up-soft: #e9f9ef;
     --down: #dc2626;
     --down-soft: #fdeeed;
+    --stock-up: #dc2626;
+    --stock-down: #16a34a;
     --warn: #d97706;
     --warn-soft: #fff6e6;
     --shadow: 0 1px 2px rgba(24,24,40,.04), 0 8px 24px -12px rgba(24,24,40,.10);
@@ -45,6 +47,8 @@
     --up-soft: #103321;
     --down: #f87171;
     --down-soft: #3a1414;
+    --stock-up: #f87171;
+    --stock-down: #4ade80;
     --warn: #fbbf24;
     --warn-soft: #332a0d;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
@@ -237,6 +241,9 @@
   .up { color: var(--up); }
   .down { color: var(--down); }
   .flat { color: var(--text-2); }
+  /* 個股股價漲跌專用（台股慣例：紅漲綠跌），跟上面泛用的 .up/.down（看多/看空、利差狀態等）分開 */
+  .px-up { color: var(--stock-up); }
+  .px-down { color: var(--stock-down); }
 
   .yield-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 4px; }
   .yield-table th { background: var(--accent-soft); color: var(--accent); padding: 8px 9px; text-align: left; font-size: 11.5px; border-radius: 8px 8px 0 0; }
@@ -624,7 +631,7 @@
       <div class="top">
         <span class="code">${s.code}</span>
         <span>${s.name}</span>
-        <span class="pct ${s.pct >= 0 ? 'up' : 'down'}">${s.pct >= 0 ? '+' : ''}${s.pct.toFixed(2)}%</span>
+        <span class="pct ${s.pct >= 0 ? 'px-up' : 'px-down'}">${s.pct >= 0 ? '+' : ''}${s.pct.toFixed(2)}%</span>
         <span class="badge badge-${s.level}">${s.level}</span>
       </div>
       <p>${s.reason}</p>
@@ -659,10 +666,10 @@
       return;
     }
     list.innerHTML = filtered.map(s => {
-      const cls = s.pct > 0 ? 'up' : (s.pct < 0 ? 'down' : 'flat');
+      const cls = s.pct > 0 ? 'px-up' : (s.pct < 0 ? 'px-down' : 'flat');
       const sign = s.pct > 0 ? '+' : '';
       const barPct = Math.min(Math.abs(s.pct) / 12 * 100, 100);
-      const barColor = s.pct > 0 ? 'var(--up)' : (s.pct < 0 ? 'var(--down)' : 'var(--muted)');
+      const barColor = s.pct > 0 ? 'var(--stock-up)' : (s.pct < 0 ? 'var(--stock-down)' : 'var(--muted)');
       return `
         <div class="stock-row">
           <div>
