@@ -342,7 +342,7 @@
     <span class="pill-badge">📅 數據對應：07/10（五） 收盤</span>
     <span class="pill-badge">🌍 地緣風險：高（中東衝突升溫，海峽受阻）</span>
     <span class="pill-badge ">➡️ 市場情緒：neutral</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="殖利率段落的說明文字屬渲染層純文字，並非JSON頂層標準key，本次以說明方式標記修正內容，但實際渲染系統需人工確認該段落對應的模板變數名稱並套用修正後文字，避免舊版本文字殘留。此外，CIO-O指出報告多處「今日操作／今日關注」時間框架不清，雖判定不構成實質誤導，但若讀者為隔日才閱讀報告者，仍可能產生混淆，建議後續版本統一改為「次一交易日（2026-07-11）操作建議」等明確時間表述，交人工評估是否納入模板規範。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="「今日重點關注」區塊中「關注今日外資是否持續提款大型電子股」一句，「今日」定義混亂（報告生成於07/11 22:56，數據為07/10收盤，實際下一交易日為07/14），但該文字對應的是 tomorrow_watchlist 陣列中的字串，修改後仍需確認渲染端是否有額外的「今日」標題文字寫死在模板中，建議工程端一併檢查渲染邏輯，避免讀者對「今日」所指日期產生混淆。此疑慮涉及內容理解，一般讀者可能因此誤判外資動向所指的交易日。">⚠️ 本篇未完全通過三方審核</span>
     
   </div>
 </div>
@@ -434,14 +434,14 @@
       <div class="outlook-scroll">
         <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>雖然ON RRP下降反映中期資金充裕，但對次日短線推力有限。隔夜費半僅微漲0.06%，加上台積電ADR跌0.65%，無法扭轉外資提款大型股的壓力。在權值股缺乏美股強援下，短線維持看空，需提防中小型股補跌。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>VIX回落顯示無恐慌，但費半僅小漲0.06%，科技股動能放緩，市場觀望高利率環境對企業獲利的影響。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>美債前端殖利率維持高檔提供支撐，但日圓微幅升值，資金尚無明顯單向匯出入跡象，呈區間震盪。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir ">⚪ 中立</span><p>中東地緣風險新聞頻傳，但實際期貨收盤下跌，顯示需求疲軟擔憂與供給風險正在拉鋸，上檔承壓。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>美債殖利率曲線正斜率且前端利率偏高，持有黃金機會成本增加，且避險情緒未顯著升溫，缺乏動能。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>2026-07-11操作建議「避開權值、嚴控資金」。考量台股看空，費半僅微漲 0.06% 缺乏上攻指引，建議減碼外資提款的半導體二線與傳產權值股。黃金展望偏弱，不建議追高黃金避險部位；原油展望中立，中東地緣風險與需求疲軟拉鋸，暫不追高。針對內資活躍的櫃買市場，可短打具備業績支撐的題材股，但須嚴設停損，避開 3675.TWO（德微） 等跌停弱勢標的，防範中小型股高檔補跌風險。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>2026-07-14操作建議「避開權值、嚴控資金」。考量台股看空，費半僅微漲 0.06% 缺乏上攻指引，建議減碼外資提款的半導體二線與傳產權值股。黃金展望偏弱，不建議追高黃金避險部位；原油展望中立，中東地緣風險與需求疲軟拉鋸，暫不追高。針對內資活躍的櫃買市場，可短打具備業績支撐的題材股，但須嚴設停損，避開 3675.TWO（德微） 等跌停弱勢標的，防範中小型股高檔補跌風險。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>中東地緣衝突</b>｜霍爾木茲海峽供應風險重燃，可能引發能源與運輸價格波動。</span><span class="risk-tag risk-中"><b>權值股提款賣壓</b>｜台塑、聯電等大型股重挫，外資調節權值與景氣循環股明顯。</span><span class="risk-tag risk-中"><b>高利率延續</b>｜美債殖利率曲線維持正斜率，前端利率居高不下壓抑高估值。</span>
+      <span class="risk-tag risk-高"><b>中東地緣衝突</b>｜霍爾木茲海峽供應風險重燃，可能引發能源與運輸價格波動。</span><span class="risk-tag risk-中"><b>權值股提款賣壓</b>｜台塑、聯電等大型股重挫，外資調節權值與景氣循環股明顯。</span><span class="risk-tag risk-中"><b>高利率延續</b>｜美債殖利率曲線維持正斜率，目前10年債4.54%高於2年債4.16%，10Y-2Y利差為正0.38%；10Y-3M利差為正0.71%，曲線整體正常化。2年債4.16%高於FFR上緣3.75%達0.41%，顯示市場對聯準會偏鷹立場的定價仍在，前端利率居高不下壓抑高估值。</span>
     </div>
   </section>
 
