@@ -176,6 +176,8 @@
   }
   .score-badge { background: var(--warn); color: #fff; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; }
   .event-card b { display: block; margin: 5px 0; font-size: 14px; }
+  .event-card b a { color: var(--accent); text-decoration: none; }
+  .event-card b a:hover { text-decoration: underline; }
   .event-card small { color: var(--muted); }
 
   .outlook-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 2px 2px 6px; -webkit-overflow-scrolling: touch; }
@@ -334,12 +336,13 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-07-11 17:59:16</span>
+    <span>｜生成時間 2026-07-11 19:29:25</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：07/10（五） 收盤</span>
     <span class="pill-badge">🌍 地緣風險：N/A</span>
     <span class="pill-badge ">➡️ 市場情緒：neutral</span>
+    
   </div>
 </div>
 
@@ -363,9 +366,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">本報告於2026-07-11（六）出具。回顧2026-07-10（五），台股延續近期 risk-off 基調，呈「權值殺、中小撐」格局。最新長端美債殖利率維持高檔，壓抑權值股估值；隔夜費半僅微漲0.06%，台積電ADR跌0.65%，缺乏上攻動能。
-中東地緣風險重燃推升油價。盤後外資雖點名防禦股與CPO，但上一交易日中華電信亦遭提款，顯示大型資金正廣泛調節。今日建議避開弱勢權值，中小型股容錯率已降（如德微跌停），應嚴控風險，並留意能源板塊的短線催化。</div>
-      <div class="exec-sub">2026-07-10（五）台股呈現「權值殺、中小撐」格局，加權下跌0.83%，櫃買逆勢上漲0.85%。外資調節權值股，內資點火中小型題材。隔夜美股平淡，地緣風險推升油價，市場情緒延續近期的 risk-off 震盪基調。</div>
+      <div class="exec-box">2026-07-10（五）市場延續近期的 risk-off 基調，台股呈現加權跌、櫃買漲的外冷內熱結構。儘管最新公布的 SOFR-IORB 利差為負顯示資金高效運轉，且隔夜 VIX 回落5.11%，但大型權值股如台積電與防禦型的中華電信同步遭提款，顯示外資調節壓力沉重。隔夜費半僅微漲0.06%，台積電 ADR 續弱，科技股缺乏上攻動能。中東地緣風險（霍爾木茲海峽供應隱憂）為本期重要背景風險，雖油價當日反應平淡，但通膨預期反彈風險不容忽視。整體而言，資金面雖具韌性，但指數面受制於高利率預期與權值股籌碼鬆動，短線難脫震盪，中小型股亦須提防補跌風險。</div>
+      <div class="exec-sub">2026-07-10（五）台股呈現「權值殺、中小撐」格局，加權指數跌0.83%，櫃買逆勢漲0.85%。大型權值股與防禦型標的皆遭提款，資金轉戰中小型股。最新美債殖利率曲線維持正斜率，長端偏高持續壓抑高估值資產。中東地緣風險升溫（霍爾木茲海峽供應隱憂）為本日重要背景風險，雖尚未完全反映於油價，但已構成市場情緒壓力來源。</div>
     </div>
   </section>
 
@@ -373,10 +375,10 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【3675德微】櫃買強勢但該股跌停，關注中小型股補跌效應。</li>
-        <li>【大立光/CPO】外資盤後釋出利多，關注今日資金是否轉入。</li>
-        <li>【台積電/聯電】隔夜費半平淡且ADR跌，關注外資賣壓是否延續。</li>
-        <li>【能源/塑化】中東地緣風險推升油價，關注傳產股能否止跌。</li>
+        <li>【德微(3675)】單日跌停顯示籌碼鬆動，本交易日需關注中小型電子股補跌效應。</li>
+        <li>【大立光(3008)】外資盤後發布CPO利多報告，關注本交易日開盤追價力道。</li>
+        <li>【中華電(2412)】防禦權值股重挫，關注今日大型資金是否持續無差別提款。</li>
+        <li>【能源族群】中東地緣風險升溫，關注今日油價連動標的之避險買盤。</li>
         
       </ul>
     </div>
@@ -385,7 +387,7 @@
   <section>
     <div class="card alert-card reveal">
       <h2><span class="dot"></span>⚡ 數據與消息面出現背離</h2>
-      <p style="margin:0;font-size:13.5px">新聞指大摩點名防禦股接棒，但上一交易日中華電信卻大跌4.30%，顯示權值提款壓力大於避險需求。此外，大立光與SK海力士利多新聞發布於7/11傍晚，時效晚於收盤，市場尚未消化，屬時效不對齊的背離。</p>
+      <p style="margin:0;font-size:13.5px">1.大摩點名防禦族群，但中華電信卻大跌4.30%，顯示大型資金無差別提款。2.大立光利多新聞於週六盤後發布，屬時效不對齊，週五尚未反映。3.中東風險升溫但布蘭特原油微跌，市場尚未完全消化供應隱憂。</p>
     </div>
   </section>
 
@@ -395,12 +397,12 @@
       <div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
         <b>Oil’s Calm Is Over as Middle East Risks Return</b>
-        <p style="font-size:13px;margin:4px 0">美伊衝突再起且霍爾木茲海峽受阻，供應中斷擔憂推升地緣溢價。</p>
+        <p style="font-size:13px;margin:4px 0">美伊衝突升溫且霍爾木茲海峽航運受阻，供應中斷擔憂推升油價。</p>
         <small>影響資產／分類：油價/能源｜發布：07/11 00:01</small>
       </div><div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
         <b>Oil Prices Rally on Renewed Hormuz Supply Risks</b>
-        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽供應風險重燃，威脅關鍵航道，推升油價。</p>
+        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽供應風險重燃，威脅全球原油運輸安全。</p>
         <small>影響資產／分類：油價/能源｜發布：07/10 19:30</small>
       </div>
     </div>
@@ -409,24 +411,24 @@
   <section>
     <div class="card reveal">
       <h2><span class="dot"></span>📑 法人報告（外資評等/目標價變動）</h2>
-      <div class="event-card" style="border-left-color:var(--warn)">
+      <div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
         <span class="badge badge-high">總經</span>
-        <b>半導體漲多失寵！大摩急尋台股避風港「點名這3大族群」接棒 它擁20%潛在報酬看俏</b>
-        <p style="font-size:13px;margin:4px 0">大摩指出半導體漲多資金輪動，點名防禦性族群接棒。</p>
+        <b><a href="https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E5%B9%B3%E9%9D%9C%E6%98%AF%E5%81%87%E8%B1%A1-%E7%91%9E%E9%8A%80-%E5%B8%82%E5%A0%B4%E8%84%86%E5%BC%B1%E5%BA%A6%E9%80%BC%E8%BF%91%E6%BB%BF%E6%AA%94-%E8%B2%A1%E5%A0%B1%E5%AD%A3%E6%81%90%E5%BC%95%E7%88%86vix%E9%A3%86%E5%8D%87-101009765.html" target="_blank" rel="noopener">美股平靜是假象？瑞銀：市場脆弱度逼近滿檔  財報季恐引爆VIX飆升</a></b>
+        <p style="font-size:13px;margin:4px 0">瑞銀警告美股脆弱度達高點，多重總經壓力累積恐引發波動</p>
+        <small>方向：利空｜發布：07/11 18:10</small>
+      </div><div class="event-card" style="border-left-color:var(--warn)">
+        <span class="score-badge">4分</span>
+        <span class="badge badge-high">總經</span>
+        <b><a href="https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94%E6%BC%B2%E5%A4%9A%E5%A4%B1%E5%AF%B5-%E5%A4%A7%E6%91%A9%E6%80%A5%E5%B0%8B%E5%8F%B0%E8%82%A1%E9%81%BF%E9%A2%A8%E6%B8%AF-%E9%BB%9E%E5%90%8D%E9%80%993%E5%A4%A7%E6%97%8F%E7%BE%A4-%E6%8E%A5%E6%A3%92-%E5%AE%83%E6%93%8120-095000997.html" target="_blank" rel="noopener">半導體漲多失寵！大摩急尋台股避風港「點名這3大族群」接棒 它擁20%潛在報酬看俏</a></b>
+        <p style="font-size:13px;margin:4px 0">大摩指出半導體漲多降溫，資金轉向防禦性族群，顯示資金輪動。</p>
         <small>方向：不確定｜發布：07/11 17:50</small>
       </div><div class="event-card" style="border-left-color:var(--up)">
         <span class="score-badge">3分</span>
         <span class="badge badge-medium">個股</span>
-        <b>大立光要飛了？外資狂讚「CPO 新武器」進度超前 喊買上看5,150元</b>
-        <p style="font-size:13px;margin:4px 0">外資看好大立光CPO進度超前，給予優於大盤評等並調高目標價。</p>
+        <b><a href="https://money.udn.com/money/story/5710/9621699" target="_blank" rel="noopener">大立光要飛了？外資狂讚「CPO 新武器」進度超前 喊買上看5,150元</a></b>
+        <p style="font-size:13px;margin:4px 0">外資看好大立光CPO進度超前，調升評等與目標價至5150元。</p>
         <small>方向：利多｜發布：07/11 17:41</small>
-      </div><div class="event-card" style="border-left-color:var(--up)">
-        <span class="score-badge">3分</span>
-        <span class="badge badge-medium">個股</span>
-        <b>SK海力士美股掛牌掀熱潮！HBM、DRAM需求爆發  大摩解析記憶體股「3大變數」</b>
-        <p style="font-size:13px;margin:4px 0">SK海力士美股掛牌募資創紀錄，AI帶動HBM需求爆發，屬產業利多。</p>
-        <small>方向：利多｜發布：07/11 17:10</small>
       </div>
     </div>
   </section>
@@ -435,16 +437,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>程式規則看多反映中期流動性充裕，但LLM看空更貼近次日短線結構。隔夜費半指數僅微漲0.06%，台積電ADR收跌，缺乏帶動權值股反攻的直接動能。資金面雖穩，但大盤仍將受制於外資調節權值股的賣壓，維持看空。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>VIX回落5.11%，但費半僅小漲0.06%，那指期貨微漲0.12%，顯示市場情緒平淡，缺乏明確方向。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>最新USDTWD微幅升值，USDJPY溫和回落，顯示資金僅為溫和去槓桿，未見強烈避險買盤。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東地緣政治風險升溫，霍爾木茲海峽供應受阻擔憂直接推升地緣溢價。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir up">🟢 看多</span><p>高利率環境下，地緣政治不確定性與避險需求仍支撐金價維持高檔震盪。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>程式規則的資金面利多屬中期支撐，次日短線更受科技股連動影響。隔夜費半僅微漲0.06%，台積電ADR跌0.65%，半導體動能熄火。配合台股權值股轉弱結構，資金面難以立刻扭轉指數弱勢，短線仍有壓力，維持看空。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>隔夜VIX回落5.11%顯示恐慌降溫，但費半僅小漲0.06%，科技股缺乏上攻動能，大盤偏向震盪整理。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>最新美債殖利率維持高檔提供利差支撐，但避險情緒未全面爆發，預期維持區間震盪。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東霍爾木茲海峽地緣風險升溫，儘管上一交易日反應平淡，但供應中斷隱憂仍將提供下檔支撐。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir up">🟢 看多</span><p>地緣政治不確定性與高檔震盪的市場環境，持續吸引避險資金進駐，期貨價格維持強勢。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>今日操作建議避開弱勢權值股（如晶圓代工與電信），不宜貿然追空反彈。資金雖轉向中小型題材，但櫃買內部已見分化，追價需嚴控資金水位。可適度關注受惠地緣風險的能源標的，以及盤後外資點名的CPO與HBM概念股，但需提防大盤拖累，建議維持較高現金比重，採短線區間操作。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>考量台股權值股結構轉弱且隔夜費半僅微漲0.06%，操作上建議避開大型電子權值股，並適度減碼漲多且籌碼鬆動的中小型股（如德微）。美股偏向震盪，可維持中立部位。針對地緣政治風險升溫，可逢低佈局原油與黃金相關標的作為避險。整體策略應以防禦為主，保留現金彈性，等待權值股止跌訊號明確後再行放大部位。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>地緣政治衝突升溫</b>｜中東霍爾木茲海峽供應風險重燃，推升能源價格與通膨預期。</span><span class="risk-tag risk-中"><b>權值股估值修正</b>｜最新長端美債殖利率偏高，持續壓抑半導體與大型權值股估值。</span><span class="risk-tag risk-中"><b>中小型股高檔震盪</b>｜櫃買指數雖強，但內部出現跌停個股，顯示容錯率下降。</span>
+      <span class="risk-tag risk-高"><b>權值股籌碼鬆動</b>｜台積電與中華電信等大型股同步走弱，外資提款壓力未歇，壓抑大盤空間。</span><span class="risk-tag risk-高"><b>中東地緣政治</b>｜霍爾木茲海峽供應風險升溫，美伊衝突加劇，隨時可能推升油價並引發通膨預期反彈，為本期重要尾部風險。</span><span class="risk-tag risk-中"><b>中小型股波動加劇</b>｜櫃買雖強但內部如德微出現跌停，顯示資金汰弱留強速度加快，補跌風險增。</span>
     </div>
   </section>
 
@@ -491,8 +493,8 @@
         </tbody>
       </table>
 
-      <div class="curve-box"><b>曲線形狀：</b>正斜率<br>目前10年美債殖利率4.54%明確高於2年期4.16%，2Y-10Y利差為正0.38%，屬標準正斜率，並非倒掛。3個月美債3.83%也低於10年期4.54%，3M-10Y同樣為正0.71%，顯示曲線整體已回到較健康的上升結構。結合FFR中位數3.625%來看，短端殖利率仍高於政策利率，代表市場並未預期快速降息，反而要求更高的未來利率與通膨補償。這種曲線形態通常意味經濟尚未陷入衰退定價，但長天期資產估值會受到較高折現率壓抑。</div>
-      <div class="ffr-box"><b>FFR 判讀：</b>FFR維持在3.5%至3.75%，但2年債高於FFR中位數0.41個百分點，顯示市場對聯準會的定價偏向高利率維持更久，甚至保留再偏鷹空間。短天期債券因此對政策敏感度最高，殖利率維持高檔；長天期則在期限溢酬與財政供給壓力下同步走高，造成整體折現率上升，對成長股與高本益比資產形成壓力。</div>
+      <div class="curve-box"><b>曲線形狀：</b>正斜率<br>目前10年債4.54%高於2年債4.16%，2Y-10Y利差為+0.38%，確認殖利率曲線為正斜率，並非倒掛。3個月債3.83%也低於10年債4.54%，3M-10Y為+0.71%，顯示曲線前後端皆維持正常上傾。這通常代表市場對未來名目成長、通膨補償與期限溢價有更高要求，而非衰退式定價。再結合2年債高於FFR中位數0.41個百分點，說明市場對聯準會的政策預期仍偏鷹，長端走高則進一步壓抑高估值資產評價。</div>
+      <div class="ffr-box"><b>FFR 判讀：</b>FFR維持3.5%~3.75%，但2年債殖利率高於政策中位數，代表市場預期聯準會短期內不會轉向寬鬆，甚至保留再偏鷹空間。短天期利率因此維持高檔，直接提高資金成本；長天期如10年與30年殖利率同步偏高，則反映通膨與期限溢價壓力，對成長股估值與長久期資產形成折現壓力。</div>
     </div>
   </section>
 
@@ -504,7 +506,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>161.672（-0.421%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-07-11 17:59（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-07-11 19:29（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -514,15 +516,19 @@
       <div class="news-item">
         <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/11 00:01</span>
         <a href="https://oilprice.com/Energy/Energy-General/Oils-Calm-Is-Over-as-Middle-East-Risks-Return.html" target="_blank" rel="noopener">Oil’s Calm Is Over as Middle East Risks Return</a>
-        <p>美伊衝突再起且霍爾木茲海峽受阻，供應中斷擔憂推升地緣溢價。</p>
+        <p>美伊衝突升溫且霍爾木茲海峽航運受阻，供應中斷擔憂推升油價。</p>
       </div><div class="news-item">
         <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/10 19:30</span>
         <a href="https://oilprice.com/Energy/Energy-General/Oil-Prices-Rally-on-Renewed-Hormuz-Supply-Risks.html" target="_blank" rel="noopener">Oil Prices Rally on Renewed Hormuz Supply Risks</a>
-        <p>霍爾木茲海峽供應風險重燃，威脅關鍵航道，推升油價。</p>
+        <p>霍爾木茲海峽供應風險重燃，威脅全球原油運輸安全。</p>
+      </div><div class="news-item">
+        <span class="news-score">4分</span><span class="news-cat">[法人報告]</span><span class="news-time">07/11 18:10</span>
+        <a href="https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E5%B9%B3%E9%9D%9C%E6%98%AF%E5%81%87%E8%B1%A1-%E7%91%9E%E9%8A%80-%E5%B8%82%E5%A0%B4%E8%84%86%E5%BC%B1%E5%BA%A6%E9%80%BC%E8%BF%91%E6%BB%BF%E6%AA%94-%E8%B2%A1%E5%A0%B1%E5%AD%A3%E6%81%90%E5%BC%95%E7%88%86vix%E9%A3%86%E5%8D%87-101009765.html" target="_blank" rel="noopener">美股平靜是假象？瑞銀：市場脆弱度逼近滿檔  財報季恐引爆VIX飆升</a>
+        <p>瑞銀警告美股脆弱度達高點，多重總經壓力累積恐引發波動</p>
       </div><div class="news-item">
         <span class="news-score">4分</span><span class="news-cat">[法人報告]</span><span class="news-time">07/11 17:50</span>
         <a href="https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94%E6%BC%B2%E5%A4%9A%E5%A4%B1%E5%AF%B5-%E5%A4%A7%E6%91%A9%E6%80%A5%E5%B0%8B%E5%8F%B0%E8%82%A1%E9%81%BF%E9%A2%A8%E6%B8%AF-%E9%BB%9E%E5%90%8D%E9%80%993%E5%A4%A7%E6%97%8F%E7%BE%A4-%E6%8E%A5%E6%A3%92-%E5%AE%83%E6%93%8120-095000997.html" target="_blank" rel="noopener">半導體漲多失寵！大摩急尋台股避風港「點名這3大族群」接棒 它擁20%潛在報酬看俏</a>
-        <p>大摩指出半導體漲多資金輪動，點名防禦性族群接棒。</p>
+        <p>大摩指出半導體漲多降溫，資金轉向防禦性族群，顯示資金輪動。</p>
       </div>
     </div>
   </section>
@@ -540,8 +546,8 @@
           <span class="tag">🤖 Gemini 綜合研判</span>
           <span class="stance" style="background:#dc2626">📉 看空</span>
         </div>
-        <div class="body">今日轉向下降｜ON RRP下降代表停泊在聯準會逆回購工具中的資金減少，資金正在流出Fed、轉向市場尋求收益。考量目前VIX下跌5.11%、費半小漲0.06%，並未出現恐慌或半導體風險擴散，因此這次下降應解讀為偏正向的資金再配置。再加上ON RRP已處岩盤低水位，重點不是緩衝耗盡，而是資金在市場中高效率流動。</div>
-        <div class="footnote">📌 程式規則看多反映中期流動性充裕，但LLM看空更貼近次日短線結構。隔夜費半指數僅微漲0.06%，台積電ADR收跌，缺乏帶動權值股反攻的直接動能。資金面雖穩，但大盤仍將受制於外資調節權值股的賣壓，維持看空。</div>
+        <div class="body">連續下降｜ON RRP連續下降且目前僅0.545B，顯示閒置資金沒有回流Fed避險，而是持續流出停泊工具、轉往市場配置。又因VIX下跌5.11%、費半小漲0.06%，並無恐慌或半導體風險擴散訊號，因此這次RRP下滑應視為資金尋求更高收益的正常再配置，對整體風險偏好屬正向訊號。</div>
+        <div class="footnote">📌 程式規則的資金面利多屬中期支撐，次日短線更受科技股連動影響。隔夜費半僅微漲0.06%，台積電ADR跌0.65%，半導體動能熄火。配合台股權值股轉弱結構，資金面難以立刻扭轉指數弱勢，短線仍有壓力，維持看空。</div>
       </div>
 
       <div class="metric-grid">
@@ -558,15 +564,15 @@
       <div class="source-note">📅 📅 資料來源：SOFR=NY Fed API（一手） ／ EFFR=NY Fed API（一手） ／ SRF=derived_from_FFR_upper ／ RRP=FRED（備援，T+1）</div>
 
       <div class="pe-grid">
-        <div class="pe-card forecast"><b>🔮 預測</b>ON RRP由5.772B急降至0.545B，屬今日轉向下降，代表資金離開Fed工具、流向實體市場與風險資產尋求更高收益。由於VIX下跌、費半微升，未觸發流動性排擠條件，因此此訊號偏向risk-on，短線有利市場承接力與題材輪動延續。</div>
-        <div class="pe-card eval"><b>📊 評估</b>從核心利差判讀，SOFR-IORB為-12bp、EFFR-IORB為-3bp，兩者皆為負值，代表流動性充裕，且廣義融資與銀行準備金層面都仍在聯準會走廊內穩定運作。ON RRP僅0.545B且處於極低水位，依岩盤模式應視為後QE時代資金高效運轉於實體市場的常態，而非任何枯竭訊號。換言之，當前真正的宏觀約束不是錢不夠，而是高利率與長端殖利率偏高對股市估值造成壓抑。</div>
+        <div class="pe-card forecast"><b>🔮 預測</b>ON RRP由5.772B降至0.545B，且連續兩日下降，代表資金持續離開Fed停泊工具，轉向實體市場與風險資產尋求收益。由於VIX下跌、費半微升，未觸發流動性排擠條件，因此此訊號應解讀為偏risk-on，對台股後續資金面仍具支撐。</div>
+        <div class="pe-card eval"><b>📊 評估</b>目前SOFR-IORB為-12bp、EFFR-IORB為-3bp，兩項關鍵利差皆為負值，這代表市場流動性充裕，資金並未出現系統性緊縮。再加上ON RRP僅0.545B，且已落入極低水位的岩盤模式，應解讀為後QE時代資金高效運轉於實體市場與金融體系，而不是任何緩衝耗盡訊號。整體來看，貨幣市場結構仍穩，流動性基底安全，短線波動更多來自股市風格輪動與權值股調節，而非資金面失序。</div>
       </div>
 
       <div class="lowwater-box">
         <div class="ttl">🧭 ON RRP 低水位信號分析</div>
         <div class="lowwater-row"><span class="k">模式</span><span><b>岩盤模式</b>（水位決定靈敏度）</span></div>
-        <div class="lowwater-row"><span class="k">方向</span><span><b>今日轉向下降</b>　今日 vs 前兩日絕對變化</span></div>
-        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">🟡 單日 risk-on｜單日資金流出 Fed，偏樂觀但需確認</span></div>
+        <div class="lowwater-row"><span class="k">方向</span><span><b>連續下降</b>　今日 vs 前兩日絕對變化</span></div>
+        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">🟢 強 risk-on（連續）｜連續2日資金流出 Fed，持續進入風險資產</span></div>
         <div class="lowwater-note">※ 系統判斷 = 純數字邏輯；Gemini解讀 = 交叉比對VIX+費半後的綜合判斷<br>※ 後QE時代 ON RRP 長期低位屬正常；真正警訊為 SOFR-IORB 利差 &gt; 15bp</div>
       </div>
     </div>
@@ -574,7 +580,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-11 17:59:16</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-11 19:29:25</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -606,7 +612,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-07-11T17:59:16');
+  const genDate = new Date('2026-07-11T19:29:25');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
@@ -649,7 +655,7 @@
   scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   // ---- 異常個股 ----
-  const abnormal = [{"code": "1301.TW", "name": "台塑", "pct": -5.52, "level": "high", "reason": "台塑跌幅明顯大於大盤，顯示傳產景氣與原物料定價權承壓。即使油價變動有限，市場仍偏向交易需求放緩與利潤收縮預期，反映資金對景氣循環股風險溢酬要求上升。"}, {"code": "2412.TW", "name": "中華電信", "pct": -4.3, "level": "high", "reason": "中華電信屬防禦型權值股卻出現明顯下跌，代表市場並非單純追逐成長，而是權值籃子遭到調節。此類防守股走弱，常見於指數型資金再平衡或大型資金短線提款。"}, {"code": "2303.TW", "name": "聯電", "pct": -4.29, "level": "medium", "reason": "聯電跌幅遠大於ADR台積電與費半整體表現，顯示成熟製程與二線半導體承受更大賣壓。這通常意味資金在半導體內部做高低位切換，偏向集中龍頭與AI鏈而非全面看多。"}, {"code": "8027.TWO", "name": "鈦昇", "pct": 10.0, "level": "medium", "reason": "鈦昇強攻漲停，與加權指數下跌形成鮮明對比，顯示內資短線資金仍積極在中小型題材股點火。這種結構屬外冷內熱，雖有投機熱度，但也提高後續補跌與震盪風險。"}, {"code": "3675.TWO", "name": "德微", "pct": -10.0, "level": "high", "reason": "德微跌停反映櫃買內部並非全面強勢，而是資金集中少數題材股，弱勢個股遭快速淘汰。這種分化意味中小型股風險偏好雖在，但容錯率下降，追價需更謹慎。"}];
+  const abnormal = [{"code": "8027.TWO", "name": "鈦昇", "pct": 10.0, "level": "high", "reason": "在加權指數下跌、權值股偏弱的背景下，鈦昇逆勢攻上漲停，屬典型內資集中點火的中小型股強勢表現。此類走勢通常反映短線題材資金活躍，但也意味市場風格分化擴大，若權值股續弱，隔日追價風險將同步升高。"}, {"code": "3675.TWO", "name": "德微", "pct": -10.0, "level": "high", "reason": "德微單日跌停，顯示中小型電子股內部並非全面強勢，而是資金快速汰弱留強。當櫃買指數整體上漲卻有個股重挫，往往代表籌碼鬆動或獲利了結壓力集中，對高波動族群具有警示意義。"}, {"code": "1301.TW", "name": "台塑", "pct": -5.52, "level": "medium", "reason": "台塑跌幅明顯大於大盤，且國際油價僅小幅波動，顯示壓力更可能來自景氣循環與原物料需求預期轉弱，而非單純成本端因素。傳產權值走弱會拖累加權指數，反映市場對景氣敏感股的風險偏好仍偏保守。"}, {"code": "2412.TW", "name": "中華電信", "pct": -4.3, "level": "medium", "reason": "中華電信屬防禦型權值股，卻出現超過4%的明顯跌幅，與一般避險資金偏好不符，可能反映大型資金部位調整或指數權重再平衡。若連防禦股都承壓，代表權值端賣壓並非只集中在高beta電子股。"}];
   document.getElementById('abnormalList').innerHTML = abnormal.map(s => `
     <div class="abn-card">
       <div class="top">
