@@ -303,6 +303,7 @@
   .news-item:last-child { border-bottom: none; }
   .news-score { background: var(--accent); color: #fff; padding: 1px 7px; border-radius: 6px; font-size: 11px; margin-right: 5px; font-weight: 700; }
   .news-cat { color: var(--muted); font-size: 11.5px; margin-right: 4px; }
+  .news-time { color: var(--muted); font-size: 11px; margin-right: 4px; }
   .news-item a { color: var(--accent); text-decoration: none; font-size: 13.5px; font-weight: 700; }
   .news-item p { font-size: 12px; color: var(--text-2); margin-top: 5px; }
 
@@ -336,6 +337,7 @@
     <span>｜生成時間 2026-07-11 00:16:34</span>
   </div>
   <div class="badges">
+    <span class="pill-badge">📅 數據對應：07/10（五） 收盤</span>
     <span class="pill-badge">🌍 地緣風險：N/A</span>
     <span class="pill-badge ">📉 市場情緒：risk-off</span>
   </div>
@@ -344,7 +346,7 @@
 <div class="quicknav-wrap">
   <nav class="quicknav" id="quicknav">
     <a href="#summary" data-id="summary">摘要</a>
-    <a href="#watch" data-id="watch">明日關注</a>
+    <a href="#watch" data-id="watch">今日關注</a>
     <a href="#events" data-id="events">事件</a>
     <a href="#outlook" data-id="outlook">展望</a>
     <a href="#risk" data-id="risk">風險</a>
@@ -368,7 +370,7 @@
 
   <section id="watch">
     <div class="card reveal">
-      <h2><span class="dot"></span>🔭 明日重點關注</h2>
+      <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
         <li>【3675德微】跌停脫離櫃買強勢，留意中小型半導體籌碼鬆動與補跌效應。</li>
         <li>【2412中華電】防禦型權值重挫，關注大型機構是否持續進行無差別降倉。</li>
@@ -391,14 +393,14 @@
       <h2><span class="dot"></span>🚨 重大事件偵測（News Agent）</h2>
       <div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
-        <b>Oil Prices Rally on Renewed Hormuz Supply Risks</b>
-        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽供應風險重燃，威脅全球原油運輸。</p>
-        <small>影響資產／分類：油價/能源</small>
+        <b>Oil’s Calm Is Over as Middle East Risks Return</b>
+        <p style="font-size:13px;margin:4px 0">美伊衝突再起且霍爾木茲海峽航運受阻，供應中斷風險大增。</p>
+        <small>影響資產／分類：油價/能源｜發布：07/11 00:01</small>
       </div><div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
-        <b>Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era</b>
-        <p style="font-size:13px;margin:4px 0">勞參率創50年新低，顯現勞動市場結構疲軟，加劇經濟衰退隱憂。</p>
-        <small>影響資產／分類：總體經濟</small>
+        <b>Oil Prices Rally on Renewed Hormuz Supply Risks</b>
+        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽供應風險重燃，地緣政治威脅推升油價。</p>
+        <small>影響資產／分類：油價/能源｜發布：07/10 19:30</small>
       </div>
     </div>
   </section>
@@ -408,10 +410,10 @@
       <h2><span class="dot"></span>📑 法人報告（外資評等/目標價變動）</h2>
       <div class="event-card" style="border-left-color:var(--up)">
         <span class="score-badge">3分</span>
-        <span class="badge badge-high">總經</span>
-        <b>上半年狂吸4540億元！0050總投資人數達327萬　台股「第四法人」 每月百億資金挹注</b>
-        <p style="font-size:13px;margin:4px 0">ETF規模與定期定額戶數創高，提供台股長期穩定的資金流支撐。</p>
-        <small>方向：利多</small>
+        <span class="badge badge-medium">個股</span>
+        <b>魏哲家早看過答案？台積電營收挑戰4300億 6字金句爆驚人真相</b>
+        <p style="font-size:13px;margin:4px 0">法人看好台積電營收挑戰新高，AI需求強勁帶動業績成長。</p>
+        <small>方向：利多｜發布：07/11 12:31</small>
       </div>
     </div>
   </section>
@@ -495,13 +497,13 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🌐 今日高分新聞（≥4分）</h2>
       <div class="news-item">
-        <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span>
-        <a href="https://oilprice.com/Energy/Energy-General/Oil-Prices-Rally-on-Renewed-Hormuz-Supply-Risks.html" target="_blank" rel="noopener">Oil Prices Rally on Renewed Hormuz Supply Risks</a>
-        <p>霍爾木茲海峽供應風險重燃，威脅全球原油運輸。</p>
+        <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/11 00:01</span>
+        <a href="https://oilprice.com/Energy/Energy-General/Oils-Calm-Is-Over-as-Middle-East-Risks-Return.html" target="_blank" rel="noopener">Oil’s Calm Is Over as Middle East Risks Return</a>
+        <p>美伊衝突再起且霍爾木茲海峽航運受阻，供應中斷風險大增。</p>
       </div><div class="news-item">
-        <span class="news-score">4分</span><span class="news-cat">[總體經濟]</span>
-        <a href="https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html" target="_blank" rel="noopener">Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era</a>
-        <p>勞參率創50年新低，顯現勞動市場結構疲軟，加劇經濟衰退隱憂。</p>
+        <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/10 19:30</span>
+        <a href="https://oilprice.com/Energy/Energy-General/Oil-Prices-Rally-on-Renewed-Hormuz-Supply-Risks.html" target="_blank" rel="noopener">Oil Prices Rally on Renewed Hormuz Supply Risks</a>
+        <p>霍爾木茲海峽供應風險重燃，地緣政治威脅推升油價。</p>
       </div>
     </div>
   </section>
