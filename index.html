@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#4338ca">
-<title>市場日報｜2026-07-14</title>
+<title>市場日報｜2026-07-15</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -336,17 +336,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-07-14 07:30:01</span>
+    <span>｜生成時間 2026-07-15 07:30:02</span>
   </div>
   <div class="badges">
-    <span class="pill-badge">📅 數據對應：07/13（一） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：高（中東衝突升溫重啟封鎖）</span>
-    <span class="pill-badge ">📉 市場情緒：risk-off</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="以下三項疑慮本輪無法透過JSON欄位修正，需工程端或人工介入：
-1.【Fed升息新聞摘要錯誤】渲染報告「重大事件偵測」與「今日高分新聞」區塊中，「A July rate hike from the Fed?」的摘要仍顯示為「霍爾木茲海峽局勢升級威脅原油供應，屬重大地緣利多」，分類標為「油價/能源」，與標題完全不符。此為讀者直接可見的內容錯誤，需修正摘要為Fed升息預期相關說明，分類改為「聯準會/利率」。
-2.【殖利率利差文字筆誤】渲染報告殖利率段落正文寫「2Y-10Y利差為+0.35%」「3M-10Y亦為+0.71%」，應為「10Y-2Y」與「10Y-3M」，且數值標示正值與表格一致，但文字順序錯誤可能誤導讀者對利差方向的理解。該段落非獨立JSON key，本輪無法修正。
-3.【油價漲幅與期貨數據落差未揭露】報告新聞標題稱油價飆升8%，但CL=F與BZ=F期貨實際僅約+0.95%~+0.98%，落差達7個百分點以上，報告正文未提示此落差，可能使讀者高估油價實際漲幅。">⚠️ 本篇未完全通過三方審核</span>
-    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="大摩於[07/14 06:20]發布美股全面開花報告，晚於美股收盤，且與費半重挫4.78%的實際市況背離，屬時效不對齊。此外，新聞稱油價飆升8%，但期貨報價僅漲約1%，顯示市場可能已提前消化地緣風險。">❗ 時效備註</span>
+    <span class="pill-badge">📅 數據對應：07/14（二） 收盤</span>
+    <span class="pill-badge">🌍 地緣風險：高（美伊衝突推升油價與通膨擔憂）</span>
+    <span class="pill-badge ">➡️ 市場情緒：neutral</span>
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1）【新聞摘要/分類錯誤】「A July rate hike from the Fed?」新聞在 JSON analysis 中無獨立的新聞條目 key 可直接覆寫，摘要與分類的錯誤存在於渲染層資料來源（News Agent 輸出），需工程端或 News Agent 重新產生該條目，本輪無法透過修正 analysis JSON 欄位完整修復，請人工確認。2）【ETF 筆誤】00642U.TW 名稱「EFT」→「ETF」同屬渲染層股票資料欄位，JSON analysis 無對應 key，需工程端修正資料來源。3）【台股展望內部矛盾】asset_outlook 台股理由稱「費半大漲已化解地緣疑慮」，但報告同時標示地緣風險為「高」且 key_risk_factors 將地緣政治列為高嚴重度風險，兩者存在實質邏輯矛盾。費半單日反彈能否「化解」持續升溫的美伊衝突地緣疑慮，判斷依據不足，建議人工審視台股看多理由措辭是否過度樂觀，或調降地緣風險評級，兩者應保持一致。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="外媒於07/15清晨發布台積電強力買進報告，但台積電ADR於07/14收盤微跌0.28%，此背離屬新聞發布晚於美股收盤的時效未對齊，非實質市場矛盾。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -370,8 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">本報告基於 2026-07-13（一）市場數據分析。今日訊號延續並加劇了近期的 risk-off 基調。儘管最新公布的底層流動性指標顯示資金仍充裕，但川普重啟伊朗封鎖引發的地緣震盪，已實質衝擊風險偏好。美股費半重挫4.78%，VIX飆升逾14%，台積電ADR下跌2.89%，外資情緒快速轉空。上一交易日台股呈現「權值撐盤、中小破底」的脆弱結構，台半等跌停，資金轉向台塑等傳產防禦板塊。在通膨預期重燃與科技股估值修正雙重壓力下，市場廣度持續惡化。</div>
-      <div class="exec-sub">2026-07-13（一）市場呈現 risk-off。台股櫃買重挫1.20%，中小型半導體跌停。美股費半重挫4.78%，VIX急升逾14%，台積電ADR跌2.89%。資金轉向傳產防禦，地緣風險推升油價，科技股承壓。</div>
+      <div class="exec-box">本報告反映 2026-07-14（二）市場狀況。近期受中東局勢干擾延續 risk-off 基調，台股上一交易日遭遇系統性賣壓。然而，隔夜美股因 CPI 降溫，費半強彈且 VIX 回落，流動性指標單日轉佳，今日台股有望一改連日弱勢，出現極短線反彈。核心動能上，美伊衝突推升油價，資金轉向能源與原物料板塊；最新公布的美債殖利率維持高檔，反映 Fed 偏緊預期。今日盤面將面臨美科技股反彈與內部籌碼去槓桿的拉鋸。</div>
+      <div class="exec-sub">2026-07-14（二）台股遭遇系統性賣壓重挫，但隔夜美股因CPI降溫預期發酵，費半強彈且VIX回落，短線資金轉向能源與塑化板塊，市場情緒呈現內外資多空拉鋸。</div>
     </div>
   </section>
 
@@ -379,10 +376,9 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【台積電與半導體】ADR弱勢，關注今日開盤補跌壓力。</li>
-        <li>【中小型電子股】櫃買破底且多檔跌停，留意流動性踩踏風險。</li>
-        <li>【台塑與能源股】油價上漲帶動，觀察資金避險轉進力道。</li>
-        <li>【VIX與美股期貨】VIX急升，關注今日盤中風險情緒是否止穩。</li>
+        <li>【台積電】法說會前外資喊買，關注今日能否領漲。</li>
+        <li>【能源塑化】油價大漲受惠，關注資金是否持續轉入。</li>
+        <li>【中小型電子】昨日重挫，關注今日去槓桿賣壓是否減輕。</li>
         
       </ul>
     </div>
@@ -395,18 +391,28 @@
       <h2><span class="dot"></span>🚨 重大事件偵測（News Agent）</h2>
       <div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">5分</span>
-        <b>Oil Prices Surge 8% After Trump Reimposes Iran Blockade</b>
-        <p style="font-size:13px;margin:4px 0">重啟伊朗封鎖嚴重限縮全球原油供應，地緣風險溢價大增。</p>
-        <small>影響資產／分類：油價/能源｜發布：07/14 02:30</small>
+        <b>台股崩跌資金大逃殺！分析師揭止穩關鍵　點名「1類股」快減碼</b>
+        <p style="font-size:13px;margin:4px 0">美伊衝突爆發引發市場恐慌，台股暴跌且資金大逃殺。</p>
+        <small>影響資產／分類：法人報告｜發布：07/15 06:20</small>
+      </div><div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">5分</span>
+        <b>美CPI數據報喜釀美股收紅　惟IBM暴跌25%</b>
+        <p style="font-size:13px;margin:4px 0">美6月CPI低於預期，通膨降溫紓緩Fed升息壓力，屬總經利多。</p>
+        <small>影響資產／分類：法人報告｜發布：07/15 06:00</small>
       </div><div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
-        <b>Trump’s Cease-Fire Effectively Collapses as He Vows to Restart Blockade and Tolls</b>
-        <p style="font-size:13px;margin:4px 0">停火破裂重啟封鎖與收費，加劇通膨與供應鏈危機。</p>
-        <small>影響資產／分類：川普動態｜發布：07/14 06:20</small>
+        <b>Oil’s Oversupply Narrative Just Died</b>
+        <p style="font-size:13px;margin:4px 0">美伊衝突再起扭轉供過於求預期，引發供應短缺擔憂。</p>
+        <small>影響資產／分類：油價/能源｜發布：07/15 00:00</small>
+      </div><div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">4分</span>
+        <b>Pakistan Races for Emergency LNG as Strait of Hormuz Traffic Stalls</b>
+        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽局勢惡化威脅能源運輸，推升供應風險。</p>
+        <small>影響資產／分類：油價/能源｜發布：07/14 21:00</small>
       </div><div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
         <b>A July rate hike from the Fed? The odds are rising</b>
-        <p style="font-size:13px;margin:4px 0">霍爾木茲海峽局勢升級威脅原油供應，屬重大地緣利多。</p>
+        <p style="font-size:13px;margin:4px 0">霍爾木茲地緣衝突威脅供應，短期油價面臨強烈上漲動能。</p>
         <small>影響資產／分類：油價/能源｜發布：07/14 01:07</small>
       </div>
     </div>
@@ -415,12 +421,36 @@
   <section>
     <div class="card reveal">
       <h2><span class="dot"></span>📑 法人報告（外資評等/目標價變動）</h2>
-      <div class="event-card" style="border-left-color:var(--up)">
+      <div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">5分</span>
+        <span class="badge badge-high">總經</span>
+        <b><a href="https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E5%B4%A9%E8%B7%8C%E8%B3%87%E9%87%91%E5%A4%A7%E9%80%83%E6%AE%BA-%E5%88%86%E6%9E%90%E5%B8%AB%E6%8F%AD%E6%AD%A2%E7%A9%A9%E9%97%9C%E9%8D%B5-%E9%BB%9E%E5%90%8D-1%E9%A1%9E%E8%82%A1-%E5%BF%AB%E6%B8%9B%E7%A2%BC-222000774.html" target="_blank" rel="noopener">台股崩跌資金大逃殺！分析師揭止穩關鍵　點名「1類股」快減碼</a></b>
+        <p style="font-size:13px;margin:4px 0">美伊衝突爆發引發市場恐慌，台股暴跌且資金大逃殺。</p>
+        <small>方向：利空｜發布：07/15 06:20</small>
+      </div><div class="event-card" style="border-left-color:var(--up)">
+        <span class="score-badge">5分</span>
+        <span class="badge badge-high">總經</span>
+        <b><a href="https://tw.news.yahoo.com/%E7%BE%8Ecpi%E6%95%B8%E6%93%9A%E5%A0%B1%E5%96%9C%E9%87%80%E7%BE%8E%E8%82%A1%E6%94%B6%E7%B4%85-%E6%83%9Fibm%E6%9A%B4%E8%B7%8C25-220052790.html" target="_blank" rel="noopener">美CPI數據報喜釀美股收紅　惟IBM暴跌25%</a></b>
+        <p style="font-size:13px;margin:4px 0">美6月CPI低於預期，通膨降溫紓緩Fed升息壓力，屬總經利多。</p>
+        <small>方向：利多｜發布：07/15 06:00</small>
+      </div><div class="event-card" style="border-left-color:var(--down)">
         <span class="score-badge">4分</span>
         <span class="badge badge-high">總經</span>
-        <b><a href="https://tw.stock.yahoo.com/news/ai%E4%B8%8D%E5%86%8D%E7%8D%A8%E6%92%90%E5%A4%A7%E7%9B%A4-%E5%A4%A7%E6%91%A9%E5%96%8A%E7%BE%8E%E8%82%A1-%E5%85%A8%E9%9D%A2%E9%96%8B%E8%8A%B1-%E8%B2%A1%E5%A0%B1%E5%AD%A3%E6%BC%B2%E5%8B%A2%E5%B0%87%E5%86%8D%E6%93%B4%E5%A4%A7-222008165.html" target="_blank" rel="noopener">AI不再獨撐大盤 大摩喊美股「全面開花」 財報季漲勢將再擴大</a></b>
-        <p style="font-size:13px;margin:4px 0">大摩預期美股財報季非科技業業績強勁，漲勢將擴大至各產業。</p>
-        <small>方向：利多｜發布：07/14 06:20</small>
+        <b><a href="https://tw.news.yahoo.com/%E5%8F%B2%E4%B8%8A%E7%AC%AC6%E5%A4%A7%E8%B7%8C%E9%BB%9E-%E5%8F%B0%E8%82%A1%E9%87%8D%E6%91%94%E8%A1%80%E6%B5%81%E6%88%90%E6%B2%B3-%E5%B0%88%E5%AE%B6%E7%A4%BA%E8%AD%A6-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%BE%88%E9%9B%A3%E5%A4%A7%E6%BC%B2-212600598.html" target="_blank" rel="noopener">史上第6大跌點！台股重摔血流成河 專家示警：台積電很難大漲</a></b>
+        <p style="font-size:13px;margin:4px 0">中東戰火引發外資逃殺，台股重挫且估值偏高，後市展望悲觀。</p>
+        <small>方向：利空｜發布：07/15 05:26</small>
+      </div><div class="event-card" style="border-left-color:var(--up)">
+        <span class="score-badge">3分</span>
+        <span class="badge badge-high">總經</span>
+        <b><a href="https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA-%E6%B3%95%E4%BA%BA%E5%96%8A%E5%BF%AB%E8%A7%B8%E5%BA%95%E4%BA%86-%E7%9F%AD%E7%B7%9A%E5%8F%8D%E5%BD%88%E6%9C%89%E6%9C%9B%E5%85%88%E7%9C%8B46k-214836826.html" target="_blank" rel="noopener">台股震盪…法人喊快觸底了 短線反彈有望先看46K</a></b>
+        <p style="font-size:13px;margin:4px 0">法人看好台股V轉留長下影線，暗示接近底部且短線有望反彈。</p>
+        <small>方向：利多｜發布：07/15 05:48</small>
+      </div><div class="event-card" style="border-left-color:var(--up)">
+        <span class="score-badge">3分</span>
+        <span class="badge badge-medium">個股</span>
+        <b><a href="https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E5%89%8D%E8%83%BD%E8%B2%B7%E5%97%8E-%E5%A4%96%E5%AA%92%E5%96%8A%E5%BC%B7%E7%83%88%E8%B2%B7%E9%80%B2-%E5%B0%88%E5%AE%B6%E6%8F%AD1%E7%AD%96%E7%95%A5%E9%81%BF%E9%9A%AA-230700294.html" target="_blank" rel="noopener">台積電法說會前能買嗎？外媒喊強烈買進！專家揭1策略避險</a></b>
+        <p style="font-size:13px;margin:4px 0">外媒看好台積電受惠蘋果與輝達需求，法說前喊強烈買進。</p>
+        <small>方向：利多｜發布：07/15 07:07</small>
       </div>
     </div>
   </section>
@@ -429,16 +459,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>費半重挫4.78%且台積電ADR跌2.89%，外資夜盤情緒偏空，台股面臨權值補跌與中小股續弱壓力。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir down">🔴 看空</span><p>費半大跌4.78%，VIX飆升逾14%，地緣風險與通膨擔憂重燃，壓抑高估值科技股表現。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir up">🟢 看多</span><p>地緣政治風險升溫與潛在的聯準會升息預期，將驅動避險資金流入美元。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東地緣衝突加劇，伊朗封鎖重啟直接威脅全球原油供應，支撐油價上行。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir up">🟢 看多</span><p>股市波動加劇與地緣政治緊張局勢，將提升黃金的避險資產吸引力。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>Stock Agent看空著眼於前一日台股恐慌拋售，但程式規則ON RRP下降顯示資金重返風險資產。最關鍵是隔夜費半強勢大漲2.54%，已化解地緣疑慮，次日台股極易跟隨美股展開跌深反彈，短線轉向看多。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>CPI數據報喜緩解通膨擔憂，隔夜費半強彈2.54%，VIX下跌3.85%，短線動能轉佳。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>最新公布的長短天期美債殖利率維持高檔正斜率，Fed短期降息預期受限，支撐美元震盪偏強。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>美伊衝突與霍爾木茲海峽危機持續發酵，供應短缺擔憂強烈，支撐油價維持上行格局。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>雖有地緣避險需求，但高利率環境延續（最新10年期美債殖利率達4.62%）壓抑無孳息資產表現。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>今日操作建議高度防禦。鑑於費半重挫4.78%與台積電ADR走弱，台股開盤面臨沉重的科技權值補跌壓力，建議全面減碼高本益比與中小型半導體股，避開弱勢標的。資金配置可轉向受惠於地緣政治與油價上漲的能源、塑化（如台塑）及黃金等避險資產。在VIX顯著回落前，切勿輕易進場承接跌深電子股，保留現金彈性以應對波動。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>今日操作建議在台股跌深反彈之際保持謹慎。鑑於隔夜費半大漲，台股權值股有望回穩，但中小型股籌碼仍亂，建議避開或減碼昨日遭重挫的高估值電子股。資金配置上，可適度增持受惠於地緣衝突與油價上漲的能源ETF及低基期塑化族群作為防禦。美股部位可續抱科技股，並密切關注通膨與 Fed 政策預期變化。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>地緣政治衝突升級</b>｜川普重啟伊朗封鎖，中東局勢惡化推升能源供應擔憂與通膨預期。</span><span class="risk-tag risk-高"><b>科技股估值修正</b>｜費半重挫4.78%，VIX大漲，高本益比科技股面臨資金撤出壓力。</span><span class="risk-tag risk-中"><b>聯準會升息預期重燃</b>｜油價上漲引發通膨擔憂，市場開始定價7月升息可能性，推升短債殖利率。</span>
+      <span class="risk-tag risk-高"><b>地緣政治與通膨</b>｜美伊衝突升溫與霍爾木茲海峽危機推升油價，恐干擾Fed降息路徑。</span><span class="risk-tag risk-中"><b>籌碼面去槓桿</b>｜台股中小型股重挫，顯示高估值電子股面臨獲利了結與資金撤出壓力。</span>
     </div>
   </section>
 
@@ -465,35 +495,35 @@
       <table class="yield-table">
         <thead><tr><th>天期</th><th>殖利率</th></tr></thead>
         <tbody>
-          <tr><td>3個月（3M）</td><td><b>3.85%</b></td></tr>
-          <tr><td>2年（2Y）</td><td><b>4.21%</b></td></tr>
-          <tr><td>5年（5Y）</td><td><b>4.30%</b></td></tr>
-          <tr><td>10年（10Y）</td><td><b>4.56%</b></td></tr>
-          <tr><td>30年（30Y）</td><td><b>5.06%</b></td></tr>
+          <tr><td>3個月（3M）</td><td><b>3.89%</b></td></tr>
+          <tr><td>2年（2Y）</td><td><b>4.26%</b></td></tr>
+          <tr><td>5年（5Y）</td><td><b>4.37%</b></td></tr>
+          <tr><td>10年（10Y）</td><td><b>4.62%</b></td></tr>
+          <tr><td>30年（30Y）</td><td><b>5.10%</b></td></tr>
           
           <tr class="ffr"><td><b>FFR 目標區間</b></td><td><b>3.5% ~ 3.75%</b></td></tr>
         </tbody>
       </table>
-      <div class="source-note">📅 資料時間：美東時間 2026-07-10 收盤</div>
+      <div class="source-note">📅 資料時間：美東時間 2026-07-13 收盤</div>
 
       <h3>關鍵利差</h3>
       <table class="yield-table">
         <thead><tr><th>利差</th><th>數值</th><th>狀態</th></tr></thead>
         <tbody>
-          <tr><td>10Y－2Y</td><td class="up"><b>+0.35%</b></td><td>🟢 正常</td></tr>
-          <tr><td>10Y－3M</td><td class="up"><b>+0.71%</b></td><td>🟢 正常</td></tr>
+          <tr><td>10Y－2Y</td><td class="up"><b>+0.36%</b></td><td>🟢 正常</td></tr>
+          <tr><td>10Y－3M</td><td class="up"><b>+0.73%</b></td><td>🟢 正常</td></tr>
         </tbody>
       </table>
 
-      <div class="curve-box"><b>曲線形狀：</b>正斜率<br>殖利率曲線為正斜率，因10年債4.56%高於2年債4.21%，2Y-10Y利差為+0.35%，3M-10Y亦為+0.71%，並非倒掛。這代表市場對未來名目成長、通膨補償與期限溢酬仍有要求，長端利率維持高位。另一方面，2年債又高於FFR中位數3.625%達46bp，顯示市場對短端政策路徑的定價偏鷹，至少反映高利率維持更久。整體來看，曲線健康但不寬鬆，屬高利率環境下的正常化正斜率，對金融股相對有利，對高本益比科技股估值則較不友善。</div>
-      <div class="ffr-box"><b>FFR 判讀：</b>FFR維持3.5%~3.75%，但2年債高於政策利率中位數，說明市場並未押注明確降息，反而傾向聯準會延長高利率停留時間。短天期債券因此維持較高收益吸引力，壓抑風險資產估值；長天期則受高名目成長與期限溢酬推升，10年與30年殖利率高檔運行，對成長股折現率形成持續約束。</div>
+      <div class="curve-box"><b>曲線形狀：</b>正斜率<br>目前10年美債殖利率4.62%高於2年期4.26%，確認殖利率曲線為正斜率，並非倒掛。2Y-10Y利差為+0.36%，3M-10Y亦為+0.73%，代表市場對未來成長與通膨補償仍有要求，長端利率維持較高水準。再結合2年期高於FFR中位數0.51個百分點，顯示市場並未交易快速降息，反而反映Fed將較長時間維持偏緊政策。這種曲線結構較接近高利率常態化，而非衰退前夕的典型倒掛警報。</div>
+      <div class="ffr-box"><b>FFR 判讀：</b>FFR維持3.5%至3.75%，但2年債高於政策利率中位數，代表市場預期聯準會短期不會轉鴿，甚至仍保有偏鷹定價。短天期債券因此受到政策利率錨定而維持高檔，長天期則在高通膨溢酬與財政供給壓力下同步偏高，造成整條曲線上移而非寬鬆下行。</div>
 
       <h3>重要總經數據</h3>
       <table class="yield-table">
         <thead><tr><th>指標</th><th>最新值</th><th>變化</th><th>下次公布</th></tr></thead>
         <tbody>
-          <tr><td>CPI</td><td><b>333.979</b>（2026-05-01）</td><td>年增 +4.27%</td><td>2026-07-14</td></tr>
-          <tr><td>核心CPI</td><td><b>336.121</b>（2026-05-01）</td><td>年增 +2.96%</td><td>2026-07-14</td></tr>
+          <tr><td>CPI</td><td><b>332.568</b>（2026-06-01）</td><td>年增 +3.73%</td><td>2026-08-12</td></tr>
+          <tr><td>核心CPI</td><td><b>336.065</b>（2026-06-01）</td><td>年增 +2.81%</td><td>2026-08-12</td></tr>
           <tr><td>PCE</td><td><b>131.527</b>（2026-05-01）</td><td>年增 +4.07%</td><td>2026-07-30</td></tr>
           <tr><td>核心PCE</td><td><b>130.082</b>（2026-05-01）</td><td>年增 +3.41%</td><td>2026-07-30</td></tr>
           <tr><td>非農就業</td><td><b>+57k 人</b>（2026-06-01）</td><td>累計就業 158,984k</td><td>2026-08-07</td></tr>
@@ -508,11 +538,11 @@
     <div class="card reveal">
       <h2><span class="dot"></span>💱 匯率</h2>
       <div class="fx-row">
-        <div class="fx-chip"><b>台幣/美元 (USDTWD)</b>32.159（-0.037%）</div>
-        <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>162.412（-0.012%）</div>
+        <div class="fx-chip"><b>台幣/美元 (USDTWD)</b>32.134（0.003%）</div>
+        <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>162.19（0.001%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-07-14 07:30（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-07-15 07:30（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -520,21 +550,29 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🌐 今日高分新聞（≥4分）</h2>
       <div class="news-item">
-        <span class="news-score">5分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/14 02:30</span>
-        <a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-8-After-Trump-Reimposes-Iran-Blockade.html" target="_blank" rel="noopener">Oil Prices Surge 8% After Trump Reimposes Iran Blockade</a>
-        <p>重啟伊朗封鎖嚴重限縮全球原油供應，地緣風險溢價大增。</p>
+        <span class="news-score">5分</span><span class="news-cat">[法人報告]</span><span class="news-time">07/15 06:20</span>
+        <a href="https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E5%B4%A9%E8%B7%8C%E8%B3%87%E9%87%91%E5%A4%A7%E9%80%83%E6%AE%BA-%E5%88%86%E6%9E%90%E5%B8%AB%E6%8F%AD%E6%AD%A2%E7%A9%A9%E9%97%9C%E9%8D%B5-%E9%BB%9E%E5%90%8D-1%E9%A1%9E%E8%82%A1-%E5%BF%AB%E6%B8%9B%E7%A2%BC-222000774.html" target="_blank" rel="noopener">台股崩跌資金大逃殺！分析師揭止穩關鍵　點名「1類股」快減碼</a>
+        <p>美伊衝突爆發引發市場恐慌，台股暴跌且資金大逃殺。</p>
       </div><div class="news-item">
-        <span class="news-score">4分</span><span class="news-cat">[川普動態]</span><span class="news-time">07/14 06:20</span>
-        <a href="https://www.nytimes.com/2026/07/13/us/politics/trump-iran-ceasefire.html" target="_blank" rel="noopener">Trump’s Cease-Fire Effectively Collapses as He Vows to Restart Blockade and Tolls</a>
-        <p>停火破裂重啟封鎖與收費，加劇通膨與供應鏈危機。</p>
+        <span class="news-score">5分</span><span class="news-cat">[法人報告]</span><span class="news-time">07/15 06:00</span>
+        <a href="https://tw.news.yahoo.com/%E7%BE%8Ecpi%E6%95%B8%E6%93%9A%E5%A0%B1%E5%96%9C%E9%87%80%E7%BE%8E%E8%82%A1%E6%94%B6%E7%B4%85-%E6%83%9Fibm%E6%9A%B4%E8%B7%8C25-220052790.html" target="_blank" rel="noopener">美CPI數據報喜釀美股收紅　惟IBM暴跌25%</a>
+        <p>美6月CPI低於預期，通膨降溫紓緩Fed升息壓力，屬總經利多。</p>
+      </div><div class="news-item">
+        <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/15 00:00</span>
+        <a href="https://oilprice.com/Energy/Crude-Oil/Oils-Oversupply-Narrative-Just-Died.html" target="_blank" rel="noopener">Oil’s Oversupply Narrative Just Died</a>
+        <p>美伊衝突再起扭轉供過於求預期，引發供應短缺擔憂。</p>
+      </div><div class="news-item">
+        <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/14 21:00</span>
+        <a href="https://oilprice.com/Latest-Energy-News/World-News/Pakistan-Races-for-Emergency-LNG-as-Strait-of-Hormuz-Traffic-Stalls.html" target="_blank" rel="noopener">Pakistan Races for Emergency LNG as Strait of Hormuz Traffic Stalls</a>
+        <p>霍爾木茲海峽局勢惡化威脅能源運輸，推升供應風險。</p>
       </div><div class="news-item">
         <span class="news-score">4分</span><span class="news-cat">[油價/能源]</span><span class="news-time">07/14 01:07</span>
         <a href="https://www.cnbc.com/2026/07/13/-a-july-rate-hike-from-the-fed-the-odds-are-rising.html" target="_blank" rel="noopener">A July rate hike from the Fed? The odds are rising</a>
-        <p>霍爾木茲海峽局勢升級威脅原油供應，屬重大地緣利多。</p>
+        <p>霍爾木茲地緣衝突威脅供應，短期油價面臨強烈上漲動能。</p>
       </div><div class="news-item">
-        <span class="news-score">4分</span><span class="news-cat">[法人報告]</span><span class="news-time">07/14 06:20</span>
-        <a href="https://tw.stock.yahoo.com/news/ai%E4%B8%8D%E5%86%8D%E7%8D%A8%E6%92%90%E5%A4%A7%E7%9B%A4-%E5%A4%A7%E6%91%A9%E5%96%8A%E7%BE%8E%E8%82%A1-%E5%85%A8%E9%9D%A2%E9%96%8B%E8%8A%B1-%E8%B2%A1%E5%A0%B1%E5%AD%A3%E6%BC%B2%E5%8B%A2%E5%B0%87%E5%86%8D%E6%93%B4%E5%A4%A7-222008165.html" target="_blank" rel="noopener">AI不再獨撐大盤 大摩喊美股「全面開花」 財報季漲勢將再擴大</a>
-        <p>大摩預期美股財報季非科技業業績強勁，漲勢將擴大至各產業。</p>
+        <span class="news-score">4分</span><span class="news-cat">[法人報告]</span><span class="news-time">07/15 05:26</span>
+        <a href="https://tw.news.yahoo.com/%E5%8F%B2%E4%B8%8A%E7%AC%AC6%E5%A4%A7%E8%B7%8C%E9%BB%9E-%E5%8F%B0%E8%82%A1%E9%87%8D%E6%91%94%E8%A1%80%E6%B5%81%E6%88%90%E6%B2%B3-%E5%B0%88%E5%AE%B6%E7%A4%BA%E8%AD%A6-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%BE%88%E9%9B%A3%E5%A4%A7%E6%BC%B2-212600598.html" target="_blank" rel="noopener">史上第6大跌點！台股重摔血流成河 專家示警：台積電很難大漲</a>
+        <p>中東戰火引發外資逃殺，台股重挫且估值偏高，後市展望悲觀。</p>
       </div>
     </div>
   </section>
@@ -543,42 +581,42 @@
     <div class="card reveal">
       <div class="rrp-title">
         💧 ON RRP + 流動性監控
-        <span class="pill" style="background:var(--warn)">🟡 觀察</span>
+        <span class="pill" style="background:var(--warn)">🟠 警示</span>
         <span class="pill" style="background:#7c3aed">🪨 岩盤模式</span>
       </div>
 
       <div class="gemini-banner">
         <div class="row">
           <span class="tag">🤖 Gemini 綜合研判</span>
-          <span class="stance" style="background:#6b7280">➡️ 中性</span>
+          <span class="stance" style="background:#16a34a">🟢 Risk-On</span>
         </div>
-        <div class="body">轉向回升｜ON RRP訊號已由前兩日大幅下降轉為單日回升，純數字方向代表資金短線回流Fed，而不是離開Fed去追逐風險資產。再結合VIX大漲14.17%、費半下跌4.78%，依決策樹應優先判定為流動性排擠：資金沒有進入股市，反而偏向停泊或轉往更安全資產，因此市場情緒需以防守解讀。</div>
-        <div class="footnote">📌 輕微方向性，需搭配 VIX / 費半確認</div>
+        <div class="body">轉向下降｜目前ON RRP下降，代表資金從Fed逆回購工具流出，尋求更高收益的市場去處。結合VIX下跌、費半上漲與SOFR-IORB維持負值，可判定這筆資金並非被動填補壓力缺口，而是流向實體金融市場的正常再配置。再加上ON RRP低於50B屬岩盤常態，應視為資金運轉效率高，而非防禦性停泊增加。</div>
+        <div class="footnote">📌 單日資金流出 Fed，偏樂觀但需確認</div>
       </div>
 
       <div class="metric-grid">
-        <div class="metric-card"><div class="lbl">RRP（07/13）</div><div class="val up">$0.795B</div><div class="sub">2026-07-13</div></div><div class="metric-card"><div class="lbl">RRP（07/10）</div><div class="val">$0.545B</div><div class="sub">2026-07-10</div></div><div class="metric-card"><div class="lbl">1日變化</div><div class="val up">45.9%</div><div class="sub">↑ 回升</div></div><div class="metric-card"><div class="lbl">SOFR（07/10）</div><div class="val">3.55%</div><div class="sub">2026-07-10</div></div><div class="metric-card"><div class="lbl">IORB（07/14）</div><div class="val">3.65%</div><div class="sub">Fed設定生效日，非市場觀察日</div></div><div class="metric-card"><div class="lbl">SOFR－IORB</div><div class="val up">-10.0bp</div><div class="sub">距SRF天花板 20.0bp</div></div>
+        <div class="metric-card"><div class="lbl">RRP（07/14）</div><div class="val down">$0.278B</div><div class="sub">2026-07-14</div></div><div class="metric-card"><div class="lbl">RRP（07/13）</div><div class="val">$0.795B</div><div class="sub">2026-07-13</div></div><div class="metric-card"><div class="lbl">1日變化</div><div class="val down">-65.0%</div><div class="sub">↓↓ 急速下降</div></div><div class="metric-card"><div class="lbl">SOFR（07/13）</div><div class="val">3.6%</div><div class="sub">2026-07-13</div></div><div class="metric-card"><div class="lbl">IORB（07/15）</div><div class="val">3.65%</div><div class="sub">Fed設定生效日，非市場觀察日</div></div><div class="metric-card"><div class="lbl">SOFR－IORB</div><div class="val up">-5.0bp</div><div class="sub">距SRF天花板 15.0bp</div></div>
       </div>
 
       <div class="dim-grid">
-        <div class="dim-card ok"><div class="lbl">D1 廣義融資</div><div class="val up">-10.0bp</div><div style="font-size:11px">🟢 正常</div><div style="font-size:10px;color:var(--muted)">前值變化 ↑+2.0bp</div></div><div class="dim-card ok"><div class="lbl">D2 銀行準備金</div><div class="val up">-3.0bp</div><div style="font-size:11px">🟡 觀察</div><div style="font-size:10px;color:var(--muted)">前值變化 →+0.0bp</div></div><div class="dim-card ok"><div class="lbl">D3 RRP緩衝</div><div class="val up">$0.795B</div><div style="font-size:11px">🟡 觀察</div></div><div class="dim-card ok"><div class="lbl">D4 SRF距離</div><div class="val up">20.0bp</div><div style="font-size:11px">🟢 正常</div></div>
+        <div class="dim-card ok"><div class="lbl">D1 廣義融資</div><div class="val up">-5.0bp</div><div style="font-size:11px">🟢 正常</div><div style="font-size:10px;color:var(--muted)">前值變化 ↑+5.0bp</div></div><div class="dim-card ok"><div class="lbl">D2 銀行準備金</div><div class="val up">-3.0bp</div><div style="font-size:11px">🟡 觀察</div><div style="font-size:10px;color:var(--muted)">前值變化 →+0.0bp</div></div><div class="dim-card watch"><div class="lbl">D3 RRP緩衝</div><div class="val ">$0.278B</div><div style="font-size:11px">🟠 警示</div></div><div class="dim-card ok"><div class="lbl">D4 SRF距離</div><div class="val up">15.0bp</div><div style="font-size:11px">🟢 正常</div></div>
       </div>
 
       <div class="signal-list">
-        <div>✅ [D1廣義融資] SOFR-IORB -10.0bp，正常（較前值+2.0bp ↑）</div><div>🟡 [D2銀行準備金] EFFR-IORB -3.0bp，利差縮小中，留意是否持續收窄（較前值+0.0bp →）</div><div>✅ [D3RRP緩衝] ON RRP $0.795B (岩盤常態)，低水位屬後QE正常現象</div><div>  ↳ 🟡 2日累降 -86.2%，趨勢值得關注</div><div>✅ [D4SRF距離] SOFR(3.55%) 未高於 IORB（SOFR-IORB -10.0bp），距 SRF(3.75%) 20.0bp 屬走廊結構寬度，無動態壓力  [SRF = FFR upper (3.75%) + 0bp]</div>
+        <div>✅ [D1廣義融資] SOFR-IORB -5.0bp，正常（較前值+5.0bp ↑）</div><div>🟡 [D2銀行準備金] EFFR-IORB -3.0bp，利差縮小中，留意是否持續收窄（較前值+0.0bp →）</div><div>✅ [D3RRP緩衝] ON RRP $0.278B (岩盤常態)，低水位屬後QE正常現象</div><div>  ↳ 🟠 單日急降 -65.0%，留意短期結算抽水效應</div><div>✅ [D4SRF距離] SOFR(3.6%) 未高於 IORB（SOFR-IORB -5.0bp），距 SRF(3.75%) 15.0bp 屬走廊結構寬度，無動態壓力  [SRF = FFR upper (3.75%) + 0bp]</div>
       </div>
       <div class="source-note">📅 📅 資料來源：SOFR=NY Fed API（一手） ／ EFFR=NY Fed API（一手） ／ SRF=derived_from_FFR_upper ／ RRP=FRED（備援，T+1）</div>
 
       <div class="pe-grid">
-        <div class="pe-card forecast"><b>🔮 預測</b>ON RRP由0.545B回升至0.795B，屬轉向回升，代表部分資金短線抽離市場、回流Fed停泊避險。由於本次回升發生在VIX大漲與費半重挫背景下，應解讀為保守配置升溫，而非支持股市的新增風險資金。</div>
-        <div class="pe-card eval"><b>📊 評估</b>目前兩項核心利差SOFR-IORB與EFFR-IORB皆為負值，這在規則上明確代表流動性充裕，美元資金仍處於寬鬆可用狀態。再者，ON RRP僅0.795B且屬岩盤模式，應解讀為後QE時代資金高效運轉於實體市場與金融體系，而不是任何緩衝耗盡的警訊。換言之，流動性底層並不構成系統性問題；當前市場波動更像是風險偏好與資產配置切換，而非資金面失序。</div>
+        <div class="pe-card forecast"><b>🔮 預測</b>ON RRP由0.795B降至0.278B，屬轉向下降且位於岩盤低水位，代表資金持續離開Fed停泊工具，轉往實體市場與收益資產配置。由於未伴隨VIX上升或費半下跌，這次下降應解讀為偏正向的資金再配置，短線對風險資產具支撐意涵。</div>
+        <div class="pe-card eval"><b>📊 評估</b>SOFR-IORB與EFFR-IORB皆為負值，這是最關鍵的流動性判讀依據，代表美元資金仍然充裕，短端融資與銀行準備金都未出現緊繃狀態。ON RRP僅0.278B且處於極低水位，依岩盤模式應視為後QE時代資金高效運轉於實體市場的常態，而非任何枯竭訊號。雖然今日ON RRP快速下降，但在VIX下跌、費半上漲的背景下，並未觸發流動性排擠條件，因此整體仍屬流動性健康、結構安全。</div>
       </div>
 
       <div class="lowwater-box">
         <div class="ttl">🧭 ON RRP 低水位信號分析</div>
         <div class="lowwater-row"><span class="k">模式</span><span><b>岩盤模式</b>（水位決定靈敏度）</span></div>
-        <div class="lowwater-row"><span class="k">方向</span><span><b>轉向回升</b>　今日 vs 前兩日絕對變化</span></div>
-        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">🟡 弱信號｜輕微方向性，需搭配 VIX / 費半確認</span></div>
+        <div class="lowwater-row"><span class="k">方向</span><span><b>轉向下降</b>　今日 vs 前兩日絕對變化</span></div>
+        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">🟡 單日 risk-on｜單日資金流出 Fed，偏樂觀但需確認</span></div>
         <div class="lowwater-note">※ 系統判斷 = 純數字邏輯；Gemini解讀 = 交叉比對VIX+費半後的綜合判斷<br>※ 後QE時代 ON RRP 長期低位屬正常；真正警訊為 SOFR-IORB 利差 &gt; 15bp</div>
       </div>
     </div>
@@ -586,7 +624,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-14 07:30:01</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-15 07:30:02</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -618,7 +656,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-07-14T07:30:01');
+  const genDate = new Date('2026-07-15T07:30:02');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
@@ -661,7 +699,7 @@
   scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   // ---- 異常個股 ----
-  const abnormal = [{"code": "2327.TW", "name": "國巨", "pct": -9.33, "level": "high", "reason": "國巨單日重挫接近跌停，明顯弱於加權指數與多數權值股，反映被動元件族群遭遇獲利了結與風險偏好降溫雙重壓力。在費半大跌、VIX急升背景下，市場對景氣循環與電子零組件庫存敏感度同步升高。"}, {"code": "5425.TWO", "name": "台半", "pct": -9.96, "level": "high", "reason": "台半幾近跌停，且櫃買整體走弱，顯示中小型半導體股承受更強賣壓。這類跌勢通常不是單一基本面事件，而是流動性偏保守與風險資金撤出高波動標的的結果，對短線人氣傷害較大。"}, {"code": "3675.TWO", "name": "德微", "pct": -9.97, "level": "high", "reason": "德微同步接近跌停，與台半形成櫃買半導體族群共振下殺，代表內資偏好的高彈性標的出現明顯退潮。當加權僅小漲而櫃買重挫時，這種結構性背離往往預示市場廣度惡化，追價風險升高。"}, {"code": "1301.TW", "name": "台塑", "pct": 9.85, "level": "medium", "reason": "台塑強彈近一成，與電子權值疲弱形成鮮明對比，顯示資金明顯轉向傳產與原物料防禦/補漲方向。配合油價上行，市場正在進行板塊再平衡，而非全面性風險承擔，屬典型輪動而非普漲。"}, {"code": "TSM", "name": "台積電ADR", "pct": -2.89, "level": "high", "reason": "台積電ADR跌幅顯著大於台股現貨2330的漲幅，形成明確負向折價訊號。這代表外資夜盤情緒快速轉空，若無新的宏觀利多對沖，次日台股開盤面臨半導體權值補跌壓力，對指數牽引效果不容忽視。"}];
+  const abnormal = [{"code": "00642U.TW", "name": "西德原油期貨EFT(TW)", "pct": 6.31, "level": "high", "reason": "原油ETF大漲，與布蘭特及西德原油期貨同步走強，顯示資金短線轉向通膨與地緣風險受惠資產。在電子權值普遍回檔之際，能源題材逆勢吸金，屬典型防禦兼事件驅動型異常波動。"}, {"code": "1301.TW", "name": "台塑", "pct": 5.65, "level": "medium", "reason": "台塑逆勢強彈，明顯脫離大盤下跌節奏，反映市場資金由高估值電子轉向原物料與景氣循環股。搭配油價上行，塑化族群具報價與庫存題材支撐，屬板塊輪動下的強勢異常表現。"}, {"code": "5425.TWO", "name": "台半", "pct": -8.94, "level": "high", "reason": "台半重挫近9%，跌幅遠大於加權與櫃買指數，顯示中小型半導體股遭到明顯去槓桿與獲利了結。當櫃買跌幅擴大時，這類高波動標的往往成為資金優先撤出的壓力中心，屬高風險訊號。"}];
   document.getElementById('abnormalList').innerHTML = abnormal.map(s => `
     <div class="abn-card">
       <div class="top">
@@ -674,7 +712,7 @@
     </div>`).join('');
 
   // ---- 全部個股 ----
-  const stocks = [{"mkt": "台股上市", "code": "2330.TW", "name": "台積電", "price": 2440.0, "pct": 1.04, "hi": 2480.0, "lo": 2440.0, "hi52": 2535.0}, {"mkt": "台股上市", "code": "8162.TW", "name": "微矽電子", "price": 72.5, "pct": -7.17, "hi": 79.6, "lo": 70.3, "hi52": 89.9}, {"mkt": "台股上市", "code": "00642U.TW", "name": "西德原油期貨EFT(TW)", "price": 24.42, "pct": 0.58, "hi": 24.44, "lo": 24.28, "hi52": 33.53}, {"mkt": "台股上市", "code": "2449.TW", "name": "京元電子", "price": 307.0, "pct": -0.49, "hi": 321.0, "lo": 306.0, "hi52": 367.5}, {"mkt": "台股上市", "code": "6139.TW", "name": "亞翔", "price": 883.0, "pct": 0.91, "hi": 900.0, "lo": 869.0, "hi52": 987.0}, {"mkt": "台股上市", "code": "2454.TW", "name": "聯發科", "price": 3825.0, "pct": -2.55, "hi": 4095.0, "lo": 3825.0, "hi52": 4970.0}, {"mkt": "台股上市", "code": "2308.TW", "name": "台達電", "price": 1890.0, "pct": 0.53, "hi": 1980.0, "lo": 1885.0, "hi52": 2585.0}, {"mkt": "台股上市", "code": "2317.TW", "name": "鴻海", "price": 236.5, "pct": -0.42, "hi": 242.5, "lo": 236.5, "hi52": 314.0}, {"mkt": "台股上市", "code": "2303.TW", "name": "聯電", "price": 153.5, "pct": -1.6, "hi": 158.0, "lo": 151.5, "hi52": 185.5}, {"mkt": "台股上市", "code": "2383.TW", "name": "台光電", "price": 5125.0, "pct": -3.21, "hi": 5390.0, "lo": 5055.0, "hi52": 6250.0}, {"mkt": "台股上市", "code": "3037.TW", "name": "欣興", "price": 903.0, "pct": 3.2, "hi": 948.0, "lo": 892.0, "hi52": 1130.0}, {"mkt": "台股上市", "code": "2881.TW", "name": "富邦金", "price": 127.0, "pct": 2.01, "hi": 127.5, "lo": 124.5, "hi52": 141.0}, {"mkt": "台股上市", "code": "2327.TW", "name": "國巨", "price": 816.0, "pct": -9.33, "hi": 921.0, "lo": 810.0, "hi52": 1220.0}, {"mkt": "台股上市", "code": "2412.TW", "name": "中華電信", "price": 133.5, "pct": 0.0, "hi": 135.5, "lo": 133.0, "hi52": 147.0}, {"mkt": "台股上市", "code": "2891.TW", "name": "中信金", "price": 66.5, "pct": -4.86, "hi": 70.2, "lo": 66.1, "hi52": 73.6}, {"mkt": "台股上市", "code": "2882.TW", "name": "國泰金", "price": 96.7, "pct": 0.42, "hi": 97.8, "lo": 95.9, "hi52": 117.5}, {"mkt": "台股上市", "code": "1301.TW", "name": "台塑", "price": 60.2, "pct": 9.85, "hi": 60.2, "lo": 56.0, "hi52": 64.0}, {"mkt": "台股上市", "code": "2002.TW", "name": "中鋼", "price": 18.4, "pct": -0.81, "hi": 18.65, "lo": 18.4, "hi52": 21.6}, {"mkt": "台股上櫃", "code": "8027.TWO", "name": "鈦昇", "price": 241.0, "pct": -0.41, "hi": 261.0, "lo": 235.5, "hi52": 297.0}, {"mkt": "台股上櫃", "code": "6693.TWO", "name": "廣閎科", "price": 232.5, "pct": -1.69, "hi": 240.5, "lo": 222.0, "hi52": 280.0}, {"mkt": "台股上櫃", "code": "5425.TWO", "name": "台半", "price": 117.5, "pct": -9.96, "hi": 130.5, "lo": 117.5, "hi52": 144.0}, {"mkt": "台股上櫃", "code": "3675.TWO", "name": "德微", "price": 356.5, "pct": -9.97, "hi": 388.0, "lo": 356.5, "hi52": 459.0}, {"mkt": "台灣大盤", "code": "^TWII", "name": "加權指數", "price": 45380.52, "pct": 0.06, "hi": 46330.91, "lo": 45272.9, "hi52": null}, {"mkt": "台灣大盤", "code": "^TWOII", "name": "櫃買指數", "price": 419.9, "pct": -1.2, "hi": 436.77, "lo": 417.55, "hi52": null}, {"mkt": "美股/指數", "code": "TSM", "name": "台積電ADR", "price": 421.58, "pct": -2.89, "hi": 437.99, "lo": 420.36, "hi52": 479.0}, {"mkt": "美股/指數", "code": "NQ=F", "name": "那斯達克100期貨", "price": 29390.25, "pct": -0.29, "hi": 29479.5, "lo": 29366.75, "hi52": 30968.0}, {"mkt": "美股/指數", "code": "BZ=F", "name": "布蘭特原油期貨", "price": 84.12, "pct": 0.98, "hi": 84.2, "lo": 83.04, "hi52": 126.1}, {"mkt": "美股/指數", "code": "CL=F", "name": "西德原油期貨", "price": 78.88, "pct": 0.95, "hi": 79.14, "lo": 77.86, "hi52": 119.48}, {"mkt": "美股/指數", "code": "GC=F", "name": "黃金期貨", "price": 4006.2, "pct": 0.01, "hi": 4015.5, "lo": 4005.0, "hi52": 5586.2}, {"mkt": "美股/指數", "code": "NVDA", "name": "輝達", "price": 203.53, "pct": -3.52, "hi": 210.57, "lo": 203.35, "hi52": 236.54}, {"mkt": "美股/指數", "code": "MU", "name": "美光", "price": 937.0, "pct": -4.32, "hi": 943.5, "lo": 902.6, "hi52": 1255.0}, {"mkt": "美股/指數", "code": "ORCL", "name": "甲骨文", "price": 131.54, "pct": -6.47, "hi": 139.64, "lo": 131.35, "hi52": 345.72}, {"mkt": "美股/指數", "code": "GOOGL", "name": "Alphabet", "price": 352.51, "pct": -1.31, "hi": 358.12, "lo": 351.75, "hi52": 408.61}, {"mkt": "美股/指數", "code": "TXN", "name": "德州儀器", "price": 298.57, "pct": -4.14, "hi": 308.52, "lo": 296.83, "hi52": 334.03}, {"mkt": "美股/指數", "code": "^SOX", "name": "費半", "price": 12347.783, "pct": -4.78, "hi": 12646.775, "lo": 12289.053, "hi52": 14655.29}, {"mkt": "美股/指數", "code": "^VIX", "name": "VIX恐慌指數", "price": 17.16, "pct": 14.17, "hi": 17.41, "lo": 16.03, "hi52": 35.3}, {"mkt": "美股/指數", "code": "HYG", "name": "高收益債ETF", "price": 79.52, "pct": -0.24, "hi": 79.69, "lo": 79.455, "hi52": 81.36}, {"mkt": "美股/指數", "code": "AMZN", "name": "亞馬遜", "price": 247.31, "pct": 0.8, "hi": 249.65, "lo": 244.23, "hi52": 278.56}, {"mkt": "美股/指數", "code": "MSFT", "name": "微軟", "price": 390.99, "pct": 1.53, "hi": 393.64, "lo": 384.15, "hi52": 555.45}, {"mkt": "美股/指數", "code": "AAPL", "name": "蘋果", "price": 317.31, "pct": 0.63, "hi": 323.45, "lo": 315.78, "hi52": 323.45}, {"mkt": "美股/指數", "code": "META", "name": "Meta", "price": 656.73, "pct": -1.86, "hi": 676.62, "lo": 654.2, "hi52": 796.25}, {"mkt": "美股/指數", "code": "TSLA", "name": "特斯拉", "price": 394.76, "pct": -3.19, "hi": 405.4, "lo": 391.37, "hi52": 498.83}];
+  const stocks = [{"mkt": "台股上市", "code": "2330.TW", "name": "台積電", "price": 2420.0, "pct": -0.82, "hi": 2430.0, "lo": 2390.0, "hi52": 2535.0}, {"mkt": "台股上市", "code": "8162.TW", "name": "微矽電子", "price": 69.4, "pct": -4.28, "hi": 71.7, "lo": 65.8, "hi52": 89.9}, {"mkt": "台股上市", "code": "00642U.TW", "name": "西德原油期貨EFT(TW)", "price": 25.96, "pct": 6.31, "hi": 26.05, "lo": 25.71, "hi52": 33.53}, {"mkt": "台股上市", "code": "2449.TW", "name": "京元電子", "price": 291.5, "pct": -5.05, "hi": 311.0, "lo": 278.5, "hi52": 367.5}, {"mkt": "台股上市", "code": "6139.TW", "name": "亞翔", "price": 834.0, "pct": -5.55, "hi": 886.0, "lo": 804.0, "hi52": 987.0}, {"mkt": "台股上市", "code": "2454.TW", "name": "聯發科", "price": 3660.0, "pct": -4.31, "hi": 3860.0, "lo": 3515.0, "hi52": 4970.0}, {"mkt": "台股上市", "code": "2308.TW", "name": "台達電", "price": 1855.0, "pct": -1.85, "hi": 1905.0, "lo": 1780.0, "hi52": 2585.0}, {"mkt": "台股上市", "code": "2317.TW", "name": "鴻海", "price": 235.5, "pct": -0.42, "hi": 237.0, "lo": 230.0, "hi52": 314.0}, {"mkt": "台股上市", "code": "2303.TW", "name": "聯電", "price": 151.0, "pct": -1.63, "hi": 151.0, "lo": 140.0, "hi52": 185.5}, {"mkt": "台股上市", "code": "2383.TW", "name": "台光電", "price": 4970.0, "pct": -3.02, "hi": 5160.0, "lo": 4745.0, "hi52": 6250.0}, {"mkt": "台股上市", "code": "3037.TW", "name": "欣興", "price": 874.0, "pct": -3.21, "hi": 914.0, "lo": 826.0, "hi52": 1130.0}, {"mkt": "台股上市", "code": "2881.TW", "name": "富邦金", "price": 125.0, "pct": -1.57, "hi": 127.0, "lo": 121.5, "hi52": 141.0}, {"mkt": "台股上市", "code": "2327.TW", "name": "國巨", "price": 778.0, "pct": -4.66, "hi": 823.0, "lo": 737.0, "hi52": 1220.0}, {"mkt": "台股上市", "code": "2412.TW", "name": "中華電信", "price": 133.0, "pct": -0.37, "hi": 134.0, "lo": 132.0, "hi52": 147.0}, {"mkt": "台股上市", "code": "2891.TW", "name": "中信金", "price": 65.0, "pct": -2.26, "hi": 67.5, "lo": 63.5, "hi52": 73.6}, {"mkt": "台股上市", "code": "2882.TW", "name": "國泰金", "price": 96.1, "pct": -0.62, "hi": 97.6, "lo": 94.0, "hi52": 117.5}, {"mkt": "台股上市", "code": "1301.TW", "name": "台塑", "price": 63.6, "pct": 5.65, "hi": 63.6, "lo": 59.4, "hi52": 64.0}, {"mkt": "台股上市", "code": "2002.TW", "name": "中鋼", "price": 18.5, "pct": 0.54, "hi": 18.55, "lo": 18.25, "hi52": 21.6}, {"mkt": "台股上櫃", "code": "8027.TWO", "name": "鈦昇", "price": 234.5, "pct": -2.7, "hi": 239.0, "lo": 221.5, "hi52": 297.0}, {"mkt": "台股上櫃", "code": "6693.TWO", "name": "廣閎科", "price": 218.5, "pct": -6.02, "hi": 234.0, "lo": 209.5, "hi52": 280.0}, {"mkt": "台股上櫃", "code": "5425.TWO", "name": "台半", "price": 107.0, "pct": -8.94, "hi": 113.0, "lo": 106.0, "hi52": 144.0}, {"mkt": "台股上櫃", "code": "3675.TWO", "name": "德微", "price": 332.0, "pct": -6.87, "hi": 352.0, "lo": 321.0, "hi52": 459.0}, {"mkt": "台灣大盤", "code": "^TWII", "name": "加權指數", "price": 44737.95, "pct": -1.42, "hi": 45364.4, "lo": 43654.04, "hi52": null}, {"mkt": "台灣大盤", "code": "^TWOII", "name": "櫃買指數", "price": 407.41, "pct": -2.97, "hi": 420.37, "lo": 390.99, "hi52": null}, {"mkt": "美股/指數", "code": "TSM", "name": "台積電ADR", "price": 420.39, "pct": -0.28, "hi": 430.87, "lo": 418.86, "hi52": 479.0}, {"mkt": "美股/指數", "code": "NQ=F", "name": "那斯達克100期貨", "price": 29792.5, "pct": 0.01, "hi": 29806.25, "lo": 29745.5, "hi52": 30968.0}, {"mkt": "美股/指數", "code": "BZ=F", "name": "布蘭特原油期貨", "price": 85.45, "pct": 0.85, "hi": 85.56, "lo": 85.2, "hi52": 126.1}, {"mkt": "美股/指數", "code": "CL=F", "name": "西德原油期貨", "price": 79.94, "pct": 0.76, "hi": 80.24, "lo": 79.59, "hi52": 119.48}, {"mkt": "美股/指數", "code": "GC=F", "name": "黃金期貨", "price": 4054.2, "pct": -0.38, "hi": 4060.0, "lo": 4052.7, "hi52": 5586.2}, {"mkt": "美股/指數", "code": "NVDA", "name": "輝達", "price": 211.8, "pct": 4.06, "hi": 212.54, "lo": 203.8, "hi52": 236.54}, {"mkt": "美股/指數", "code": "MU", "name": "美光", "price": 983.12, "pct": 4.92, "hi": 994.8, "lo": 950.07, "hi52": 1255.0}, {"mkt": "美股/指數", "code": "ORCL", "name": "甲骨文", "price": 127.94, "pct": -2.74, "hi": 132.75, "lo": 127.83, "hi52": 345.72}, {"mkt": "美股/指數", "code": "GOOGL", "name": "Alphabet", "price": 359.51, "pct": 1.99, "hi": 360.16, "lo": 351.09, "hi52": 408.61}, {"mkt": "美股/指數", "code": "TXN", "name": "德州儀器", "price": 305.55, "pct": 2.34, "hi": 310.565, "lo": 301.885, "hi52": 334.03}, {"mkt": "美股/指數", "code": "^SOX", "name": "費半", "price": 12661.931, "pct": 2.54, "hi": 12846.29, "lo": 12489.544, "hi52": 14655.29}, {"mkt": "美股/指數", "code": "^VIX", "name": "VIX恐慌指數", "price": 16.5, "pct": -3.85, "hi": 17.56, "lo": 16.15, "hi52": 35.3}, {"mkt": "美股/指數", "code": "HYG", "name": "高收益債ETF", "price": 79.68, "pct": 0.2, "hi": 79.69, "lo": 79.57, "hi52": 81.36}, {"mkt": "美股/指數", "code": "AMZN", "name": "亞馬遜", "price": 247.49, "pct": 0.07, "hi": 248.56, "lo": 243.8, "hi52": 278.56}, {"mkt": "美股/指數", "code": "MSFT", "name": "微軟", "price": 384.93, "pct": -1.55, "hi": 388.19, "lo": 378.65, "hi52": 555.45}, {"mkt": "美股/指數", "code": "AAPL", "name": "蘋果", "price": 314.86, "pct": -0.77, "hi": 316.19, "lo": 311.91, "hi52": 323.45}, {"mkt": "美股/指數", "code": "META", "name": "Meta", "price": 661.04, "pct": 0.66, "hi": 666.5, "lo": 649.05, "hi52": 796.25}, {"mkt": "美股/指數", "code": "TSLA", "name": "特斯拉", "price": 396.18, "pct": 0.36, "hi": 402.22, "lo": 394.76, "hi52": 498.83}];
 
   // 顯示順序：大盤 -> 美股 -> 上市 -> 上櫃（未知分類排在最後）
   const MARKET_ORDER = ['台灣大盤', '美股/指數', '台股上市', '台股上櫃'];
