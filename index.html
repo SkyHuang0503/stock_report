@@ -731,10 +731,12 @@
       return;
     }
     list.innerHTML = filtered.map(s => {
-      const cls = s.pct > 0 ? 'px-up' : (s.pct < 0 ? 'px-down' : 'flat');
-      const sign = s.pct > 0 ? '+' : '';
-      const barPct = Math.min(Math.abs(s.pct) / 12 * 100, 100);
-      const barColor = s.pct > 0 ? 'var(--stock-up)' : (s.pct < 0 ? 'var(--stock-down)' : 'var(--muted)');
+      const hasPct = s.pct !== null && s.pct !== undefined;
+      const cls = hasPct ? (s.pct > 0 ? 'px-up' : (s.pct < 0 ? 'px-down' : 'flat')) : 'flat';
+      const sign = hasPct && s.pct > 0 ? '+' : '';
+      const barPct = hasPct ? Math.min(Math.abs(s.pct) / 12 * 100, 100) : 0;
+      const barColor = hasPct ? (s.pct > 0 ? 'var(--stock-up)' : (s.pct < 0 ? 'var(--stock-down)' : 'var(--muted)')) : 'var(--muted)';
+      const pctText = hasPct ? `${sign}${s.pct.toFixed(2)}%` : '資料異常';
       return `
         <div class="stock-row">
           <div>
@@ -742,7 +744,7 @@
             <span class="code">${s.code}｜<span class="mkt">${s.mkt}</span></span>
           </div>
           <div class="num">${fmtNum(s.price)}</div>
-          <div class="pct ${cls}">${sign}${s.pct.toFixed(2)}%</div>
+          <div class="pct ${cls}">${pctText}</div>
           <div class="bar-track"><div class="bar-fill" style="width:${barPct}%;background:${barColor}"></div></div>
           <div class="range">今日 ${fmtNum(s.lo)}–${fmtNum(s.hi)}　52週高 ${fmtNum(s.hi52)}</div>
         </div>`;
