@@ -336,14 +336,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-07-22 07:30:01</span>
+    <span>｜生成時間 2026-07-22 07:39:38</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：07/21（二） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：高（紅海衝突升溫推升油價）</span>
+    <span class="pill-badge">🌍 地緣風險：高（紅海衝突與關稅戰升溫）</span>
     <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="①報告渲染文字中殖利率段落（曲線形狀說明）原文寫「2Y-10Y利差為+0.39%」，方向應為「10Y-2Y利差為+0.39%」，且「2年債高於FFR中位數0.46個百分點」應更正為約0.585個百分點——此段為渲染後報告的純文字區塊，不對應獨立的analysis JSON key，本輪已於market_overview欄位補充正確數字，但原殖利率段落的獨立渲染文字（曲線形狀說明與FFR判讀兩段）需工程端確認對應的模板欄位或直接修改渲染邏輯，否則讀者仍會看到錯誤數字。②「西德原油期貨EFT(TW)」拼字錯誤（應為ETF），出現於股票資料表格的name欄位，屬資料來源或渲染層問題，非analysis JSON可修正範圍，需工程端或資料端處理。">⚠️ 本篇未完全通過三方審核</span>
-    
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="①FFR判讀段落為渲染後純文字區塊，非獨立JSON key，本輪無法直接對應欄位修正「0.46%→0.585%」，需工程端確認該段落對應的模板變數或欄位名稱後手動修正，否則渲染後報告仍顯示錯誤數值。②聯發科異常個股描述稱「外資與本地資金同步加碼」，但三大法人數據顯示外資當日整體賣超43.32億，兩者存在實質矛盾——個股層級外資動向未被獨立揭露，無法確認聯發科個股外資是否確實買超，建議人工核查原始個股外資數據後決定是否修改該描述，此矛盾若未修正可能誤導讀者對籌碼面的判斷。③D2「利差縮小中」與前值+0.0bp的矛盾同屬渲染文字區塊，非獨立JSON key，本輪亦無法直接修正，需工程端處理。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="法人報告指出外資連13日賣超但台股卻創下歷史最大漲點，呈現籌碼面與指數表現的背離現象；惟該報告發布時間晚於上一交易日收盤，屬於事後盤點，並非盤中即時的市場矛盾，時間點不對齊，非市場矛盾。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -367,8 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">2026-07-21（二）市場一改近期連日重挫的陰霾，迎來報復性反彈。台股創史上最大漲點；隔夜美股費半大漲5.21%，VIX顯著回落，確認短線情緒轉向risk-on。儘管處於FOMC會前觀望期且外資延續賣超，但底層流動性充裕為科技股估值修復提供支撐。雖需留意川普關稅及紅海衝突帶來的通膨隱憂，但極短線資金動能已由科技巨頭領軍重掌多頭兵符。</div>
-      <div class="exec-sub">2026-07-21（二）全球市場強勁反彈。台股創史上最大漲點，權值與中小型股齊揚；美股費半大漲5.21%，VIX回落至17.05。儘管外資延續賣超且紅海風險推升油價，但科技股買盤強勁，情緒轉為risk-on。殖利率方面，10Y－2Y利差為+0.39%（10年債4.60%高於2年債4.21%），曲線呈正斜率；2年債（4.21%）高於FFR目標區間中位數（3.625%）約0.585個百分點，顯示市場預期聯準會短期內不急於轉鴿，高利率環境將延續。</div>
+      <div class="exec-box">2026-07-21（二）市場一改近期連續的 risk-off 弱勢基調，出現極短線強勁反彈。台股創歷史最大漲點，美股費半亦大漲5.21%，帶動 VIX 顯著回落，情緒轉向 risk-on。最新公布的 SOFR-IORB 利差維持負值，顯示底層資金充裕，支撐科技股與 AI 鏈強勢共振。然而，目前處於下週 FOMC 會議前觀望期，且川普關稅政策與紅海衝突推升油價的通膨隱憂仍在。本交易日需留意台股強彈後，外資連賣的籌碼面是否引發震盪。</div>
+      <div class="exec-sub">2026-07-21（二）全球市場強勁反彈，台股創歷史最大漲點，美股費半與台積電ADR大漲，VIX顯著回落。儘管處於FOMC會前觀望期且外資延續賣超，科技股強勢共振仍大幅推升了整體風險偏好。</div>
     </div>
   </section>
 
@@ -376,20 +376,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【半導體族群】外資連賣但指數大漲，關注今日內資買盤是否續強。</li>
-        <li>【美加關稅受害股】川普祭出高關稅，關注今日供應鏈成本轉嫁能力。</li>
-        <li>【能源與航運股】紅海衝突推升油價，關注今日通膨預期對股價推力。</li>
+        <li>【台股科技權值】外資連賣下能否續強，關注內資買盤力道。</li>
+        <li>【美股半導體】費半大漲後，關注FOMC會前是否引發獲利了結。</li>
+        <li>【原油與能源股】紅海衝突升溫，關注油價是否突破近期高點。</li>
+        <li>【關稅受害概念股】川普對加拿大加徵關稅，關注相關供應鏈股價反應。</li>
         
       </ul>
     </div>
   </section>
 
-  <section>
-    <div class="card alert-card reveal">
-      <h2><span class="dot"></span>⚡ 數據與消息面出現背離</h2>
-      <p style="margin:0;font-size:13.5px">2026-07-21（二）台股創下史上最大漲點（+4.20%），但外資仍連續13日賣超，顯示籌碼面與股價表現背離，強勁反彈主要由內資或特定買盤推動，外資尚未實質翻多。</p>
-    </div>
-  </section>
+  
 
   <section id="events">
     <div class="card reveal">
@@ -442,16 +438,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>程式規則僅因 ON RRP 回升看空，卻忽略其岩盤低位的充裕流動性。次日短線應以強市場訊號為準，隔夜費半狂飆5.21%，搭配 VIX 回落與台積電 ADR 走強，完全蓋過微弱的資金干擾，支持台股延續多頭上攻。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>VIX顯著回落且費半大漲5.21%，顯示科技股風險偏好回溫，抵銷了關稅政策帶來的短期不確定性。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>聯準會高利率預期支撐美元，但市場風險偏好升溫限制了避險買盤，預期維持高檔震盪。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>紅海衝突升級加劇供應鏈中斷風險，布蘭特與西德州原油期貨同步收紅，動能偏強。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>地緣政治風險提供支撐，但市場情緒轉向risk-on且美債殖利率維持高檔，壓抑金價上行空間。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>純程式規則因ON RRP微升看空，卻忽略負利差彰顯的充裕流動性。相比之下，隔夜費半狂飆5.21%，搭配台積電ADR大漲5.55%與VIX回落，半導體多頭氣勢強盛，對次日台股具直接正向牽引，故維持看多。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>VIX回落至17.05，且費半強勢大漲5.21%，顯示科技股買盤積極，短線風險偏好明顯回溫。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>台幣微幅升值且日圓續貶，匯市缺乏明確避險資金流入美元的單一方向指引，維持震盪格局。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>紅海衝突升級與航運受阻風險持續發酵，布蘭特與西德州原油期貨同步收紅，動能偏多。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>市場情緒轉向risk-on壓抑避險需求，但地緣政治與關稅不確定性仍提供下檔支撐。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>今日操作建議順勢偏多，聚焦具備基本面支撐的AI與半導體權值股。鑑於外資尚未實質翻多且面臨FOMC會前觀望期，建議分批佈局並嚴設停損。同時，可適度配置受惠於紅海衝突的能源標的作為避險；避開易受美加關稅衝擊的傳產供應鏈。整體維持高beta科技股為主、抗通膨資產為輔的策略。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>鑑於市場情緒轉為 risk-on，本交易日操作建議偏多看待台股與美股科技板塊，可適度參與 AI 與半導體輪動反彈。考量外資籌碼未完全翻多且臨近 FOMC 會議，建議避免過度追高，採逢回佈局策略。針對紅海衝突與關稅戰升溫，可適度配置原油相關標的作為通膨與地緣風險的避險部位。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>川普關稅政策</b>｜美對加徵50%關稅恐重創供應鏈，引發通膨與經濟放緩憂慮。</span><span class="risk-tag risk-高"><b>中東地緣衝突</b>｜紅海航線受阻增加航運成本與斷供風險，持續推升油價。</span><span class="risk-tag risk-中"><b>外資籌碼動向</b>｜台股雖強彈但外資連13日賣超，需留意反彈延續性。</span>
+      <span class="risk-tag risk-高"><b>關稅政策衝擊</b>｜川普對加拿大加徵50%關稅，恐重創供應鏈並引發通膨擔憂。</span><span class="risk-tag risk-中"><b>地緣衝突與油價</b>｜紅海航線受阻推升油價，增加通膨與運輸成本壓力。</span><span class="risk-tag risk-中"><b>籌碼面隱憂</b>｜台股雖強彈，但外資連續賣超，需留意反彈延續性。</span>
     </div>
   </section>
 
@@ -534,7 +530,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>163.199（0.034%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-07-22 07:30（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-07-22 07:39（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -604,7 +600,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-22 07:30:01</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-07-22 07:39:38</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -636,7 +632,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-07-22T07:30:01');
+  const genDate = new Date('2026-07-22T07:39:38');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
