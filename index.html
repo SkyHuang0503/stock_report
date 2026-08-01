@@ -336,14 +336,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-08-02 00:00:35</span>
+    <span>｜生成時間 2026-08-02 00:10:03</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：07/31（五） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：高（中東衝突持續威脅原油供給）</span>
+    <span class="pill-badge">🌍 地緣風險：高（中東衝突推升油價）</span>
     <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1.【數字錯誤—需工程端修正渲染表格】三大法人買賣超合計欄位：報告表格顯示合計為+675.54億元，但依外資(+360.20)+投信(-162.60)+自營商(+873.14)加總應為+1070.74億元，且表格欄位順序疑似錯置（合計值與外資值互換）。此為渲染表格數值，非本JSON欄位，無法於此修正，需工程端核查原始資料與欄位對應邏輯。2.【殖利率正文描述錯誤—需工程端修正渲染正文】報告正文稱「2年期仍較FFR中位數高48bp」，但2年期(4.23%)與FFR中位數(3.625%)利差應為60.5bp；48bp為與FFR上限(3.75%)之利差。此段文字位於渲染後正文，非獨立JSON key，本輪無法對應修正，需工程端定位該段文字來源欄位後修改。3.【日期用詞—渲染模板問題】報告日期為8/2（週日），摘要與操作建議中「今日台股」實際應指8/3（週一）開盤。此為渲染模板中「今日」變數未依發布日與交易日差異動態調整所致，非JSON欄位問題，需工程端處理。">⚠️ 本篇未完全通過三方審核</span>
-    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="鎧俠回購利多新聞發布於08/01晚間，晚於07/31收盤，因此美光(MU)於07/31下跌5.90%並非實質背離，屬時間點不對齊，非市場矛盾。報告時效備註應呈現此說明，提醒讀者鎧俠消息為盤後資訊，不應回溯解讀07/31盤中走勢。">❗ 時效備註</span>
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="兩處疑慮需人工確認：(1)殖利率曲線段落「2年期仍較FFR中位數高48bp」已確認計算錯誤（4.23%－3.625%＝60.5bp），但該段落為渲染後報告內的純文字敘述，並非獨立JSON key，本輪無對應欄位可直接覆寫，需工程端或編輯端手動修正該段落文字。(2)重大事件偵測段落將「Shell profits double as oil prices rise due to Iran war」詮釋為「霍爾木茲海峽供應中斷」，措辭較原始新聞標題所呈現的風險程度更為嚴重（原文僅指油價因伊朗戰爭上漲，未確認供應實際中斷），此為內容層面的事實強化，可能使讀者高估供應中斷風險，建議人工核實並修正該摘要描述。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="鎧俠發布鉅額回購利多新聞的時間為08/01週末，晚於07/31美股收盤，因此美光07/31的下跌並未反映此消息，屬時間點不對齊，非市場矛盾。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -367,8 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">經歷7月下旬連續risk-off與FOMC會議後，2026-07-31（五）市場一改連日弱勢，由極短線強勁反彈轉為risk-on基調。台股加權暴漲近8%；但隔夜美股費半僅微漲0.07%，台積電ADR僅漲0.23%，跨市場情緒未完全同步。最新公布的10年期美債殖利率升至4.68%，蘋果與美光逆勢下跌，反映高利率下科技股估值受壓。流動性雖充裕，但ON RRP單日回升顯示局部資金避險，今日台股需提防權值股價差收斂與族群分化。中東地緣政治衝突持續威脅霍爾木茲海峽原油供給（尚無確認中斷），布蘭特原油已升破90美元，通膨風險不容忽視。</div>
-      <div class="exec-sub">2026-07-31（五）台股強勁反彈，加權與櫃買指數分別暴漲7.98%與6.63%。美股方面，費半微漲0.07%，VIX回落至15.99。貨幣市場流動性充裕，但台積電ADR未跟上現股漲幅，暗示短線可能面臨高檔震盪。</div>
+      <div class="exec-box">2026-07-31（五）台股一改7月中下旬以來的連日弱勢，由極短線強勁反彈，加權與櫃買指數雙雙飆漲。然而，此risk-on情緒在隔夜美股面臨考驗：費半僅微漲0.07%，蘋果與美光重挫，且台積電ADR僅小漲0.23%，與台股現股近漲停的表現脫鉤。最新公布的SOFR-IORB利差為0bp，顯示廣義流動性依然充裕，但資料顯示ON RRP轉向上升暗示局部資金避險。綜合判斷，8/3（一）台股開盤將面臨ADR價差收斂與科技股分化的雙重考驗，指數預期轉為高檔震盪，資金動能將從全面普漲轉向個股表現。</div>
+      <div class="exec-sub">2026-07-31（五）台股展現強勁反彈，加權與櫃買同步大漲。然而隔夜美股表現分歧，費半僅微漲0.07%，蘋果與美光重挫，台積電ADR未跟漲。油價因中東局勢續揚，VIX回落，整體情緒偏risk-on但隱含分化風險。</div>
     </div>
   </section>
 
@@ -376,9 +376,9 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【台積電】ADR未跟上現股，關注今日開盤是否面臨價差收斂賣壓。</li>
-        <li>【記憶體族群】美光重挫，關注今日是否受鎧俠回購消息帶動反彈。</li>
-        <li>【能源油價】布蘭特原油現報90.12美元，已突破90美元整數關卡，關注能否持續站穩並進一步上攻，或因獲利了結出現拉回。</li>
+        <li>【台積電與半導體】ADR未跟漲現股，關注今日開盤價差收斂與外資買盤延續性。</li>
+        <li>【記憶體族群】鎧俠週末釋出回購利多，觀察能否扭轉美光上一交易日大跌的拖累。</li>
+        <li>【日圓受惠/受害股】日圓急升1.38%，留意套利平倉賣壓及工具機等出口競爭力變化。</li>
         
       </ul>
     </div>
@@ -415,16 +415,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir ">⚪ 中立</span><p>純程式規則因ON RRP回升看空略顯武斷；但台股前日暴漲後，隔夜費半僅微漲0.07%，台積電ADR與美光亦疲軟，未跟上現股強勢。綜合評估，次日台股易面臨價差收斂與高檔震盪，維持中立判斷最貼近實際盤況。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半僅小漲0.07%，蘋果與美光顯著下跌，顯示科技股內部存在分歧，指數上攻動能受限。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir down">🔴 看空</span><p>最新匯率顯示台幣與日圓兌美元皆升值，資金有匯出美元資產跡象。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東地緣政治衝突持續，霍爾木茲海峽供應風險支撐油價上行。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>市場風險情緒轉為risk-on，且長天期美債殖利率走高，削弱無息資產吸引力。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir ">⚪ 中立</span><p>台股前日暴漲，但隔夜費半僅微漲0.07%，台積電ADR僅漲0.23%，未跟上現股強勢。結合美光重挫與ON RRP回升顯示資金短線謹慎，次日台股勢必面臨價差收斂與獲利了結壓力，預期呈高檔震盪，故維持中立。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半僅微漲0.07%，蘋果與美光重挫抵銷亞馬遜大漲利多，科技股面臨估值檢驗與族群分化。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir down">🔴 看空</span><p>最新報價顯示日圓與台幣兌美元皆強勢升值，資金有流出美元轉向非美貨幣或避險的跡象。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東地緣政治衝突未解，霍爾木茲海峽供應風險持續支撐WTI與布蘭特原油走強。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>市場風險情緒轉為risk-on，VIX回落，且長天期美債殖利率高企，壓抑無息資產黃金表現。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>考量台股短線急漲但美股科技股（費半僅+0.07%）未完全跟上，今日操作建議居高思危，維持中立偏保守。建議逢高減碼漲幅過大且ADR未同步跟上的半導體權值股，避免盲目追高。資金可適度轉向受惠油價上漲的能源相關標的。記憶體族群則需觀察週末利多消息能否抵抗美光下跌的拖累，宜待籌碼沉澱後再行佈局。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>今日操作建議避免追高上一交易日已大漲的半導體權值股，防範台積電ADR未跟漲帶來的開盤回檔壓力。考量費半僅微漲0.07%且美光弱勢，電子族群宜採逢低承接而非突破追買。資金可適度分散至受惠油價上行的能源相關標的，或具備低基期優勢的傳產族群。同時，密切關注日圓急升是否引發外資熱錢撤出，保留適度現金部位以應對盤中震盪。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>地緣政治衝突</b>｜中東戰事波及霍爾木茲海峽，原油供給面臨威脅，推升油價並增添全球通膨變數。</span><span class="risk-tag risk-中"><b>科技股分化</b>｜蘋果與美光逆勢顯著下跌，顯示大型科技股內部面臨估值與基本面修正壓力。</span><span class="risk-tag risk-中"><b>長端殖利率攀升</b>｜10年期美債殖利率達4.68%，恐持續壓抑高本益比成長股的估值空間。</span>
+      <span class="risk-tag risk-高"><b>科技巨頭財報分化</b>｜蘋果與美光顯著下跌，顯示大型科技股基本面預期出現分歧，恐拖累台股電子族群。</span><span class="risk-tag risk-中"><b>地緣政治與通膨壓力</b>｜中東衝突推升原油價格，長天期美債殖利率走高，恐壓抑高估值成長股空間。</span><span class="risk-tag risk-中"><b>匯率波動引發平倉</b>｜日圓單日急升1.38%，需留意日圓套利交易平倉對高槓桿風險資產的短線衝擊。</span>
     </div>
   </section>
 
@@ -517,7 +517,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>157.4（-1.383%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-08-02 00:00（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-08-02 00:10（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -583,7 +583,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-08-02 00:00:35</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-08-02 00:10:03</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -615,7 +615,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-08-02T00:00:35');
+  const genDate = new Date('2026-08-02T00:10:03');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
