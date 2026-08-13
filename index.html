@@ -336,12 +336,12 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-08-14 07:30:02</span>
+    <span>｜生成時間 2026-08-14 07:53:56</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：08/13（四） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：N/A</span>
-    <span class="pill-badge ">📉 市場情緒：risk-off</span>
+    <span class="pill-badge">🌍 地緣風險：中（霍爾木茲海峽緊張未降溫但油價持穩）</span>
+    <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
     <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="總裁回傳內容無法解析為 JSON，需人工複查兩位 CIO 的意見。">⚠️ 本篇未完全通過三方審核</span>
     
   </div>
@@ -367,45 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">```json
-{
-  "data_news_check": {
-    "has_divergence": true,
-    "is_timing_issue": true,
-    "description": "MSCI三升利多新聞發布於08/14 01:15，已晚於2026-08-13台股收盤，無法反映在當日+1.11%漲幅上；此為時效不對齊，屬下一交易日增量資金題材，非真正市場矛盾。",
-  },
-  "geopolitical_risk": "低（無重大突發事件）",
-  "market_sentiment": "risk-on",
-  "market_overview": "2026-08-13台股加權+1.11%、櫃買+1.02%雙漲，國巨+9.97%、台達電+5.31%領漲電子權值，外資買超756.95億強力挺盤；惟鴻海逆勢-2.96%現分歧。美股費半+0.46%、VIX低位14.63，隔夜氣氛穩健偏多。",
-  "key_risk_factors": [
-    {"factor":"長端美債殖利率偏高","severity":"中","description":"10Y4.68%、2Y4.2%均高於FFR區間，隱含降息0次，壓抑高估值資產表現。"},
-    {"factor":"權值股內部分化","severity":"中","description":"鴻海-2.96%逆勢走弱，若擴散至AI供應鏈將削弱雙漲結構穩定性。"},
-    {"factor":"個股短線過熱","severity":"中","description":"國巨單日+9.97%漲多，量能若未同步放大，需留意獲利了結賣壓。"},
-    {"factor":"VIX微幅走高","severity":"低","description":"VIX14.63雖仍低位，但+0.55%與ON RRP連降組合，波動風險略升溫。"}
-  ],
-  "stock_news_correlation": [
-    {"topic":"MSCI調升台股權重","stock_impact":"預估帶來2,500億外資活水，為下一交易日潛在多頭催化","news_trigger":"[08/14 01:15] MSCI三升 台股迎資金潮"},
-    {"topic":"電子權值輪動強勢","stock_impact":"國巨、台達電、聯發科帶動加權指數擴散上攻","news_trigger":"被動元件與AI電力基建題材延續"}
-  ],
-  "asset_outlook": {
-    "台股": {"direction":"看多","reason":"費半+0.46%隔夜穩健，外資買超756.95億強力挹注，惟鴻海-2.96%分化需控管風險"},
-    "美股": {"direction":"看多","reason":"費半+0.46%、VIX僅14.63低位，那斯達克期貨持平偏多，情緒未見恐慌"},
-    "美元": {"direction":"中立","reason":"USDTWD僅小貶0.012%，長端殖利率高位支撐美元，但幅度不足以判定明確趨勢"},
-    "原油": {"direction":"中立","reason":"CL小跌0.06%、Brent-0.1%，但霍爾木茲僵局帶來供給風險溢酬，短線區間拉鋸"},
-    "黃金": {"direction":"看空","reason":"VIX僅14.63且+0.55%屬溫和波動，非急速恐慌；費半+0.46%顯示風險偏好回歸，日圓USDJPY僅小跌0.017%未見套利平倉急漲訊號，資金暫被科技股與電子權值吸血，短線避險需求偏弱，長期央行儲備轉向黃金的結構支撐仍未破壞，故判斷短線看空、非長期轉弱。"}
-  },
-  "tomorrow_watchlist": [
-    "【國巨2327】漲多9.97%，留意量能未擴大時的獲利了結賣壓",
-    "【鴻海2317】逆勢-2.96%，觀察是否擴散至其他AI供應鏈權值股",
-    "【MSCI權重上調】2,500億資金潮預期，觀察外資買盤是否延續",
-    "【VIX】14.63小幅走高，留意波動放大是否轉為實質風險",
-    "【美債殖利率】10Y達4.68%高檔，留意對高估值電子股估值壓力"
-  ],
-  "executive_summary": "延續近兩日risk-on反彈基調（08/12、08/13連續risk-on），電子權值帶動加權、櫃買雙漲，國巨、台達電領漲，外資買超756.95億強力挹注，MSCI三升消息（08/14 01:15發布）將為下一交易日注入增量資金。惟鴻海逆勢-2.96%顯示權值股內部分化，VIX微升0.55%配合ON RRP連續下降構成資金排擠訊號，須留意波動放大風險。整體而言多頭結構健康擴散，非拉高出貨假象，隔夜費半+0.46%、VIX低位14.63亦支持台股續強格局，但追價應設停利。",
-  "trading_strategy": "台股延續多頭可偏多操作，聚焦電子權值與MSCI資金題材受惠股，但避免追高國巨等短線漲多標的，並控管鴻海領軍的權值分化風險；美股費半+0.46%支持順勢偏多；美元、原油維持區間觀望；黃金短線因風險偏好回歸建議減碼或觀望，待VIX明確走高或日圓急升再轉向避險配置。"
-}
-```</div>
-      <div class="exec-sub">分析回傳格式異常</div>
+      <div class="exec-box">延續近兩日(8/12、8/13)risk-on基調，台股加權+1.11%、櫃買+1.02%雙漲，電子權值擴散(國巨+9.97%、台達電+5.31%)搭配外資買超756.95億，流動性模組維持強risk-on連續。惟鴻海逆勢-2.96%顯示權值股內部分化，加上美債2年期殖利率4.2%仍高於FFR上限、市場隱含0次降息，鷹派定價未鬆動，長端估值壓力仍在。費半+0.46%、VIX14.63屬低檔，美股情緒平穩，MSCI三升資金潮利多(發布於08/14 01:15，效應待下一交易日反映)為後續動能添柴。短線偏多延續，但需留意獲利了結與權值股分化風險。</div>
+      <div class="exec-sub">台股加權+1.11%、櫃買+1.02%雙漲，電子權值國巨+9.97%、台達電+5.31%領漲擴散，外資買超756.95億挹注；惟鴻海逆勢-2.96%顯示內部分化，美債2年期4.2%仍高於FFR上限，鷹派定價未鬆動。</div>
     </div>
   </section>
 
@@ -413,7 +376,12 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>暫無特別關注項目</li>
+        <li>【MSCI資金潮】2,500億活水陸續到位，觀察外資買超力度是否延續</li>
+        <li>【國巨2327】+9.97%近漲停，留意量能是否同步放大避免獲利了結</li>
+        <li>【鴻海2317】逆勢-2.96%，觀察權值股分化是否擴散至AI供應鏈</li>
+        <li>【費半SOX】隔夜+0.46%溫和，觀察是否延續帶動台積電ADR動能</li>
+        <li>【美債2年期殖利率】4.2%高於FFR上限，觀察降息預期是否鬆動</li>
+        
       </ul>
     </div>
   </section>
@@ -444,16 +412,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>費半+0.46%隔夜偏穩，外資買超756.95億、流動性模組強risk-on連續，MSCI資金潮利多待反映</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>費半+0.46%、那斯達克期貨+0.08%溫和上漲，VIX僅14.63屬低檔，無恐慌訊號</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>USDTWD僅小幅貶0.012%至32.124，美債殖利率高企但變動有限，尚未見資金大幅撤離</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir ">⚪ 中立</span><p>CL-0.06%、Brent-0.1%，霍爾木茲緊張持續但油價未明顯反應，供需暫維持平衡</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立偏空</span><p>VIX僅14.63且微升0.55%，尚未觸及恐慌門檻；費半+0.46%、NQ+0.08%顯示科技股風險偏好回歸，日圓USDJPY僅升值0.017%不足以觸發套利平倉，避險傳導鏈未啟動。金價當日-0.17%走軟，短線資金被吸向風險資產，判斷中立偏空，但央行購金長期結構支撐未變，非趨勢轉弱訊號。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b></div>
+      <div class="advice-box">💼 <b>操作建議：</b>延續偏多操作，聚焦電子權值與MSCI資金潮受惠股，但國巨、台達電急漲後宜設停利避免追高；密切觀察鴻海弱勢是否擴散至其他AI供應鏈權值股。費半+0.46%溫和上漲支撐台積電ADR，可持股續抱。黃金短線中立偏空，科技股風險偏好回歸壓抑金價，不建議加碼避險倉位；原油區間觀望，霍爾木茲緊張尚未反映在油價。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      
+      <span class="risk-tag risk-中"><b>權值股內部分化</b>｜鴻海逆勢-2.96%，若擴散至其他AI供應鏈個股將削弱雙漲結構穩定性。</span><span class="risk-tag risk-中"><b>Fed鷹派定價未鬆動</b>｜2年期殖利率4.2%高於FFR上限0.45%，市場隱含0次降息，長端估值壓力持續。</span><span class="risk-tag risk-低"><b>個股急漲獲利了結</b>｜國巨+9.97%近漲停，若量能未同步放大，短線有回吐風險。</span>
     </div>
   </section>
 
@@ -547,7 +515,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>159.473（-0.017%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-08-14 07:30（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-08-14 07:53（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -617,7 +585,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-08-14 07:30:02</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-08-14 07:53:56</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -649,7 +617,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-08-14T07:30:02');
+  const genDate = new Date('2026-08-14T07:53:56');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
