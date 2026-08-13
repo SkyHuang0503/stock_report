@@ -336,14 +336,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-08-13 23:26:33</span>
+    <span>｜生成時間 2026-08-13 23:55:38</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：08/12（三） 收盤</span>
     <span class="pill-badge">🌍 地緣風險：低（無重大事件）</span>
     <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="【工程問題，需人工確認】(1) 報告頁首標示「2026-08-13 收盤」，但生成時間為 23:26 台灣時間，美股當日尚未收盤，費半、那斯達克期貨等數值為盤中值卻被呈現為收盤定論。此問題根源在渲染層的時間戳記與標題文案，非 JSON 欄位可修正，需工程端調整頁首標示邏輯（例如：美股收盤前自動改為「盤中即時」）。(2) 08/12 通膨新聞（An inflation report Wednesday should be a big deal for the Fed）的渲染摘要寫成「通膨溫和增長強化降息預期」，但原文為公布前瞻，並非已公布結果。該摘要文字不對應任何獨立 JSON key，無法在此輪直接覆寫，需工程端確認新聞摘要的來源欄位並重新生成。以上兩點均可能使讀者對市場狀況產生誤判，建議人工介入修正後再發布。">⚠️ 本篇未完全通過三方審核</span>
-    
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1.【三大法人加總爭議】CIO-G稱外資+投信+自營合計為+1028.13億但合計欄顯示+756.95億；然而渲染表格實際顯示外資+756.95、投信-15.02、自營+150.61、合計+892.54，三項相加確為892.54億與合計欄一致，但合計欄數字892.54與外資欄756.95之間的差距顯示外資數字本身可能有兩個版本（原始JSON與渲染後不一致？），建議工程端確認Stock Agent原始輸出的外資買賣超數字是+756.95億還是+892.54億，以及合計892.54億的計算來源。2.【CIO-O：「隔夜美股大漲」時段定義】報告23:55生成時美股仍在盤中，executive_summary與market_overview稱「費半大漲2.18%」係引用盤中即時數據，但若渲染後報告以「隔夜」措辭呈現則確有誤導，需確認前端渲染是否有「隔夜美股」字樣，本輪無法從JSON欄位層面修正渲染模板文字。3.【今日高分新聞納入08/12 22:04新聞】該筆新聞日期為08/12，納入08/13「今日高分新聞」定義不一致，此為News Agent篩選邏輯問題，非JSON可修正欄位，建議工程端檢討新聞時效篩選邊界。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="鴻海遭外資大賣與MSCI調升權重的新聞發布時間（20:30與20:48）皆晚於台股收盤，股價下跌與新聞利空看似吻合，但實為盤中法說會反應或時效不對齊，非市場矛盾。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -367,8 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">今日（2026-08-13）市場延續近期的 risk-on 基調，台股大盤與中小型股雙漲，美股費半與那斯達克期貨同步走強。最新公布的 SOFR-IORB 利差維持負值，顯示廣義流動性充裕。資金明顯向 AI 基礎設施與 IC 設計集中，台達電與聯發科表現強勢；然而，鴻海在法說利多下逆勢下跌，顯示市場對部分高檔權值股出現「利多出盡」的獲利了結賣壓。整體而言，科技股多頭格局未變，但內部輪動加劇，操作上應避免無差別追高。</div>
-      <div class="exec-sub">今日（2026-08-13）全球市場延續 risk-on 氛圍，台股加權與櫃買齊揚，美股科技股走強。流動性充裕，資金聚焦 AI 基礎設施與 IC 設計，惟鴻海因利多出盡逆勢下跌，顯示資金在科技股內部出現輪動與汰弱留強。</div>
+      <div class="exec-box">2026-08-13（四）市場延續近期的 risk-on 基調。台股加權與櫃買指數雙雙上揚，資金積極進駐AI基礎設施與IC設計，國巨與台達電表現強勢。隔夜美股科技股表現亮眼，費半大漲2.18%，VIX回落至14.5，加上最新公布的SOFR-IORB利差為-3.0bp，確認廣義流動性充裕。儘管鴻海法說後遭遇外資賣壓，但MSCI調升台股權重有望帶來被動資金活水。整體而言，科技股風險偏好強勁，但需留意高檔個股的獲利回吐壓力。</div>
+      <div class="exec-sub">2026-08-13（四）台股呈現大盤與中小型股雙漲格局，加權與櫃買分別上漲1.11%與1.02%。美股科技股延續強勢，費半大漲2.18%，VIX回落。最新公布的SOFR-IORB利差為-3.0bp，顯示流動性充裕，市場延續risk-on基調。</div>
     </div>
   </section>
 
@@ -376,20 +376,15 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【AI零組件與IC設計】資金輪動強勁，明日關注台達電、聯發科續航力。</li>
-        <li>【鴻海與組裝代工】法說利多不漲，明日關注外資賣壓是否擴散至同業。</li>
-        <li>【美債殖利率變化】長端殖利率仍高，明日關注對高估值科技股的潛在壓抑。</li>
+        <li>【台股AI供應鏈】費半大漲2.18%，關注資金是否持續流入IC設計與電源。</li>
+        <li>【鴻海(2317)】法說後遭外資賣超，關注明日是否止跌及對代工族群影響。</li>
+        <li>【國巨(2327)】單日大漲近漲停，短線乖離擴大，留意獲利了結賣壓。</li>
         
       </ul>
     </div>
   </section>
 
-  <section>
-    <div class="card alert-card reveal">
-      <h2><span class="dot"></span>⚡ 數據與消息面出現背離</h2>
-      <p style="margin:0;font-size:13.5px">鴻海法說釋出利多且獲外資調升目標價，今日股價卻逆勢下跌2.96%，顯示市場對AI組裝代工族群短線利多出盡，資金轉向其他零組件。</p>
-    </div>
-  </section>
+  
 
   <section id="events">
     <div class="card reveal">
@@ -421,16 +416,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>台積電ADR上漲1.02%，費半大漲2.18%，科技股風險偏好強勁，MSCI調升權重有利外資匯入。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>費半大漲2.18%，那斯達克100期貨上揚1.19%，VIX回落至14.5，流動性充裕支撐科技股表現。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>台幣與日圓小幅升值，風險偏好回升壓抑美元避險需求，但美債殖利率仍高，提供下檔支撐。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir down">🔴 看空</span><p>西德州與布蘭特原油期貨雙雙下跌逾2%，需求預期轉弱為主要壓力。惟同日出現霍爾木茲海峽中斷風險升溫的報導，地緣政治面存在上行風險，若局勢升級可能逆轉跌勢，現階段看空判斷以需求面為主要依據，地緣風險尚未消除。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>黃金期貨小跌0.56%，市場情緒轉向 risk-on 削弱避險需求，但降息預期仍提供長線支撐。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>台積電ADR上漲1.02%，且費半大漲2.18%，科技股風險偏好強勁，有利台股明日延續多頭擴散。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>費半大漲2.18%，那斯達克100期貨上漲1.19%，VIX走低，顯示美股情緒樂觀，資金持續回補科技股。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>台幣與日圓小幅升值反映風險偏好改善，但最新公布的美債長端殖利率仍高，美元短線偏向整理。另需注意：08/12通膨報告預期溫和、市場解讀有利降息，但當前殖利率曲線隱含降息次數為0次，兩者反映的是不同時間維度的預期（短線情緒 vs. 當前定價），並不矛盾，惟後續若CPI數據確認降溫，短端殖利率可能重新定價。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir ">⚪ 中立</span><p>西德與布蘭特原油期貨當日皆下跌逾2%，反映能源需求預期轉弱；然而23:00高分新聞警示霍爾木茲海峽中斷風險可能推升油價至120美元，地緣政治供給側風險不容忽視。供需兩端訊號相互拉鋸，方向判斷暫調整為中立，建議密切追蹤霍爾木茲局勢後續發展，若地緣風險升溫則看法將轉為看多。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>費半大漲2.18%，VIX回落至14.5，科技股狂歡與風險偏好回歸對黃金產生吸血效應，且美債實質利率偏高。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>今日操作建議順應 risk-on 趨勢偏多操作，但須注重選股與節奏。台股與美股皆看多，建議逢低佈局具獲利能見度的 AI 零組件、散熱及 IC 設計族群；避開或減碼短線利多出盡、籌碼鬆動的組裝代工廠（如鴻海）。原油看空，可減少能源相關配置；美元與黃金看中立，維持基本部位即可。整體資金控管上，留意高檔震盪風險，不宜過度追高乖離過大之個股。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>明日操作建議偏多看待台股與美股科技板塊。受惠於費半強勢與流動性充裕，可逢低佈局AI零組件、IC設計及電源供應鏈，但應避開短線乖離過大的個股（如國巨）以防獲利了結。鴻海因法說後籌碼鬆動，建議暫時觀望組裝代工族群。原油因霍爾木茲地緣風險與需求走弱訊號並存，方向不明，建議暫時觀望；黃金因風險偏好回升及高利率環境承壓，建議減碼，將資金集中於具備獲利能見度的成長型科技股。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-中"><b>科技股高檔分化</b>｜鴻海法說利多卻遭外資賣超下跌，留意 AI 族群高檔獲利了結賣壓。</span><span class="risk-tag risk-中"><b>政策利率維持高位</b>｜2年期美債殖利率高於FFR上限，對高估值資產仍有折現率約束。</span><span class="risk-tag risk-低"><b>原油需求預期轉弱</b>｜油價顯著回落，雖緩解通膨疑慮，但需留意是否隱含全球需求放緩風險。</span>
+      <span class="risk-tag risk-中"><b>大型權值股籌碼鬆動</b>｜鴻海法說利多卻遭外資大舉賣超，需留意組裝代工族群短線承壓與資金排擠效應。</span><span class="risk-tag risk-中"><b>長端高利率約束</b>｜最新公布的10年期美債殖利率達4.7%，對長久期高估值資產仍具折現率約束。</span><span class="risk-tag risk-中"><b>個股短線乖離過大</b>｜國巨、台達電等單日大漲，資金高度集中，需防範次日獲利了結賣壓出籠。</span>
     </div>
   </section>
 
@@ -524,7 +519,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>159.19（-0.136%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-08-13 23:26（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-08-13 23:55（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -590,7 +585,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-08-13 23:26:33</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-08-13 23:55:38</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -622,7 +617,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-08-13T23:26:33');
+  const genDate = new Date('2026-08-13T23:55:38');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
