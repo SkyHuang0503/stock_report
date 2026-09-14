@@ -336,14 +336,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-09-14 08:22:31</span>
+    <span>｜生成時間 2026-09-14 08:22:59</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：09/11（五） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：中（中東局勢威脅原油供應）</span>
+    <span class="pill-badge">🌍 地緣風險：高（中東衝突推升油價）</span>
     <span class="pill-badge ">📉 市場情緒：risk-off</span>
-    
-    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="09/14早上發布的油價飆升警告與美日利率會議應對報告，時間晚於09/11收盤，故09/11股價重挫與油價上漲並非對該消息的即時背離，屬時間點不對齊之時效問題。">❗ 時效備註</span>
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1)【內容錯誤，需人工修正】流動性『預測』區塊寫「ON RRP由4.32億美元升至52.55億美元」，單位不一致：09/09應為4.32B（43.2億美元），與09/11的5.255B（52.55億美元）相比實際僅約增加兩成，現行寫法會讓讀者誤以為資金回流暴增十餘倍，進而高估避險訊號強度。該段不在 analysis JSON 內，本輪無法修正。2)【事實錯誤】個股資料中 00642U.TW 名稱標為「西德原油期貨EFT(TW)」，正確名稱應為元大S&P石油ETF（追蹤標的為原油指數而非單一西德原油期貨），且ETF拼為EFT；該名稱來自股價資料欄位，非 analysis 欄位，需由資料端更正。3)【工程備註】data_news_check.description 的時效說明渲染後僅剩「ⓘ」圖示，本輪已將其要點併入 executive_summary，但建議工程端改為預設展開顯示。4)【工程備註】執行摘要區塊同時渲染 executive_summary 與 market_overview 造成內容重複，本輪已改寫 market_overview 為數據面補充以降低重複，仍建議檢視模板拼接邏輯。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="新聞多於週末或週一早晨發布（如油價飆升警訊、美日央行會議觀望），晚於9月11日台股收盤，兩者存在時間差，非實質市場背離。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -367,8 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">2026-09-11（五）市場延續近期 risk-off 基調。台股遭外資大舉提款，上市市場單日賣超 892.7 億元、上櫃再賣 58.84 億元（合計約 951.5 億元），加權與櫃買指數同步重挫，融資亦大減 40.27 億元，籌碼面呈現系統性去風險。儘管費半反彈 1.81% 且台積電 ADR 上漲 1.22%，但那指期貨走弱與 ON RRP 連續回升，顯示在 FOMC 會議前夕，市場避險情緒仍居高不下。原油大漲逾 2% 亦加劇再通膨擔憂，整體市場防守意願極高。須留意時效落差：本報告數據對應 09/11 收盤，而油價飆升警告與美日利率會議應對等新聞發布於 09/14 清晨，時間點晚於收盤，故 09/11 的股價重挫與油價上漲並非對該批新聞的即時反應，該批新聞的衝擊應以 09/14 之後的盤勢驗證。</div>
-      <div class="exec-sub">2026-09-11（五）台股因外資大舉調節重挫，加權與櫃買雙雙大跌，市場避險情緒濃厚。美股費半雖反彈，但那指期貨走弱，且 ON RRP 連續回升，顯示資金在 FOMC 會議前夕持續回流 Fed 避險。</div>
+      <div class="exec-box">2026-09-11（五）台股收盤呈現明顯 risk-off：加權指數重挫1.61%、櫃買下跌2.40%，外資單日賣超892億元，籌碼面顯著鬆動。主要壓力來自中東衝突推升布蘭特原油突破107美元所引發的通膨復燃疑慮，以及2年期美債殖利率升至4.56%、市場隱含降息次數為0的高利率預期，壓抑風險資產評價；美日央行利率會議本週登場亦加深觀望。須提醒兩點時間框架：一、本報告生成於9/14，文中09/12～09/14發布的油價與央行會議新聞（Currie汽油示警、美日利率會議劇本）晚於9/11台股收盤，屬後續脈絡與次一交易日觀察重點，非9/11當日下跌成因；二、市場層次需區分，台股當日為 risk-off，但同日美股費半上漲1.81%、台積電ADR上漲1.22%、VIX回落11.21%至15.84，美股端風險偏好並未同步轉弱，兩者並不衝突。</div>
+      <div class="exec-sub">數據面回顧：9/11加權指數收46,184.85（-1.61%）、櫃買指數395.52（-2.40%），上市三大法人合計賣超1,112.59億元（外資-892.70億），融資餘額減少40.27億元，亞翔（-5.84%）、廣閎科（-5.32%）等中小型電子跌幅居前，呈現高波動標的優先降槓桿的特徵。同日海外market則相對分化：布蘭特原油107.43美元（+2.70%）、能源ETF 00642U上漲5.68%，費半+1.81%，VIX下跌至15.84。賣壓集中於台股與中小型電子，尚未擴散為全球同步避險。</div>
     </div>
   </section>
 
@@ -376,9 +376,10 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【台積電2330】今日（09/14）關注ADR上漲1.22%能否抵抗外資賣壓並撐盤。</li>
-        <li>【原油ETF】油價大漲2.4%，今日（09/14）關注地緣風險與通膨預期發酵。</li>
-        <li>【櫃買指數】融資大減40億，今日（09/14）關注中小型股是否止跌。</li>
+        <li>【權值股與台積電】TSM（台積電ADR） ADR溢價能否帶動現貨止跌企穩。</li>
+        <li>【美日央行會議】FOMC與BOJ決策前的資金觀望與避險動向。</li>
+        <li>【原油與能源ETF】油價飆升對通膨預期及科技股估值的壓抑。</li>
+        <li>【VIX波動率】VIX單日大跌11.2%，留意恐慌情緒是否反覆。</li>
         
       </ul>
     </div>
@@ -426,16 +427,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>外資大賣892.7億且融資大減40.27億，雖費半反彈1.81%，但雙指數重挫顯示籌碼面極度脆弱。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半反彈1.81%且TSM漲1.22%，但那指期貨跌1.10%且FOMC會議前市場觀望情緒濃厚。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir up">🟢 看多</span><p>2年期美債殖利率4.56%高於FFR上限，且ON RRP連續回升，避險資金回流支撐美元。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>西德原油大漲2.4%，中東地緣風險威脅供應，且分析師預警選前油價恐持續飆升。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>雖然台股重挫且ON RRP顯示強避險，但美債長端殖利率偏高（10年期達4.95%）增加持有黃金的機會成本，且費半反彈1.81%分流部分避險資金，金價微跌0.51%呈現高檔震盪。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>外資大賣892億，雖費半上漲1.81%提供局部支撐，但美日央行會議前避險情緒重，中小型股面臨降槓桿壓力。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半上漲1.81%顯示科技股具韌性，但NQ期貨下跌1.10%且油價高漲壓抑估值，央行會議前資金料偏觀望。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir up">🟢 看多</span><p>高油價引發通膨擔憂，且最新公布的2年期美債殖利率高達4.56%，支撐美元利差優勢，資金偏好避險。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東局勢緊張與荷姆茲海峽風險持續發酵，布蘭特原油站上107美元，供給中斷擔憂未減，動能強勁。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>中東地緣風險雖升溫，但同日美股端風險偏好並未同步轉弱：費半上漲1.81%、VIX下跌11.21%至15.84，美股避險需求降溫對黃金形成短線吸金壓力（此與台股當日的 risk-off 屬不同市場層次的訊號，並不矛盾）；加上2年期殖利率升至4.56%、市場隱含降息次數為0，高實質利率壓抑不孳息資產表現。惟若中東供應中斷風險進一步升高、VIX回升，此一短線看空觀點須即時修正。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>操作上應與 risk-off 動能一致，對台股維持防守減碼策略。鑒於外資大賣及融資退場，應避開亞翔等高波動、高估值的中小型電子股。原油看多，可適度配置 00642U 等能源資產避險。美股與黃金維持中立，靜待 FOMC 利率決議塵埃落定，切忌在雙指數止穩前盲目抄底。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>FOMC會議前夕且油價高漲，建議整體操作維持保守，降低持股水位。台股面臨外資大賣與中小型股降槓桿壓力，應避開弱勢設備與IC設計族群，僅可少量關注受惠台積電ADR溢價的權值股。美股受制於通膨預期，建議觀望；原油受地緣政治支撐可偏多看待；黃金則因VIX回落與科技股局部吸金，短線建議減碼或中立觀望。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>聯準會偏鷹與高利率壓抑</b>｜FFR維持高檔且降息預期降溫，壓抑高估值科技股。</span><span class="risk-tag risk-高"><b>外資大舉撤離台股</b>｜外資單日大賣892.7億元，籌碼面面臨強烈系統性拋售壓力。</span><span class="risk-tag risk-中"><b>能源價格上漲引發通膨擔憂</b>｜原油期貨大漲逾2%，選前油價飆升恐加劇再通膨風險。</span>
+      <span class="risk-tag risk-高"><b>地緣政治與能源通膨</b>｜中東衝突致油價飆升，加劇通膨復燃與政策緊縮預期。</span><span class="risk-tag risk-高"><b>央行政策不確定性</b>｜美日央行會議在即，市場觀望情緒濃厚，壓抑追價意願。</span><span class="risk-tag risk-中"><b>籌碼面鬆動</b>｜外資單日大賣超892億，中小型股面臨顯著降槓桿壓力。</span>
     </div>
   </section>
 
@@ -607,7 +608,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-09-14 08:22:31</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-09-14 08:22:59</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -639,7 +640,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-09-14T08:22:31');
+  const genDate = new Date('2026-09-14T08:22:59');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
