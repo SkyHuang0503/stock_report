@@ -336,14 +336,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-09-14 08:22:59</span>
+    <span>｜生成時間 2026-09-14 08:36:05</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：09/11（五） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：高（中東衝突推升油價）</span>
+    <span class="pill-badge">🌍 地緣風險：高（中東IRGC攻擊、霍爾木茲海峽供油風險升溫）</span>
     <span class="pill-badge ">📉 市場情緒：risk-off</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1)【內容錯誤，需人工修正】流動性『預測』區塊寫「ON RRP由4.32億美元升至52.55億美元」，單位不一致：09/09應為4.32B（43.2億美元），與09/11的5.255B（52.55億美元）相比實際僅約增加兩成，現行寫法會讓讀者誤以為資金回流暴增十餘倍，進而高估避險訊號強度。該段不在 analysis JSON 內，本輪無法修正。2)【事實錯誤】個股資料中 00642U.TW 名稱標為「西德原油期貨EFT(TW)」，正確名稱應為元大S&P石油ETF（追蹤標的為原油指數而非單一西德原油期貨），且ETF拼為EFT；該名稱來自股價資料欄位，非 analysis 欄位，需由資料端更正。3)【工程備註】data_news_check.description 的時效說明渲染後僅剩「ⓘ」圖示，本輪已將其要點併入 executive_summary，但建議工程端改為預設展開顯示。4)【工程備註】執行摘要區塊同時渲染 executive_summary 與 market_overview 造成內容重複，本輪已改寫 market_overview 為數據面補充以降低重複，仍建議檢視模板拼接邏輯。">⚠️ 本篇未完全通過三方審核</span>
-    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="新聞多於週末或週一早晨發布（如油價飆升警訊、美日央行會議觀望），晚於9月11日台股收盤，兩者存在時間差，非實質市場背離。">❗ 時效備註</span>
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1) 渲染端問題：執行摘要區塊把 executive_summary 與 market_overview 直接串印、未分欄標題，即使已改寫仍可能讀來重複，需工程端確認模板。2)「時效備註」區塊在網頁上呈現空白，data_news_check.description（說明StanChart 09/14、Europe's Less 09/12、Currie 09/14、美日利率會議 09/14 等新聞均發布於9/11收盤後）未被渲染，讀者會看到以9/12~9/14新聞搭配9/11收盤數據卻無時效警語，容易誤解因果，請人工確認修復。3) executive_summary 原文「TSM ADR連兩日走強」僅有9/11單日+1.22%資料佐證，本輪保留但建議核對前一交易日數據。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="StanChart油价警訊[09/14 07:00]、Europe's Less[09/12 06:00]、Currie汽油警告[09/14 07:58]、美日利率會議報告[09/14 05:19]均發布於09-11收盤之後，無法反映在當日股價數據上，屬時效不對齊，非真正市場背離。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -367,8 +367,8 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">2026-09-11（五）台股收盤呈現明顯 risk-off：加權指數重挫1.61%、櫃買下跌2.40%，外資單日賣超892億元，籌碼面顯著鬆動。主要壓力來自中東衝突推升布蘭特原油突破107美元所引發的通膨復燃疑慮，以及2年期美債殖利率升至4.56%、市場隱含降息次數為0的高利率預期，壓抑風險資產評價；美日央行利率會議本週登場亦加深觀望。須提醒兩點時間框架：一、本報告生成於9/14，文中09/12～09/14發布的油價與央行會議新聞（Currie汽油示警、美日利率會議劇本）晚於9/11台股收盤，屬後續脈絡與次一交易日觀察重點，非9/11當日下跌成因；二、市場層次需區分，台股當日為 risk-off，但同日美股費半上漲1.81%、台積電ADR上漲1.22%、VIX回落11.21%至15.84，美股端風險偏好並未同步轉弱，兩者並不衝突。</div>
-      <div class="exec-sub">數據面回顧：9/11加權指數收46,184.85（-1.61%）、櫃買指數395.52（-2.40%），上市三大法人合計賣超1,112.59億元（外資-892.70億），融資餘額減少40.27億元，亞翔（-5.84%）、廣閎科（-5.32%）等中小型電子跌幅居前，呈現高波動標的優先降槓桿的特徵。同日海外market則相對分化：布蘭特原油107.43美元（+2.70%）、能源ETF 00642U上漲5.68%，費半+1.81%，VIX下跌至15.84。賣壓集中於台股與中小型電子，尚未擴散為全球同步避險。</div>
+      <div class="exec-box">台股9/11延續risk-off基調，加權指數收46,184.85點、下跌1.61%，櫃買指數收395.52點、下跌2.40%，中小型股跌勢明顯較重；三大法人合計賣超1112.59億（外資-892.70億）、融資減40.27億，設備與中小型電子(亞翔-5.84%、廣閎科-5.32%)重挫領跌。隔夜費半大漲1.81%、VIX骤降11.21%、TSM（台積電ADR）+1.22%，為次日注入反彈契機，惟流動性模組示警資金連2日回流Fed、外資現貨單日大舉賣超892.7億，反彈力道恐受限。原油受中東地緣政治推升續漲逾2%，通膨壓力與FOMC倒數2天交織，市場氣氛仍謹慎，尚待驗證是否真正反轉。</div>
+      <div class="exec-sub">盤面結構觀察：9/11櫃買指數-2.40%跌幅明顯大於加權指數-1.61%，呈現高波動、低流動性標的被優先降槓桿的特徵；三大法人單日合計賣超1112.59億元，其中外資上市賣超892.70億元為主要賣壓來源。外部訊號則出現分歧：隔夜費半+1.81%、VIX -11.21%顯示美股情緒快速回溫，但ON RRP連2日回流Fed、油價因中東局勢漲逾2%，顯示資金配置仍偏保守，次日台股權值股與中小型股恐分化。</div>
     </div>
   </section>
 
@@ -376,10 +376,11 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 今日重點關注</h2>
       <ul class="watch-list">
-        <li>【權值股與台積電】TSM（台積電ADR） ADR溢價能否帶動現貨止跌企穩。</li>
-        <li>【美日央行會議】FOMC與BOJ決策前的資金觀望與避險動向。</li>
-        <li>【原油與能源ETF】油價飆升對通膨預期及科技股估值的壓抑。</li>
-        <li>【VIX波動率】VIX單日大跌11.2%，留意恐慌情緒是否反覆。</li>
+        <li>【VIX骤降11.21%】恐慌情緒快速降溫，留意美股反彈動能能否延續</li>
+        <li>【美日央行會議】FOMC前觀望期最後階段，留意利率決議前市場波動</li>
+        <li>【原油續飆】中東地緣風險未解，通膨升溫恐強化Fed鷹派立場</li>
+        <li>【外資9/11單日賣超892.7億】籌碼面轉弱，觀察接手力道是否回穩</li>
+        <li>【費半+1.81%】隔夜科技股走強，觀察能否帶動台股權值股反彈</li>
         
       </ul>
     </div>
@@ -427,16 +428,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>外資大賣892億，雖費半上漲1.81%提供局部支撐，但美日央行會議前避險情緒重，中小型股面臨降槓桿壓力。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半上漲1.81%顯示科技股具韌性，但NQ期貨下跌1.10%且油價高漲壓抑估值，央行會議前資金料偏觀望。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir up">🟢 看多</span><p>高油價引發通膨擔憂，且最新公布的2年期美債殖利率高達4.56%，支撐美元利差優勢，資金偏好避險。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>中東局勢緊張與荷姆茲海峽風險持續發酵，布蘭特原油站上107美元，供給中斷擔憂未減，動能強勁。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>中東地緣風險雖升溫，但同日美股端風險偏好並未同步轉弱：費半上漲1.81%、VIX下跌11.21%至15.84，美股避險需求降溫對黃金形成短線吸金壓力（此與台股當日的 risk-off 屬不同市場層次的訊號，並不矛盾）；加上2年期殖利率升至4.56%、市場隱含降息次數為0，高實質利率壓抑不孳息資產表現。惟若中東供應中斷風險進一步升高、VIX回升，此一短線看空觀點須即時修正。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir ">⚪ 中立</span><p>費半大漲1.81%、VIX重挫11%，屬next-day強力正向訊號，可望撐起台積電與權值股止穩；惟ON RRP連續回升、外資當日賣超892.7億、櫃買重挫2.40%（加權-1.61%）顯示資金氛圍仍偏避險，兩方看空多基於已發生的台股結構，未充分反映費半領先性，故權值股與中小型股恐分化，維持中立而非全面看空。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>費半大漲1.81%、VIX骤降11.21%顯示恐慌情緒快速降溫，惟原油飆漲與FOMC倒數2天仍需留意，短線偏多。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>USDTWD報31.631、+0.013%（美元小升、台幣小貶），USDJPY報153.531、-0.015%（美元小貶、日圓小升），雙邊波動幅度皆不足0.02%，方向性有限；FOMC倒數2天前市場觀望氣氛濃厚，區間整理為主。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir up">🟢 看多</span><p>西德原油+2.37%、布蘭特+2.7%，中東地緣政治(IRGC攻擊、霍爾木茲海峽)風險升溫，供給疑慮續推升油價。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>VIX骤降11.21%及費半大漲1.81%顯示風險偏好回升，形成對黃金的吸血效應；USDJPY僅下跌0.015%（日圓小幅走強），未見套利平倉急漲跡象，長端殖利率(10Y 4.95%)維持高檔壓抑實質吸引力，金價當日下跌0.51%印證短線偏弱，惟去美元化長期結構支撐仍在，故短線判斷看空。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>FOMC會議前夕且油價高漲，建議整體操作維持保守，降低持股水位。台股面臨外資大賣與中小型股降槓桿壓力，應避開弱勢設備與IC設計族群，僅可少量關注受惠台積電ADR溢價的權值股。美股受制於通膨預期，建議觀望；原油受地緣政治支撐可偏多看待；黃金則因VIX回落與科技股局部吸金，短線建議減碼或中立觀望。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>台股短線中立看待，可留意費半+1.81%及TSM（台積電ADR）帶動的權值股反彈契機，但外資9/11單日賣超892.7億顯示籌碼未回穩，追價宜保守；設備/中小型電子(亞翔、廣閎科)逢反彈宜減碼。美股偏多操作，觀察VIX骤降11.21%後情緒能否延續。原油可順勢操作能源部位，黃金短線偏空，待FOMC(9/16)結果明朗後再調整部位。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>地緣政治與能源通膨</b>｜中東衝突致油價飆升，加劇通膨復燃與政策緊縮預期。</span><span class="risk-tag risk-高"><b>央行政策不確定性</b>｜美日央行會議在即，市場觀望情緒濃厚，壓抑追價意願。</span><span class="risk-tag risk-中"><b>籌碼面鬆動</b>｜外資單日大賣超892億，中小型股面臨顯著降槓桿壓力。</span>
+      <span class="risk-tag risk-高"><b>中東地緣政治與油價飆升</b>｜IRGC攻擊、霍爾木茲海峽風險推升油價逾2%，加劇通膨與Fed鷹派立場</span><span class="risk-tag risk-中"><b>FOMC倒數觀望期</b>｜距9/16會議僅剩2天，市場保守觀望，利率決議前波動風險偏高</span><span class="risk-tag risk-中"><b>台股籌碼面轉弱</b>｜外資賣超892.7億、融資減40.27億，反彈力道恐受籌碼面制約</span><span class="risk-tag risk-中"><b>高利率環境壓抑評價</b>｜FFR維持3.5%~3.75%、隱含降息0次，長端殖利率高企持續約束成長股評價</span>
     </div>
   </section>
 
@@ -530,7 +531,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>153.531（-0.015%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-09-14 08:22（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-09-14 08:36（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -608,7 +609,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-09-14 08:22:59</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-09-14 08:36:05</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -640,7 +641,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-09-14T08:22:59');
+  const genDate = new Date('2026-09-14T08:36:05');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
