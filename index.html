@@ -340,14 +340,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-09-17 08:11:57</span>
+    <span>｜生成時間 2026-09-17 08:33:29</span>
   </div>
   <div class="badges">
     <span class="pill-badge">📅 數據對應：09/16（三） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：N/A</span>
-    <span class="pill-badge ">📉 市場情緒：risk-off</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="總裁（Claude）呼叫失敗，兩位 CIO 的意見未被採納或拒絕，需人工複查。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge">🌍 地緣風險：中（紅海/中東油運危機推升能源風險）</span>
+    <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
     
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="港金管局升息、外資喊多AI、油運危機等新聞均發布於09/17台股開盤前（06:43~07:35），時點晚於09-16台股與美股收盤，無法反映在當日數據上，屬時效不對齊而非真實市場矛盾。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -371,47 +371,9 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">{
-  "data_news_check": {
-    "has_divergence": true,
-    "is_timing_issue": true,
-    "description": "重大新聞（運費飆升09/17 07:00、HKMA升息09/17 07:35、川普喊話09/17 07:07、外資唱旺AI股09/17 06:43）皆晚於09-16收盤，無法反映在當日股價，屬時效不對齊而非真實市場矛盾。"
-  },
-  "geopolitical_risk": "高（荷姆茲海峽緊張、油輪運費飆破百萬美元）",
-  "market_sentiment": "risk-on",
-  "market_overview": "台股連兩日重挫後強彈，加權+0.74%、櫃買+2.70%，屬短線risk-on反彈而非全面資金回流；外資同步賣超逾200億，反彈由德微(+9.85%)等中小型題材及內資主導，費半+0.63%、ADR+1.23%提供正面前瞻，惟VIX升2.97%顯示避險未除。",
-  "key_risk_factors": [
-    {"factor":"FOMC會後政策不確定性","severity":"高","description":"距FOMC僅1天，2年期殖利率較FFR上限高0.92%，隱含0次降息，偏鷹格局未解。"},
-    {"factor":"中東地緣政治/油輪運費飆升","severity":"中","description":"油輪運費突破每日100萬美元，反映荷姆茲海峽緊張，能源供應鏈風險升溫。"},
-    {"factor":"外資大幅淨賣超","severity":"中","description":"上市外資賣超179.8億、上櫃賣超25.07億，反彈缺乏外資資金深度支撐。"},
-    {"factor":"中小型股急漲追價風險","severity":"中","description":"德微單日+9.85%、融資餘額增39.26億，短線需慎防獲利了結賣壓。"}
-  ],
-  "stock_news_correlation": [
-    {"topic":"台積電ADR與現股乖離","stock_impact":"ADR+1.23%領先現股-0.21%，具權值股正面前瞻意義","news_trigger":"無直接新聞驅動，反映美股半導體情緒偏多（SOX+0.63%）"},
-    {"topic":"外資唱旺AI供應鏈","stock_impact":"廣達、技嘉、鴻海等權值股潛在利多，惟屬次日效應尚未反映","news_trigger":"外資看好AI後市看旺廣達技嘉鴻海（09/17 06:43發布）"},
-    {"topic":"油輪運費飆升","stock_impact":"對能源/航運類股潛在利多，惟WTI/Brent當日仍收黑","news_trigger":"Tanker Rates Smash $1M/day報導（09/17 07:00發布）"},
-    {"topic":"降息喊話與港元升息並存","stock_impact":"增添利率政策不確定性，恐影響利率敏感類股評價","news_trigger":"川普喊話降息＋HKMA升息一碼（09/17發布）"}
-  ],
-  "asset_outlook": {
-    "台股": {"direction":"看多","reason":"費半收漲0.63%、台積電ADR+1.23%具正面外溢，惟外資賣超179.8億顯示反彈缺資金深度，宜偏多但控節奏。"},
-    "美股": {"direction":"中立","reason":"費半僅收漲0.63%、那斯達克期貨+0.51%顯示情緒未崩，但FOMC剛落幕偏鷹加上VIX升2.97%，短線恐區間震盪。"},
-    "美元": {"direction":"中立","reason":"USDTWD僅微升0.003%，儘管外資淨賣超逾200億，匯率變動甚微，恐為結匯時點錯位而非資金全面撤離。"},
-    "原油": {"direction":"看多","reason":"油輪運費飆破每日100萬美元反映荷姆茲海峽緊張加劇，儘管WTI單日-0.5%回落，供應鏈風險仍支撐中期油價。"},
-    "黃金": {"direction":"看空","reason":"VIX僅溫和升2.97%、費半+0.63%與那斯達克期貨+0.51%顯示風險偏好未崩，加上10年期殖利率升至5.0%推升實質利率，黃金當日已下跌1.83%，呈現AI風險資產回歸吸走避險資金的短線拉鋸格局，長期去美元化底部結構未變，但短線偏空。"}
-  ],
-  "tomorrow_watchlist": [
-    "【外資動向】連續賣超逾200億後能否止穩，觀察買盤回補力道",
-    "【VIX後續】單日升2.97%，留意是否延續轉為恐慌情緒",
-    "【荷姆茲海峽/油輪運費】破百萬美元運費，關注油價是否補漲",
-    "【AI權值股】外資喊旺廣達技嘉鴻海，觀察營收題材是否發酵",
-    "【FOMC會後解讀】會後首日，留意聲明稿細節與官員談話",
-    "【中小型飆股】德微類個股急漲後留意獲利了結賣壓"
-  ],
-  "executive_summary": "台股連兩日重挫後強彈，加權+0.74%、櫃買+2.70%，屬短線risk-on反彈而非全面資金回流：外資同步賣超逾200億，反彈由德微(+9.85%)等中小型題材及內資主導。費半+0.63%、台積電ADR+1.23%提供正面前瞻，惟VIX升2.97%、ON RRP暴增667.9%顯示避險未除；FOMC甫落幕1天，2年期殖利率隱含零降息的偏鷹格局延續，油輪運費破百萬美元凸顯中東風險。反彈基礎不穩，宜偏多但控節奏。",
-  "trading_strategy": "台股短線偏多，聚焦費半連動權值電子股與AI供應鏈(廣達、技嘉、鴻海)，慎防德微類飆股獲利了結並嚴設停損。美股區間思維，觀察FOMC後續解讀與VIX是否延續升溫。黃金短線偏空看待，待拉回布局長線避險部位。原油因荷姆茲海峽緊張逢低留意能源航運股，惟波動放大需控倉位。美元/台幣區間操作，觀察外資賣超能否止穩。"
-}</div>
+      <div class="exec-box">2026-09-16台股一改連日risk-off基調，加權收漲0.74%、櫃買大漲2.70%，廣度明顯擴散，德微暴衝9.85%領軍中小型電子；台積電ADR+1.23%、費半+0.63%、那斯達克期貨+0.51%皆為偏多訊號。惟VIX單日升2.97%、ON RRP暴增667.9%至53.75億美元，加上外資現股大賣179.8億元，顯示部分資金邊際轉趨避險，反彈廣度雖佳但根基仍待確認。港升息、外資喊多AI等消息係09/16收盤之後、09/17台股開盤之前發布，時效落後於當日收盤數據，不構成當日數據矛盾。整體判斷短線偏多但須嚴控停利與部位。</div>
       <div class="exec-sub-label">📊 數據面補充</div>
-      <div class="exec-sub">分析回傳格式異常</div>
+      <div class="exec-sub">2026-09-16台股加權收漲0.74%、櫃買大漲2.70%，改寫連日risk-off基調；台積電ADR+1.23%、費半+0.63%、那斯達克期貨+0.51%皆偏多。惟VIX升2.97%、ON RRP暴增667.9%至53.75億美元，外資現股賣超179.8億元，顯示避險資金邊際回流，反彈根基待確認。</div>
     </div>
   </section>
 
@@ -419,7 +381,12 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 後市重點關注</h2>
       <ul class="watch-list">
-        <li>暫無特別關注項目</li>
+        <li>【VIX延續性】單日+2.97%須觀察是否續揚，留意避險資金加速回流</li>
+        <li>【外資動向】上市現股賣超179.8億，留意本交易日是否延續調節</li>
+        <li>【德微3675】單日暴衝9.85%，慎防獲利了結拉回</li>
+        <li>【油運危機】運費破百萬美元/天，留意能源與通膨連動效應</li>
+        <li>【港升息效應】香港跟進升息至4.25%，觀察資金面是否轉緊</li>
+        
       </ul>
     </div>
   </section>
@@ -467,16 +434,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>費半收漲0.63%、ADR+1.23%皆為次日台股權值股正向前導，加權+0.74%、櫃買+2.70%廣度擴散健康；程式規則僅憑ON RRP單日回升判空，但流動性模組本身標註為「單日避險信號」需觀察連續性，非結構性緊縮，SOFR-IORB -26bp、EFFR-IORB -27bp皆為負，顯示準備金仍屬充裕。外資賣超179.8億與VIX上升是風險提示而非趨勢反轉，短線仍偏多操作。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir up">🟢 看多</span><p>費半+0.63%、台積電ADR+1.23%顯示科技股情緒偏正向，但VIX單日升2.97%反映FOMC後波動未歇</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>USDTWD微升0.003%與外資賣超179.8億方向一致；USDJPY小跌0.043%至156.152（即日圓小幅走強），幅度有限、未達套利平倉訊號，走勢待Fed路徑明朗</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir ">⚪ 中立</span><p>運費破百萬美元/天顯示供應鏈吃緊，但WTI收跌0.5%、Brent跌0.3%顯示追價力道未同步展現，短線多空拉鋸</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir down">🔴 看空</span><p>黃金收跌1.83%，儘管VIX升2.97%顯示避險需求邊際回溫，但費半+0.63%、那斯達克期貨+0.51%顯示風險偏好回歸，日圓僅小升0.043%（USDJPY下跌）未觸發套利平倉效應，短線資金被風險資產吸引使黃金承壓；惟去美元化的長期結構支撐未變，拉回仍具支撐力道。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b></div>
+      <div class="advice-box">💼 <b>操作建議：</b>台股延續反彈力道，可留意台積電、廣達、鴻海等受費半+0.63%與外資AI看好帶動的權值股，但外資賣超179.8億尚未止血，宜控制倉位、避免追高德微類短線急漲股。美股短線偏多，惟VIX+2.97%提示波動風險，建議逢高分批獲利了結。黃金短線看空，待避險需求明確再介入；原油多空拉鋸，觀望為宜；美元中性，匯率波動有限，不建議加碼單邊部位。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      
+      <span class="risk-tag risk-中"><b>外資賣壓未歇</b>｜上市外資賣超179.8億元、上櫃賣超25.07億元，籌碼面尚未轉為明確買方主導。</span><span class="risk-tag risk-中"><b>地緣政治/油運危機</b>｜油輪運費飆破每日百萬美元反映紅海/中東供應鏈受阻，恐推升能源與通膨壓力。</span><span class="risk-tag risk-低"><b>VIX與避險資金邊際回流</b>｜VIX單日升2.97%、ON RRP單日暴增667.9%，顯示部分資金轉趨避險，需觀察是否延續。</span><span class="risk-tag risk-中"><b>美債長端殖利率高檔</b>｜10年期5.0%、30年期5.36%反映財政赤字與供給壓力，限制成長股估值擴張空間。</span>
     </div>
   </section>
 
@@ -570,7 +537,7 @@
         <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>156.152（-0.043%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-09-17 08:11（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-09-17 08:33（台灣時間，即時報價）</div>
     </div>
   </section>
 
@@ -648,7 +615,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-09-17 08:11:57</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-09-17 08:33:29</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -680,7 +647,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-09-17T08:11:57');
+  const genDate = new Date('2026-09-17T08:33:29');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
