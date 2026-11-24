@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#4338ca">
-<title>市場日報｜2026-11-23</title>
+<title>市場日報｜2026-11-24</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -340,17 +340,14 @@
   <h1>📊 Multi-Agent 市場日報</h1>
   <div class="meta">
     <span id="genRelative">計算中…</span>
-    <span>｜生成時間 2026-11-23 08:10:00</span>
+    <span>｜生成時間 2026-11-24 08:10:01</span>
   </div>
   <div class="badges">
-    <span class="pill-badge">📅 數據對應：11/20（五） 收盤</span>
-    <span class="pill-badge">🌍 地緣風險：中（中東供給風險延續，無新突發）</span>
-    <span class="pill-badge ">📉 市場情緒：risk-off</span>
-    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1. NQ期貨+2.94%與費半-10.73%方向相反，報價可能是週一盤前，也可能是資料異常，需人工確認時點。
-2. 渲染報告中的「曲線形狀」與「FFR判讀」段落仍寫「甚至升息」，不是analysis的JSON key，本輪無法修改。
-3. 流動性「預測」段稱RRP為「零點幾億美元的變化」，實際僅減少約0.04億美元（約400萬美元），同樣不是可修改的欄位，需工程端修正。
-4. 原「12檔跌停」可能來自全市場統計，但資料源未揭露，本輪改以追蹤表的9檔為準，需人工確認。">⚠️ 本篇未完全通過三方審核</span>
-    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="高盛「進場時機浮現」、大摩看好聯發科、亞翔調升目標價等報告，發布時間為11/23 01:19~07:54，晚於2026-11-20（五）收盤。聯發科-9.95%、亞翔-8.74%的跌幅不可能反映這些消息，屬時間點不對齊，非市場矛盾。">❗ 時效備註</span>
+    <span class="pill-badge">📅 數據對應：11/23（一） 收盤</span>
+    <span class="pill-badge">🌍 地緣風險：中（伊朗戰事與能源封鎖背景延續）</span>
+    <span class="pill-badge riskon">📈 市場情緒：risk-on</span>
+    <span class="pill-badge" style="background:rgba(220,38,38,.22);border-color:rgba(220,38,38,.4)" title="1. 「重大事件偵測」與「今日高分新聞」區塊的新聞摘要寫黃仁勳回任「直接帶動輝達市值大增一兆美元」。這與執行摘要及data_news_check的說法矛盾：消息晚於美股收盤，漲勢成因未確認。該摘要由News Agent產生，不在analysis欄位內，本輪無法修改，需人工改寫或撤下「直接帶動」字樣。2. 殖利率區塊的「FFR判讀」文字仍僅以2年期高於FFR上限推論暫不降息，未提期限溢價。該文字非analysis欄位，需工程端確認來源後同步修正。3. CIO-O稱當日10年期殖利率反升0.6bp，但報告殖利率表顯示1日-0.12%（資料為11/20）。兩者可能是資料日期不同，需人工核對最新殖利率。">⚠️ 本篇未完全通過三方審核</span>
+    <span class="pill-badge" style="background:rgba(217,119,6,.2);border-color:rgba(217,119,6,.4)" title="黃仁勳回任輝達CEO的新聞（台灣時間11/24 07:10、07:41，約美東11/23 18:10後）晚於11/23美股收盤，也晚於台股收盤，不可能反映在11/23的股價上，屬時間點不對齊，不是市場背離。日月光CoWoS法人報告（台灣時間11/24 02:35，約美東11/23 13:35）晚於台股收盤，但落在美股盤中，最多只能影響當日美股/ADR的盤中後段，無法解釋全日漲幅。NVDA+31.48%、TSM ADR+14.08%的成因無法由這些新聞確認。">❗ 時效備註</span>
   </div>
 </div>
 
@@ -374,9 +371,9 @@
   <section id="summary">
     <div class="card reveal">
       <h2><span class="dot"></span>🎯 執行摘要（Master Agent 深度分析）</h2>
-      <div class="exec-box">上一交易日（2026-11-20（五））延續近期連日risk-off基調，並升級為恐慌式殺盤，抹去11/19的微幅反彈：加權-6.23%、櫃買-7.72%，費半-10.73%、VIX 35.89（+26.2%）。當日觸發要看事件型訊號：VIX單日+26.2%，NVDA（輝達）-14.01%、MU（美光）-13.89%，AI鏈集中出清，但沒有單一新突發事件可佐證導火線。慢變數是背景：實質殖利率2.88%在近一年高端、PCE偏高、高收益債利差升至近一年高點，代表估值緩衝薄、對利率與信用變化敏感，放大了跌幅，而非決定當日方向。追蹤的22檔台股中有9檔跌停或逼近跌停，上市融資減491.41億，顯示出清放大了深度。10Y殖利率回落、黃金上漲，更像避險而非全面搶現金。台積電ADR-9.48%大於2330的-4.76%，今日台股2330開盤補跌壓力大；週末利多報告時效晚於收盤，不能當成已反映。</div>
+      <div class="exec-box">2026-11-23（一）加權+2.16%、櫃買+2.88%，費半+14.03%、VIX 26.62（-25.83%），一改近期連日重挫的risk-off基調，屬極短線反彈。資金集中AI半導體：TSM（台積電ADR） ADR+14.08%、NVDA（輝達）+31.48%，聯發科、台達電、聯電漲停；富邦金-4.40%、中信金-6.18%逆勢走弱。上市外資賣超289.48億，上櫃外資買超108.83億。黃仁勳回任等消息都在收盤後發布，不能當作漲勢的解釋。高收益債利差3.76%創一年高、10年期殖利率4.92%，反彈尚未解除信用與長端利率壓力。</div>
       <div class="exec-sub-label">📊 數據面補充</div>
-      <div class="exec-sub">上一交易日（2026-11-20（五））台股加權指數36033.29（-6.23%）、櫃買指數263.31（-7.72%）雙雙重挫，追蹤個股中9檔跌停或逼近跌停（跌幅約10%），集中在AI與電子供應鏈。費半-10.73%，VIX升至35.89（+26.2%），恐慌情緒快速升溫，須留意是否延續。美債殖利率與油價回落、黃金上漲，顯示資金在避險而非單純搶現金。</div>
+      <div class="exec-sub">2026-11-23（一）加權+2.16%、櫃買+2.88%，費半+14.03%、VIX 26.62（-25.83%），AI半導體帶動極短線反彈。上市外資賣超289.48億，上櫃外資買超108.83億。金融股走弱，資金明顯往科技族群集中。</div>
     </div>
   </section>
 
@@ -384,13 +381,12 @@
     <div class="card reveal">
       <h2><span class="dot"></span>🔭 後市重點關注</h2>
       <ul class="watch-list">
-        <li>【費半／NQ期貨】費半-10.73%、NQ期貨+2.94%（報價時點待確認），看開盤是否真反彈</li>
-        <li>【台積電2330】ADR-9.48%遠大於台股-4.76%，留意開盤補跌</li>
-        <li>【跌停潮電子股】追蹤股中9檔跌停或逼近跌停，看跌停是否打開、融資續退</li>
-        <li>【VIX 35.89】單日+26.2%，續升代表恐慌未歇，回落才算降溫</li>
-        <li>【外資與櫃買】上市外資賣超95.11億，櫃買跌-7.72%，看賣壓擴散</li>
-        <li>【PCE公布 11/25】2天後公布，核心PCE偏高將壓抑降息預期</li>
-        <li>【OPEC+會議 11/29】6天後，將定2027年產量基準線，留意油價</li>
+        <li>【台股開盤】費半大漲後，觀察權值與中小型股能否延續，避免追漲停股</li>
+        <li>【VIX 26.62】單日大降25.83%，觀察是否回升及NQ期貨走勢</li>
+        <li>【金融股】富邦金-4.40%、中信金-6.18%，觀察賣壓是否擴散</li>
+        <li>【信用利差】高收益債3.76%創高，關注HYG（高收益債ETF）與利差是否續擴</li>
+        <li>【11/25 PCE】9月資料前值年增+3.65%，影響利率預期與科技股估值</li>
+        <li>【OPEC+ 11/29】將定2027基準線，影響原油與能源股</li>
         
       </ul>
     </div>
@@ -401,7 +397,17 @@
   <section id="events">
     <div class="card reveal">
       <h2><span class="dot"></span>🚨 重大事件偵測（News Agent）</h2>
-      <p style="color:var(--muted);margin:0;font-size:13.5px">今日無重大突發事件</p>
+      <div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">5分</span>
+        <b>Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'</b>
+        <p style="font-size:13px;margin:4px 0">黃仁勳強勢回歸重振市場信心，直接帶動輝達市值大增一兆美元。</p>
+        <small>影響資產／分類：川普動態｜發布：11/24 07:10</small>
+      </div><div class="event-card" style="border-left-color:var(--down)">
+        <span class="score-badge">4分</span>
+        <b>Trump Is Said to Have Pushed to Reinstate Nvidia CEO Jensen Huang</b>
+        <p style="font-size:13px;margin:4px 0">川普介入助黃仁勳回任輝達執行長，有助穩定市場對AI板塊信心。</p>
+        <small>影響資產／分類：川普動態｜發布：11/24 07:41</small>
+      </div>
     </div>
   </section>
 
@@ -410,28 +416,10 @@
       <h2><span class="dot"></span>📑 法人報告（外資評等/目標價變動）</h2>
       <div class="event-card" style="border-left-color:var(--up)">
         <span class="score-badge">3分</span>
-        <span class="badge badge-high">總經</span>
-        <b><a href="https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E9%87%8D%E6%8C%AB%E6%81%90%E6%85%8C%E6%8C%87%E6%A8%99%E9%80%BC%E8%BF%91%E6%A5%B5%E5%80%BC-%E9%AB%98%E7%9B%9B%E8%A9%95%E4%BC%B0%E9%80%B2%E5%A0%B4%E6%99%82%E6%A9%9F%E5%B7%B2%E6%B5%AE%E7%8F%BE-235441280.html" target="_blank" rel="noopener">美股重挫恐慌指標逼近極值 高盛評估進場時機已浮現</a></b>
-        <p style="font-size:13px;margin:4px 0">高盛評估美股超跌後進場點浮現，惟短期持倉仍有震盪風險。</p>
-        <small>方向：利多｜發布：11/23 07:54</small>
-      </div><div class="event-card" style="border-left-color:var(--up)">
-        <span class="score-badge">3分</span>
         <span class="badge badge-medium">個股</span>
-        <b><a href="https://tw.stock.yahoo.com/news/%E5%86%8D%E5%A5%AAgoogle-tpu%E5%A4%A7%E5%96%AE-%E8%81%AF%E7%99%BC%E7%A7%91%E7%8D%B2%E5%A4%A7%E6%91%A9%E9%AB%98%E5%96%8A6188%E5%85%83%E7%9B%AE%E6%A8%99%E5%83%B9-%E5%89%8D%E4%B8%89%E5%AD%A3eps%E8%A1%9D47%E5%85%83-234800689.html" target="_blank" rel="noopener">再奪Google TPU大單！聯發科獲大摩高喊6188元目標價　前三季EPS衝47元</a></b>
-        <p style="font-size:13px;margin:4px 0">大摩看好聯發科獲Google新單列為首選，屬權值個股常態評等調整。</p>
-        <small>方向：利多｜發布：11/23 07:48</small>
-      </div><div class="event-card" style="border-left-color:var(--up)">
-        <span class="score-badge">3分</span>
-        <span class="badge badge-medium">個股</span>
-        <b><a href="https://tw.news.yahoo.com/%E5%90%83%E4%B8%8B%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%A4%A7%E5%96%AE-%E9%80%99%E5%A4%A7%E5%BB%A0-%E5%9C%A8%E6%89%8B%E8%A8%82%E5%96%AE4400%E5%84%84-%E7%9B%AE%E6%A8%99%E5%83%B9%E4%B8%8A%E7%9C%8B1000%E5%85%83-183500154.html" target="_blank" rel="noopener">吃下台積電大單！「這大廠」在手訂單4400億　目標價上看1000元</a></b>
-        <p style="font-size:13px;margin:4px 0">亞翔前三季獲利創高且在手訂單充沛，法人調升目標價看好後市。</p>
-        <small>方向：利多｜發布：11/23 02:35</small>
-      </div><div class="event-card" style="border-left-color:var(--up)">
-        <span class="score-badge">3分</span>
-        <span class="badge badge-medium">個股</span>
-        <b><a href="https://money.udn.com/money/story/5607/9894982" target="_blank" rel="noopener">聯發科擁利基 大摩按讚 維持「優於大盤」評等</a></b>
-        <p style="font-size:13px;margin:4px 0">大摩重申權值股聯發科為半導體首選，維持正向評等。</p>
-        <small>方向：利多｜發布：11/23 01:19</small>
+        <b><a href="https://tw.news.yahoo.com/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%94%A2%E8%83%BD%E5%A1%9E%E7%88%86-%E9%80%99%E5%B0%81%E6%B8%AC%E5%A4%A7%E5%BB%A0-%E7%8B%82%E5%90%83cowos%E8%BD%89%E5%96%AE%E7%B4%85%E5%88%A9-%E7%9B%AE%E6%A8%99%E5%83%B9%E4%B8%8A%E7%9C%8B800%E5%85%83-183500686.html" target="_blank" rel="noopener">台積電產能塞爆！「這封測大廠」狂吃CoWoS轉單紅利　目標價上看800元</a></b>
+        <p style="font-size:13px;margin:4px 0">先進封裝滿載外溢帶動封測外包商機，法人看好日月光等營運。</p>
+        <small>方向：利多｜發布：11/24 02:35</small>
       </div>
     </div>
   </section>
@@ -440,16 +428,16 @@
     <div class="card reveal">
       <h2><span class="dot"></span>📐 各類資產展望</h2>
       <div class="outlook-scroll">
-        <div class="outlook-item"><span class="name">台股</span><span class="dir down">🔴 看空</span><p>費半-10.73%、台積電ADR-9.48%大於2330的-4.76%，加上上市外資賣超95.11億，開盤補跌壓力大；NQ期貨+2.94%（報價時點待確認）僅帶來反彈變數。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半-10.73%、VIX 35.89（+26.2%）顯示賣壓沉重；NQ期貨+2.94%（報價時點待確認，若屬週一盤前新報價才算反彈訊號）與高盛稱進場點浮現，使短線反彈與續殺拉鋸；高收益債利差走擴也限制反彈。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>DXY 103.848僅+0.039%，10Y殖利率回落14bp，沒有明確資金集中流向美元。台幣微升與上市外資賣超95.11億方向不一，變動太小，不能推論資金流向。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir ">⚪ 中立</span><p>WTI 82.85（-0.67%）、布蘭特89.34（-0.68%），價差6.49。跌幅小且無新供給中斷事件，供給溢價未再擴大；小跌與風險情緒轉弱同步，但單日小跌不足以確認需求轉弱。11/29 OPEC+部長會議在6天後，會前產量消息可能增加波動。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>金價+1.95%、銀+2.67%，與股市反向；10Y殖利率回落14bp、DXY僅+0.039%，顯示避險買盤進場、利率回落提供支撐。但10年期實質殖利率2.88%（11/19）一個月升11bp、在近一年高端，壓抑金價；若VIX續升演變成搶現金式拋售，黃金也可能被同步賣出，故維持中立。</p></div>
+        <div class="outlook-item"><span class="name">台股</span><span class="dir up">🟢 看多</span><p>費半+14.03%、台積電ADR+14.08%帶動。流動性模組的純數字訊號雖為連續risk-on，但ON RRP已處岩盤低水位，綜合研判認定變動訊號偏弱，因此不把它當主要支撐，主要依據仍是半導體情緒修復。NQ期貨-0.22%、上市外資賣超289.48億，不宜追高。</p></div><div class="outlook-item"><span class="name">美股</span><span class="dir ">⚪ 中立</span><p>費半+14.03%且VIX降至26.62，短線情緒修復；但NQ期貨-0.22%，高收益債利差3.76%創一年高，10年期殖利率4.92%，反彈持續性待確認。</p></div><div class="outlook-item"><span class="name">美元</span><span class="dir ">⚪ 中立</span><p>DXY 104.317近乎持平，USDJPY 158.896小升；USDTWD 32.847（-0.337%）為08:10即時報價，反映隔夜半導體強勢，與上市外資賣超289.48億的時點不一致，不宜推論資金流入。</p></div><div class="outlook-item"><span class="name">原油</span><span class="dir ">⚪ 中立</span><p>WTI 80.47（+0.37%）、布蘭特86.91（+0.27%），漲幅小，價差6.44美元。伊朗戰事與能源封鎖是油價的供給風險溢價背景，但今日沒有對應新聞，小幅上漲的成因無法確認，近期也沒有新的惡化訊號。11/29 OPEC+會議將定2027年基準線，會前方向不明。</p></div><div class="outlook-item"><span class="name">黃金</span><span class="dir ">⚪ 中立</span><p>金價3631（-0.56%）在股市大漲、VIX降25.83%時下跌，顯示科技股吸走資金。10年期實質殖利率2.77%（11/20資料）較7天前-14bp，屬週趨勢的支撐；但較30天前僅+1bp，中期並未明顯下行，支撐力道有限。DXY持平，避險段與搶現金段都不明確，故判中立。</p></div>
       </div>
-      <div class="advice-box">💼 <b>操作建議：</b>對應台股看空：今日開盤補跌風險高，電子權值與AI供應鏈降低曝險，不在跌停或急跌中盲目攤平，不加槓桿，等VIX回落、跌停打開再評估承接。美股中立：不追殺也不搶反彈，NQ期貨反彈僅視為短線機會。黃金中立：已有避險買盤但實質利率高，不追高。原油中立，美元中立。PCE前以現金與短天期票息資產為主，避開長天期公債。</div>
+      <div class="advice-box">💼 <b>操作建議：</b>台股看多但以分批為主：可布局AI半導體與封測（如聯發科、聯電、日月光），不追已漲停的急漲股。美股中立，等NQ期貨與信用利差確認後再加碼。金融股在賣壓未止前先避開。美元、原油、黃金皆中立，不押方向。11/25 PCE公布前，持倉保留現金緩衝並控制單一個股比重。</div>
     </div>
   </section>
 
   <section id="risk">
     <div class="card reveal">
       <h2><span class="dot"></span>⚠️ 主要風險因子</h2>
-      <span class="risk-tag risk-高"><b>AI／半導體集中出清</b>｜NVDA（輝達）-14.01%、MU（美光）-13.89%、費半-10.73%，漲最多的AI鏈跌最兇。台股電子權值與供應鏈同步被拋，開盤補跌壓力大。</span><span class="risk-tag risk-中"><b>高殖利率下的估值敏感度</b>｜10Y殖利率5.04%（11/19），10年期限溢價0.99%在近一年高位；ERP-2.49，股票相對公債的估值緩衝薄，對利率上行特別敏感。</span><span class="risk-tag risk-中"><b>信用利差走擴</b>｜高收益債利差3.52%（11/19），一週+32bp，達近一年高點；投資級0.94%也在近一年高端，且尚未含11/20大跌。利差走擴代表企業融資成本上升、風險胃納下降：美股高估值與高槓桿企業承壓，反彈空間受限；HYG同步-0.26%，顯示高收益債偏弱；資金偏向公債與黃金避險。若利差續擴，美股與台股電子股的反彈更受壓抑；若回落，才代表信用端未擴散。</span><span class="risk-tag risk-中"><b>通膨黏性與Fed偏鷹</b>｜9月PCE年增+3.65%、核心PCE年增+3.12%。2年期4.76%高於FFR上限約0.76個百分點，顯示市場不預期近期降息；但2年期也含期限與風險溢價，不能直接解讀為升息定價。降息預期受壓，使高估值科技股難獲利率支撐。</span><span class="risk-tag risk-低"><b>中東供給與油價波動</b>｜近期有伊朗戰事、航道封鎖新聞，但無新突發事件；WTI 82.85（-0.67%），目前不是這次下跌的主因。</span>
+      <span class="risk-tag risk-高"><b>信用利差擴大</b>｜高收益債利差3.76%（11/20），七天擴53bp，創一年高點；投資級1~3年利差0.66%也在區間高檔。企業融資成本在墊高，會壓抑股市與高收益債。</span><span class="risk-tag risk-中"><b>長端殖利率與期限溢價</b>｜10年期殖利率4.92%、30年期5.31%，期限溢價0.99%（11/13）。ERP為-2.30個百分點，股市對利率上行很敏感，長債與高估值科技股承壓。</span><span class="risk-tag risk-中"><b>通膨偏高與Fed政策預期</b>｜9月資料PCE年增+3.65%、核心PCE年增+3.12%，皆較前值上升。2年期殖利率高於FFR上限0.63%，但其中可能含期限溢價等風險補償，只能視為市場未積極定價降息的參考，不能直接等同暫不降息。11/25 PCE公布前，利率預期與科技股估值易有波動。</span><span class="risk-tag risk-中"><b>漲幅極端、籌碼分歧</b>｜NVDA（輝達）單日+31.48%，台股外資上市賣超289.48億，上市三大法人合計賣超521.04億。獲利了結與追價風險升高，金融權值股同步走弱。</span>
     </div>
   </section>
 
@@ -460,8 +448,8 @@
       <table class="yield-table">
         <thead><tr><th>市場</th><th>外資</th><th>投信</th><th>自營商</th><th>合計</th></tr></thead>
         <tbody>
-          <tr><td>上市（2026-11-20）</td><td><span style="color:var(--stock-down)">-95.11</span></td><td><span style="color:var(--stock-down)">-73.47</span></td><td><span style="color:var(--stock-down)">-340.83</span></td><td><b><span style="color:var(--stock-down)">-509.41</span></b></td></tr>
-          <tr><td>上櫃（2026-11-20）</td><td><span style="color:var(--stock-up)">+76.78</span></td><td><span style="color:var(--stock-up)">+5.13</span></td><td><span style="color:var(--stock-down)">-11.59</span></td><td><b><span style="color:var(--stock-up)">+70.32</span></b></td></tr>
+          <tr><td>上市（2026-11-23）</td><td><span style="color:var(--stock-down)">-289.48</span></td><td><span style="color:var(--stock-down)">-41.55</span></td><td><span style="color:var(--stock-down)">-190.01</span></td><td><b><span style="color:var(--stock-down)">-521.04</span></b></td></tr>
+          <tr><td>上櫃（2026-11-23）</td><td><span style="color:var(--stock-up)">+108.83</span></td><td><span style="color:var(--stock-down)">-65.88</span></td><td><span style="color:var(--stock-up)">+0.65</span></td><td><b><span style="color:var(--stock-up)">+43.60</span></b></td></tr>
           
         </tbody>
       </table>
@@ -470,8 +458,8 @@
       <table class="yield-table">
         <thead><tr><th>市場</th><th>今日餘額</th><th>較前日</th></tr></thead>
         <tbody>
-          <tr><td>上市（2026-11-20）</td><td><b>4,352.27億</b></td><td><span style="color:var(--stock-down)">-491.41億</span></td></tr>
-          <tr><td>上櫃（2026-11-20）</td><td><b>1,895,670張</b></td><td><span style="color:var(--stock-down)">-102,429張</span></td></tr>
+          <tr><td>上市（2026-11-23）</td><td><b>4,338.08億</b></td><td><span style="color:var(--stock-down)">-14.20億</span></td></tr>
+          <tr><td>上櫃（2026-11-23）</td><td><b>1,868,098張</b></td><td><span style="color:var(--stock-down)">-27,568張</span></td></tr>
           
         </tbody>
       </table>
@@ -496,29 +484,29 @@
       <table class="yield-table">
         <thead><tr><th>天期</th><th>殖利率</th><th>較1日前</th><th>較7日前</th></tr></thead>
         <tbody>
-          <tr><td>3個月（3M）</td><td><b>4.34%</b></td><td><span class="up">+0.00%</span></td><td><span class="up">+0.02%</span></td></tr>
-          <tr><td>2年（2Y）</td><td><b>4.76%</b></td><td><span class="down">-0.04%</span></td><td><span class="down">-0.10%</span></td></tr>
-          <tr><td>5年（5Y）</td><td><b>4.86%</b></td><td><span class="down">-0.03%</span></td><td><span class="down">-0.09%</span></td></tr>
-          <tr><td>10年（10Y）</td><td><b>5.04%</b></td><td><span class="down">-0.03%</span></td><td><span class="down">-0.06%</span></td></tr>
-          <tr><td>30年（30Y）</td><td><b>5.40%</b></td><td><span class="down">-0.01%</span></td><td><span class="down">-0.03%</span></td></tr>
+          <tr><td>3個月（3M）</td><td><b>4.32%</b></td><td><span class="down">-0.02%</span></td><td><span class="up">+0.00%</span></td></tr>
+          <tr><td>2年（2Y）</td><td><b>4.63%</b></td><td><span class="down">-0.13%</span></td><td><span class="down">-0.25%</span></td></tr>
+          <tr><td>5年（5Y）</td><td><b>4.71%</b></td><td><span class="down">-0.15%</span></td><td><span class="down">-0.27%</span></td></tr>
+          <tr><td>10年（10Y）</td><td><b>4.92%</b></td><td><span class="down">-0.12%</span></td><td><span class="down">-0.23%</span></td></tr>
+          <tr><td>30年（30Y）</td><td><b>5.31%</b></td><td><span class="down">-0.09%</span></td><td><span class="down">-0.16%</span></td></tr>
           
           <tr class="ffr"><td><b>FFR 目標區間</b></td><td colspan="3"><b>3.75% ~ 4.0%</b></td></tr>
         </tbody>
       </table>
-      <div class="source-note">📅 資料時間：美東時間 2026-11-19 收盤</div>
+      <div class="source-note">📅 資料時間：美東時間 2026-11-20 收盤</div>
 
       <h3>關鍵利差</h3>
       <table class="yield-table">
         <thead><tr><th>利差</th><th>數值</th><th>狀態</th></tr></thead>
         <tbody>
-          <tr><td>10Y－2Y</td><td class="up"><b>+0.28%</b></td><td>🟢 正常</td></tr>
-          <tr><td>10Y－3M</td><td class="up"><b>+0.70%</b></td><td>🟢 正常</td></tr>
+          <tr><td>10Y－2Y</td><td class="up"><b>+0.29%</b></td><td>🟢 正常</td></tr>
+          <tr><td>10Y－3M</td><td class="up"><b>+0.60%</b></td><td>🟢 正常</td></tr>
           
         </tbody>
       </table>
 
-      <div class="curve-box"><b>曲線形狀：</b>正斜率（牛陡）<br>10年期殖利率5.04%高於2年期4.76%，10Y－2Y為+0.28%；10Y－3M為+0.70%，曲線維持正斜率。近7日2年期下行0.10%，10年期下行0.06%，短端降幅較大，利差擴大偏向牛陡，而非長端殖利率上衝造成的熊陡。2年期仍高於FFR上限0.76%，顯示市場政策定價方向偏向暫不降息甚至升息；曲線正斜率不代表長債風險消失。</div>
-      <div class="ffr-box"><b>FFR 判讀：</b>FFR目標區間為3.75%～4.0%；2年期殖利率高於FFR上限0.76%，市場方向偏向暫不降息甚至升息，但不能據此推算降息次數。10年期與30年期殖利率分別為5.04%與5.4%，達結構性警示門檻；財政赤字與發債供給、外國官方持債需求變化及企業融資需求可能推高期限溢價。策略上降低或避開長天期公債，僅保留高確定票息的短天期國庫券。</div>
+      <div class="curve-box"><b>曲線形狀：</b>正斜率<br>10年期殖利率4.92%高於2年期4.63%，10Y－2Y為正0.29%；10年期亦高於3個月期，10Y－3M為正0.60%，曲線維持正斜率。近1日與7日各期限殖利率均下行，短端跌幅略大於長端，僅呈現輕微牛陡傾向，尚無明顯陡峭化證據，不宜解讀為強烈降息定價。2年期高於FFR上限0.63%，政策預期仍偏向暫不降息；曲線形狀健康不代表長端債券沒有供給與期限溢價風險。</div>
+      <div class="ffr-box"><b>FFR 判讀：</b>FFR目標區間為3.75%～4.0%；2年期殖利率高於FFR上限0.63%，市場方向偏向暫不降息，但不能據此推算降息次數。長天期殖利率達結構性警示門檻，財政赤字與發債供給、外國央行需求變化及AI企業發債等因素可能推升期限溢價，使長債價格承壓。策略上宜降低或避開長天期公債，僅保留高確定票息的短天期國庫券（T-Bills）。</div>
 
       <h3>重要總經數據</h3>
       <table class="yield-table">
@@ -538,12 +526,12 @@
       <table class="yield-table">
         <thead><tr><th>指標</th><th>最新值</th><th>較7日前</th><th>較30日前</th><th>近一年區間</th></tr></thead>
         <tbody>
-          <tr><td>10年實質殖利率</td><td><b>2.88%</b><br><small>2026-11-19</small></td><td>+2bp</td><td>+11bp</td><td>1.72%～2.95%</td></tr>
-<tr><td>10年損益兩平通膨</td><td><b>2.15%</b><br><small>2026-11-20</small></td><td>-9bp</td><td>-22bp</td><td>2.15%～2.50%</td></tr>
+          <tr><td>10年實質殖利率</td><td><b>2.77%</b><br><small>2026-11-20</small></td><td>-14bp</td><td>+1bp</td><td>1.72%～2.95%</td></tr>
+<tr><td>10年損益兩平通膨</td><td><b>2.13%</b><br><small>2026-11-23</small></td><td>-7bp</td><td>-21bp</td><td>2.13%～2.50%</td></tr>
 <tr><td>10年期限溢價</td><td><b>0.99%</b><br><small>2026-11-13</small></td><td>+11bp</td><td>-6bp</td><td>0.44%～1.10%</td></tr>
-<tr><td>投資級債利差</td><td><b>0.94%</b><br><small>2026-11-19</small></td><td>+5bp</td><td>+7bp</td><td>0.73%～0.94%</td></tr>
-<tr><td>投資級1-3年利差</td><td><b>0.63%</b><br><small>2026-11-19</small></td><td>+2bp</td><td>+5bp</td><td>0.44%～0.67%</td></tr>
-<tr><td>高收益債利差</td><td><b>3.52%</b><br><small>2026-11-19</small></td><td>+32bp</td><td>+19bp</td><td>2.60%～3.52%</td></tr>
+<tr><td>投資級債利差</td><td><b>0.98%</b><br><small>2026-11-20</small></td><td>+9bp</td><td>+10bp</td><td>0.73%～0.98%</td></tr>
+<tr><td>投資級1-3年利差</td><td><b>0.66%</b><br><small>2026-11-20</small></td><td>+5bp</td><td>+7bp</td><td>0.44%～0.67%</td></tr>
+<tr><td>高收益債利差</td><td><b>3.76%</b><br><small>2026-11-20</small></td><td>+53bp</td><td>+49bp</td><td>2.60%～3.76%</td></tr>
 <tr><td>銀行準備金</td><td><b>2.98 兆美元</b><br><small>2026-11-18</small></td><td>+191 億美元</td><td>-425 億美元</td><td>2.86 兆美元～3.14 兆美元</td></tr>
 
         </tbody>
@@ -556,19 +544,27 @@
     <div class="card reveal">
       <h2><span class="dot"></span>💱 匯率</h2>
       <div class="fx-row">
-        <div class="fx-chip"><b>台幣/美元 (USDTWD)</b>32.956（-0.006%）</div>
-        <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>158.97（0.289%）</div>
-        <div class="fx-chip"><b>美元指數 (DXY)</b>103.848（0.039%）</div>
+        <div class="fx-chip"><b>台幣/美元 (USDTWD)</b>32.847（-0.337%）</div>
+        <div class="fx-chip"><b>日圓/美元 (USDJPY)</b>158.896（0.242%）</div>
+        <div class="fx-chip"><b>美元指數 (DXY)</b>104.317（-0.001%）</div>
         
       </div>
-      <div class="source-note">🕒 擷取時間：2026-11-23 08:10（台灣時間，即時報價）</div>
+      <div class="source-note">🕒 擷取時間：2026-11-24 08:10（台灣時間，即時報價）</div>
     </div>
   </section>
 
   <section id="news">
     <div class="card reveal">
       <h2><span class="dot"></span>🌐 今日高分新聞（≥4分）</h2>
-      <p style="color:var(--muted)">今日無高分新聞</p>
+      <div class="news-item">
+        <span class="news-score">5分</span><span class="news-cat">[川普動態]</span><span class="news-time">11/24 07:10</span>
+        <a href="https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'</a>
+        <p>黃仁勳強勢回歸重振市場信心，直接帶動輝達市值大增一兆美元。</p>
+      </div><div class="news-item">
+        <span class="news-score">4分</span><span class="news-cat">[川普動態]</span><span class="news-time">11/24 07:41</span>
+        <a href="https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html" target="_blank" rel="noopener">Trump Is Said to Have Pushed to Reinstate Nvidia CEO Jensen Huang</a>
+        <p>川普介入助黃仁勳回任輝達執行長，有助穩定市場對AI板塊信心。</p>
+      </div>
     </div>
   </section>
 
@@ -583,35 +579,35 @@
       <div class="gemini-banner">
         <div class="row">
           <span class="tag">🤖 Gemini 綜合研判</span>
-          <span class="stance" style="background:#6b7280">➡️ 中性</span>
+          <span class="stance" style="background:#16a34a">🟢 Risk-On</span>
         </div>
-        <div class="body">轉向下降｜ON RRP近期由回升轉為小幅下降，數字方向偏向資金離開Fed尋求收益，但餘額處於岩盤常態水位，微小變動也可能只是資金調度，不能確認資金去了哪裡。VIX升至35.89、費半下跌10.73%，且SOFR-IORB為+1.0bp；交叉訊號偏向風險規避，不能據此推論股市獲得資金流入。</div>
-        <div class="footnote">📌 ON RRP 變化很小，沒有明確方向</div>
+        <div class="body">連續下降｜ON RRP連續下降，純數字訊號偏向資金離開Fed尋求收益，但低於50B的岩盤水位使單日變化解讀力有限，且不能據此確定資金流向股市。VIX下跌、費半上漲與SOFR-IORB僅+2.0bp提供偏向risk-on的交叉確認；EFFR-IORB為-2.0bp，亦未顯示銀行準備金層明顯緊張。</div>
+        <div class="footnote">📌 ON RRP 連續2日下降，偏向資金流出 Fed 尋求收益（去向需搭配股市與 VIX 確認）</div>
       </div>
 
       <div class="metric-grid">
-        <div class="metric-card"><div class="lbl">RRP（11/20）</div><div class="val down">$0.401B</div><div class="sub">2026-11-20</div></div><div class="metric-card"><div class="lbl">RRP（11/19）</div><div class="val">$0.405B</div><div class="sub">2026-11-19</div></div><div class="metric-card"><div class="lbl">1日變化</div><div class="val down">-1.0%</div><div class="sub">轉向下降</div></div><div class="metric-card"><div class="lbl">SOFR（11/19）</div><div class="val">3.91%</div><div class="sub">2026-11-19</div></div><div class="metric-card"><div class="lbl">IORB（11/23）</div><div class="val">3.9%</div><div class="sub">Fed設定生效日，非市場觀察日</div></div><div class="metric-card"><div class="lbl">SOFR－IORB</div><div class="val up">1.0bp</div><div class="sub">距SRF天花板 9.0bp</div></div>
+        <div class="metric-card"><div class="lbl">RRP（11/23）</div><div class="val down">$0.35B</div><div class="sub">2026-11-23</div></div><div class="metric-card"><div class="lbl">RRP（11/20）</div><div class="val">$0.401B</div><div class="sub">2026-11-20</div></div><div class="metric-card"><div class="lbl">1日變化</div><div class="val down">-12.7%</div><div class="sub">連續下降</div></div><div class="metric-card"><div class="lbl">SOFR（11/20）</div><div class="val">3.92%</div><div class="sub">2026-11-20</div></div><div class="metric-card"><div class="lbl">IORB（11/24）</div><div class="val">3.9%</div><div class="sub">Fed設定生效日，非市場觀察日</div></div><div class="metric-card"><div class="lbl">SOFR－IORB</div><div class="val up">2.0bp</div><div class="sub">距SRF天花板 8.0bp</div></div>
       </div>
 
       <div class="dim-grid">
-        <div class="dim-card ok"><div class="lbl">D1 廣義融資</div><div class="val up">1.0bp</div><div style="font-size:11px">🟢 正常</div><div style="font-size:10px;color:var(--muted)">前值變化 ↑+1.0bp</div></div><div class="dim-card ok"><div class="lbl">D2 銀行準備金</div><div class="val up">-2.0bp</div><div style="font-size:11px">🟡 觀察</div><div style="font-size:10px;color:var(--muted)">前值變化 →+0.0bp</div></div><div class="dim-card ok"><div class="lbl">D3 RRP緩衝</div><div class="val up">$0.401B</div><div style="font-size:11px">🟢 正常</div></div><div class="dim-card watch"><div class="lbl">D4 SRF距離</div><div class="val ">9.0bp</div><div style="font-size:11px">🟠 警示</div></div>
+        <div class="dim-card ok"><div class="lbl">D1 廣義融資</div><div class="val up">2.0bp</div><div style="font-size:11px">🟢 正常</div><div style="font-size:10px;color:var(--muted)">前值變化 ↑+1.0bp</div></div><div class="dim-card ok"><div class="lbl">D2 銀行準備金</div><div class="val up">-2.0bp</div><div style="font-size:11px">🟡 觀察</div><div style="font-size:10px;color:var(--muted)">前值變化 →+0.0bp</div></div><div class="dim-card ok"><div class="lbl">D3 RRP緩衝</div><div class="val up">$0.35B</div><div style="font-size:11px">🟢 正常</div></div><div class="dim-card watch"><div class="lbl">D4 SRF距離</div><div class="val ">8.0bp</div><div style="font-size:11px">🟠 警示</div></div>
       </div>
 
       <div class="signal-list">
-        <div>✅ [D1廣義融資] SOFR-IORB +1.0bp，正常（較前值+1.0bp ↑）</div><div>🟡 [D2銀行準備金] EFFR-IORB -2.0bp，利差持平於觀察區間，留意後續變化（較前值+0.0bp →）</div><div>🟢 [D3RRP緩衝] ON RRP $0.401B (岩盤常態)，低水位屬後QE正常現象</div><div>🟠 [D4SRF距離] SOFR（SOFR-IORB +1.0bp） 已高於 IORB，距 SRF(4.0%) 9.0bp，接近警戒區</div>
+        <div>✅ [D1廣義融資] SOFR-IORB +2.0bp，正常（較前值+1.0bp ↑）</div><div>🟡 [D2銀行準備金] EFFR-IORB -2.0bp，利差持平於觀察區間，留意後續變化（較前值+0.0bp →）</div><div>🟢 [D3RRP緩衝] ON RRP $0.35B (岩盤常態)，低水位屬後QE正常現象</div><div>🟠 [D4SRF距離] SOFR（SOFR-IORB +2.0bp） 已高於 IORB，距 SRF(4.0%) 8.0bp，接近警戒區</div>
       </div>
       <div class="source-note">📅 📅 資料來源：SOFR=NY Fed API（一手） ／ EFFR=NY Fed API（一手） ／ SRF=derived_from_FFR_upper ／ RRP=NY Fed API（一手）</div>
 
       <div class="pe-grid">
-        <div class="pe-card forecast"><b>🔮 預測</b>2026-11-19的4.05億美元下降至2026-11-20的4.01億美元。餘額已在極低水位，這種零點幾億美元的變化訊號很弱，偏向資金尋求收益或日常調度，不能確認實際去向。VIX上升、費半下跌且SOFR-IORB為小幅正值，交叉確認風險情緒偏空，故不應解讀為資金流入股市。</div>
-        <div class="pe-card eval"><b>📊 評估</b>四維度綜合評級為警示：SOFR-IORB +1.0bp屬正常，EFFR-IORB -2.0bp處於觀察區間，ON RRP處於岩盤常態水位；較需留意的是SOFR距SRF僅9.0bp。ON RRP的低水位與微小日變化不能證明資金流向，也不宜解讀為緩衝耗盡。配合VIX急升、費半重挫，市場風險情緒偏弱；目前可說隔夜利差未顯示明確緊張，但整體評級仍應保留警示。</div>
+        <div class="pe-card forecast"><b>🔮 預測</b>ON RRP由2026-11-20的4.01億美元下降至2026-11-23的3.5億美元，方向偏向資金離開Fed尋求收益，但餘額已處極低水位，變動訊號偏弱且不能確認去向。交叉觀察VIX下跌、費半大漲及隔夜利差整體平穩，市場表現偏向risk-on，並非資金排擠組合。</div>
+        <div class="pe-card eval"><b>📊 評估</b>四維度綜合評級為警示，主要需留意SOFR距SRF僅8.0bp及銀行準備金利差處於觀察區間；但SOFR-IORB僅+2.0bp、EFFR-IORB為-2.0bp，並未呈現廣泛隔夜融資緊張。ON RRP已處岩盤常態水位，低水位本身不是警訊，也不能證明資金流向或實體市場運轉效率。整體宜定調為資金市場局部指標需追蹤，而非已出現系統性壓力；綜合警示評級不應被解讀為全面流動性危機。</div>
       </div>
 
       <div class="lowwater-box">
         <div class="ttl">🧭 ON RRP 低水位信號分析</div>
         <div class="lowwater-row"><span class="k">模式</span><span><b>岩盤模式</b>（水位決定靈敏度）</span></div>
-        <div class="lowwater-row"><span class="k">方向</span><span><b>轉向下降</b>　今日 vs 前兩日絕對變化</span></div>
-        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">⚪ 中性｜ON RRP 變化很小，沒有明確方向</span></div>
+        <div class="lowwater-row"><span class="k">方向</span><span><b>連續下降</b>　今日 vs 前兩日絕對變化</span></div>
+        <div class="lowwater-row"><span class="k">信號</span><span class="lowwater-sig">🟢 強 risk-on（連續）｜ON RRP 連續2日下降，偏向資金流出 Fed 尋求收益（去向需搭配股市與 VIX 確認）</span></div>
         <div class="lowwater-note">※ 系統判斷 = 純數字邏輯；Gemini解讀 = 交叉比對VIX+費半後的綜合判斷<br>※ 後QE時代 ON RRP 長期低位屬正常；真正警訊為 SOFR-IORB 利差 &gt; 15bp</div>
       </div>
     </div>
@@ -619,7 +615,7 @@
 
 </div>
 
-<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-11-23 08:10:00</footer>
+<footer class="note">Generated by Multi-Agent System｜Stock Agent + News Agent + Master Agent（Gemini）｜2026-11-24 08:10:01</footer>
 
 <button class="scrolltop" id="scrollTopBtn" aria-label="回到頂部">↑</button>
 
@@ -651,7 +647,7 @@
   });
 
   // ---- relative time ----
-  const genDate = new Date('2026-11-23T08:10:00');
+  const genDate = new Date('2026-11-24T08:10:01');
   function updateRelative() {
     const diffMin = Math.max(0, Math.round((Date.now() - genDate.getTime()) / 60000));
     let txt;
@@ -694,7 +690,7 @@
   scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   // ---- 異常個股 ----
-  const abnormal = [{"code": "^SOX", "name": "費半", "pct": -10.73, "level": "high", "reason": "費半重挫10.73%，與VIX急升相互印證，顯示半導體風險偏好快速降溫。台股電子權值與供應鏈同步走弱，短線需留意波動延續及反彈承接力。"}, {"code": "NVDA", "name": "輝達", "pct": -14.01, "level": "high", "reason": "輝達下跌14.01%，跌幅顯著且與美光、費半同步走弱，反映高估值AI與半導體部位遭集中調節。此走勢加深科技股風險情緒，但單日變動不足以確認基本面轉折。"}, {"code": "MU", "name": "美光", "pct": -13.89, "level": "high", "reason": "美光重挫13.89%，在費半大跌與VIX升高背景下，顯示記憶體及半導體類股承受廣泛賣壓。短線宜避免僅憑單日跌幅判定景氣反轉，並觀察後續板塊及信用市場確認。"}, {"code": "TSM", "name": "台積電ADR", "pct": -9.48, "level": "high", "reason": "台積電ADR跌9.48%，相較台股2330.TW下跌4.76%明顯走弱，呈現海外報酬率乖離，可能增加台股次日開盤補跌壓力。僅比較漲跌幅，不能據此判定折溢價。"}, {"code": "2454.TW", "name": "聯發科", "pct": -9.95, "level": "high", "reason": "聯發科下跌9.95%，接近跌停，與費半及多檔台灣電子權值股同步急挫，反映賣壓並非局限於單一公司。短線應控制電子股曝險，等待市場波動與承接狀況改善。"}, {"code": "^VIX", "name": "VIX恐慌指數", "pct": 26.2, "level": "high", "reason": "VIX上升26.20%至35.89，與費半下跌10.73%及台股雙指數重挫構成明確避險訊號。波動率急升代表市場風險定價升高，短線不宜把ON RRP小幅下降解讀為資金流入股市。"}];
+  const abnormal = [{"code": "NVDA", "name": "輝達", "pct": 31.48, "level": "high", "reason": "單日大漲31.48%，遠超其他大型科技股，顯示半導體風險偏好急速升溫；但漲幅極端，短線容易伴隨獲利了結與波動擴大，宜留意追價風險。"}, {"code": "TSM", "name": "台積電ADR", "pct": 14.08, "level": "high", "reason": "ADR上漲14.08%，明顯強於台股2330.TW的1.50%，呈現報酬率顯著乖離，反映海外半導體情緒強勢；僅憑漲跌幅無法判定折溢價，仍須留意後續現股反應。"}, {"code": "2881.TW", "name": "富邦金", "pct": -4.4, "level": "medium", "reason": "富邦金下跌4.40%，與加權指數上漲2.16%及多數科技股強勢形成反差，顯示金融權值股相對疲弱；大盤上漲的廣度雖佳，金融板塊仍需觀察賣壓是否擴散。"}, {"code": "2891.TW", "name": "中信金", "pct": -6.18, "level": "high", "reason": "中信金下跌6.18%，在大盤與櫃買同步上漲時仍明顯走弱，反映金融股內部表現分歧；需留意其對權值結構的拖累，但單日走勢不足以確認板塊趨勢反轉。"}];
   document.getElementById('abnormalList').innerHTML = abnormal.map(s => `
     <div class="abn-card">
       <div class="top">
@@ -707,7 +703,7 @@
     </div>`).join('');
 
   // ---- 全部個股 ----
-  const stocks = [{"mkt": "台股上市", "code": "2330.TW", "name": "台積電", "price": 2000.0, "pct": -4.76, "hi": 2060.0, "lo": 1970.0, "hi52": 2590.0}, {"mkt": "台股上市", "code": "8162.TW", "name": "微矽電子", "price": 45.45, "pct": -3.81, "hi": 48.4, "lo": 42.85, "hi52": 89.9}, {"mkt": "台股上市", "code": "00642U.TW", "name": "元大S&P石油ETF", "price": 29.5, "pct": 0.75, "hi": 29.66, "lo": 29.39, "hi52": 36.81}, {"mkt": "台股上市", "code": "2449.TW", "name": "京元電子", "price": 157.5, "pct": -10.0, "hi": 164.0, "lo": 157.5, "hi52": 350.0}, {"mkt": "台股上市", "code": "6139.TW", "name": "亞翔", "price": 501.0, "pct": -8.74, "hi": 525.0, "lo": 494.5, "hi52": 987.0}, {"mkt": "台股上市", "code": "2454.TW", "name": "聯發科", "price": 3350.0, "pct": -9.95, "hi": 3655.0, "lo": 3350.0, "hi52": 5480.0}, {"mkt": "台股上市", "code": "2308.TW", "name": "台達電", "price": 900.0, "pct": -10.0, "hi": 950.0, "lo": 900.0, "hi52": 2585.0}, {"mkt": "台股上市", "code": "2317.TW", "name": "鴻海", "price": 210.0, "pct": -4.76, "hi": 217.0, "lo": 208.0, "hi52": 314.0}, {"mkt": "台股上市", "code": "2303.TW", "name": "聯電", "price": 80.3, "pct": -8.96, "hi": 85.3, "lo": 79.4, "hi52": 185.5}, {"mkt": "台股上市", "code": "2383.TW", "name": "台光電", "price": 2810.0, "pct": -9.94, "hi": 2860.0, "lo": 2810.0, "hi52": 6470.0}, {"mkt": "台股上市", "code": "3037.TW", "name": "欣興", "price": 537.0, "pct": -9.9, "hi": 545.0, "lo": 537.0, "hi52": 1420.0}, {"mkt": "台股上市", "code": "2881.TW", "name": "富邦金", "price": 136.5, "pct": -7.77, "hi": 145.5, "lo": 134.0, "hi52": 164.5}, {"mkt": "台股上市", "code": "2327.TW", "name": "國巨", "price": 296.0, "pct": -8.22, "hi": 314.5, "lo": 295.0, "hi52": 1220.0}, {"mkt": "台股上市", "code": "2412.TW", "name": "中華電信", "price": 162.5, "pct": -2.11, "hi": 167.5, "lo": 160.0, "hi52": 171.0}, {"mkt": "台股上市", "code": "2891.TW", "name": "中信金", "price": 68.0, "pct": -6.98, "hi": 72.5, "lo": 66.3, "hi52": 80.6}, {"mkt": "台股上市", "code": "2882.TW", "name": "國泰金", "price": 96.9, "pct": -6.38, "hi": 103.0, "lo": 95.5, "hi52": 118.0}, {"mkt": "台股上市", "code": "1301.TW", "name": "台塑", "price": 56.1, "pct": -7.12, "hi": 58.6, "lo": 55.7, "hi52": 89.4}, {"mkt": "台股上市", "code": "2002.TW", "name": "中鋼", "price": 17.1, "pct": -2.84, "hi": 17.5, "lo": 17.0, "hi52": 21.6}, {"mkt": "台股上櫃", "code": "8027.TWO", "name": "鈦昇", "price": 99.0, "pct": -10.0, "hi": 101.5, "lo": 99.0, "hi52": 297.0}, {"mkt": "台股上櫃", "code": "6693.TWO", "name": "廣閎科", "price": 94.1, "pct": -9.95, "hi": 99.5, "lo": 94.1, "hi52": 280.0}, {"mkt": "台股上櫃", "code": "5425.TWO", "name": "台半", "price": 58.6, "pct": -9.98, "hi": 62.2, "lo": 58.6, "hi52": 144.0}, {"mkt": "台股上櫃", "code": "3675.TWO", "name": "德微", "price": 167.5, "pct": -9.95, "hi": 174.5, "lo": 167.5, "hi52": 459.0}, {"mkt": "台灣大盤", "code": "^TWII", "name": "加權指數", "price": 36033.29, "pct": -6.23, "hi": 37646.13, "lo": 35738.68, "hi52": null}, {"mkt": "台灣大盤", "code": "^TWOII", "name": "櫃買指數", "price": 263.31, "pct": -7.72, "hi": 280.79, "lo": 262.77, "hi52": null}, {"mkt": "美股/指數", "code": "TSM", "name": "台積電ADR", "price": 318.71, "pct": -9.48, "hi": 343.75, "lo": 318.481, "hi52": 487.47}, {"mkt": "美股/指數", "code": "NQ=F", "name": "那斯達克100期貨", "price": 25866.25, "pct": 2.94, "hi": 25884.5, "lo": 25426.75, "hi52": 31616.5}, {"mkt": "美股/指數", "code": "BZ=F", "name": "布蘭特原油期貨", "price": 89.34, "pct": -0.68, "hi": 89.94, "lo": 89.05, "hi52": 126.1}, {"mkt": "美股/指數", "code": "CL=F", "name": "WTI原油期貨", "price": 82.85, "pct": -0.67, "hi": 83.73, "lo": 82.63, "hi52": 119.48}, {"mkt": "美股/指數", "code": "GC=F", "name": "黃金期貨", "price": 3583.8, "pct": 1.95, "hi": 3588.0, "lo": 3552.3, "hi52": 5586.2}, {"mkt": "美股/指數", "code": "NVDA", "name": "輝達", "price": 125.53, "pct": -14.01, "hi": 143.725, "lo": 124.5, "hi52": 243.37}, {"mkt": "美股/指數", "code": "MU", "name": "美光", "price": 594.51, "pct": -13.89, "hi": 668.99, "lo": 585.253, "hi52": 1255.0}, {"mkt": "美股/指數", "code": "ORCL", "name": "甲骨文", "price": 101.19, "pct": -8.48, "hi": 108.99, "lo": 100.251, "hi52": 250.25}, {"mkt": "美股/指數", "code": "GOOGL", "name": "Alphabet", "price": 265.29, "pct": -2.7, "hi": 283.14, "lo": 264.22, "hi52": 408.61}, {"mkt": "美股/指數", "code": "TXN", "name": "德州儀器", "price": 263.75, "pct": -7.7, "hi": 282.545, "lo": 262.29, "hi52": 334.03}, {"mkt": "美股/指數", "code": "^SOX", "name": "費半", "price": 8408.591, "pct": -10.73, "hi": 9204.42, "lo": 8342.214, "hi52": 14655.29}, {"mkt": "美股/指數", "code": "^VIX", "name": "VIX恐慌指數", "price": 35.89, "pct": 26.2, "hi": 40.03, "lo": 26.94, "hi52": 40.03}, {"mkt": "美股/指數", "code": "HYG", "name": "高收益債ETF", "price": 76.33, "pct": -0.26, "hi": 76.57, "lo": 76.27, "hi52": 81.24}, {"mkt": "美股/指數", "code": "AMZN", "name": "亞馬遜", "price": 246.82, "pct": -4.1, "hi": 259.97, "lo": 245.31, "hi52": 287.2}, {"mkt": "美股/指數", "code": "MSFT", "name": "微軟", "price": 484.52, "pct": -2.77, "hi": 503.8, "lo": 481.03, "hi52": 559.15}, {"mkt": "美股/指數", "code": "AAPL", "name": "蘋果", "price": 342.56, "pct": -1.9, "hi": 354.3, "lo": 340.56, "hi52": 360.83}, {"mkt": "美股/指數", "code": "META", "name": "Meta", "price": 560.84, "pct": -5.93, "hi": 588.69, "lo": 558.68, "hi52": 779.82}, {"mkt": "美股/指數", "code": "TSLA", "name": "特斯拉", "price": 345.82, "pct": -7.64, "hi": 373.88, "lo": 344.33, "hi52": 498.83}];
+  const stocks = [{"mkt": "台股上市", "code": "2330.TW", "name": "台積電", "price": 2030.0, "pct": 1.5, "hi": 2050.0, "lo": 1970.0, "hi52": 2590.0}, {"mkt": "台股上市", "code": "8162.TW", "name": "微矽電子", "price": 45.35, "pct": -0.22, "hi": 45.8, "lo": 43.35, "hi52": 89.9}, {"mkt": "台股上市", "code": "00642U.TW", "name": "元大S&P石油ETF", "price": 29.83, "pct": 1.12, "hi": 29.83, "lo": 29.52, "hi52": 36.81}, {"mkt": "台股上市", "code": "2449.TW", "name": "京元電子", "price": 157.0, "pct": -0.32, "hi": 160.0, "lo": 146.0, "hi52": 350.0}, {"mkt": "台股上市", "code": "6139.TW", "name": "亞翔", "price": 551.0, "pct": 9.98, "hi": 551.0, "lo": 476.0, "hi52": 987.0}, {"mkt": "台股上市", "code": "2454.TW", "name": "聯發科", "price": 3685.0, "pct": 10.0, "hi": 3685.0, "lo": 3350.0, "hi52": 5480.0}, {"mkt": "台股上市", "code": "2308.TW", "name": "台達電", "price": 990.0, "pct": 10.0, "hi": 990.0, "lo": 864.0, "hi52": 2585.0}, {"mkt": "台股上市", "code": "2317.TW", "name": "鴻海", "price": 206.0, "pct": -1.9, "hi": 214.5, "lo": 205.0, "hi52": 314.0}, {"mkt": "台股上市", "code": "2303.TW", "name": "聯電", "price": 88.3, "pct": 9.96, "hi": 88.3, "lo": 83.5, "hi52": 185.5}, {"mkt": "台股上市", "code": "2383.TW", "name": "台光電", "price": 3090.0, "pct": 9.96, "hi": 3090.0, "lo": 2560.0, "hi52": 6470.0}, {"mkt": "台股上市", "code": "3037.TW", "name": "欣興", "price": 558.0, "pct": 3.91, "hi": 568.0, "lo": 484.5, "hi52": 1420.0}, {"mkt": "台股上市", "code": "2881.TW", "name": "富邦金", "price": 130.5, "pct": -4.4, "hi": 134.5, "lo": 125.0, "hi52": 164.5}, {"mkt": "台股上市", "code": "2327.TW", "name": "國巨", "price": 310.0, "pct": 4.73, "hi": 315.0, "lo": 288.5, "hi52": 1220.0}, {"mkt": "台股上市", "code": "2412.TW", "name": "中華電信", "price": 164.5, "pct": 1.23, "hi": 166.0, "lo": 161.5, "hi52": 171.0}, {"mkt": "台股上市", "code": "2891.TW", "name": "中信金", "price": 63.8, "pct": -6.18, "hi": 66.2, "lo": 61.5, "hi52": 80.6}, {"mkt": "台股上市", "code": "2882.TW", "name": "國泰金", "price": 95.0, "pct": -1.96, "hi": 97.5, "lo": 91.5, "hi52": 118.0}, {"mkt": "台股上市", "code": "1301.TW", "name": "台塑", "price": 56.8, "pct": 1.25, "hi": 58.0, "lo": 54.3, "hi52": 89.4}, {"mkt": "台股上市", "code": "2002.TW", "name": "中鋼", "price": 16.85, "pct": -1.46, "hi": 17.2, "lo": 16.85, "hi52": 21.6}, {"mkt": "台股上櫃", "code": "8027.TWO", "name": "鈦昇", "price": 98.8, "pct": -0.2, "hi": 101.5, "lo": 91.0, "hi52": 297.0}, {"mkt": "台股上櫃", "code": "6693.TWO", "name": "廣閎科", "price": 97.5, "pct": 3.61, "hi": 98.2, "lo": 87.6, "hi52": 280.0}, {"mkt": "台股上櫃", "code": "5425.TWO", "name": "台半", "price": 62.8, "pct": 7.17, "hi": 63.8, "lo": 54.4, "hi52": 144.0}, {"mkt": "台股上櫃", "code": "3675.TWO", "name": "德微", "price": 178.5, "pct": 6.57, "hi": 183.5, "lo": 157.0, "hi52": 459.0}, {"mkt": "台灣大盤", "code": "^TWII", "name": "加權指數", "price": 36811.89, "pct": 2.16, "hi": 37108.2, "lo": 35442.41, "hi52": null}, {"mkt": "台灣大盤", "code": "^TWOII", "name": "櫃買指數", "price": 270.9, "pct": 2.88, "hi": 272.66, "lo": 253.74, "hi52": null}, {"mkt": "美股/指數", "code": "TSM", "name": "台積電ADR", "price": 363.6, "pct": 14.08, "hi": 386.9, "lo": 361.69, "hi52": 487.47}, {"mkt": "美股/指數", "code": "NQ=F", "name": "那斯達克100期貨", "price": 26748.25, "pct": -0.22, "hi": 26893.75, "lo": 26684.0, "hi52": 31616.5}, {"mkt": "美股/指數", "code": "BZ=F", "name": "布蘭特原油期貨", "price": 86.91, "pct": 0.27, "hi": 86.91, "lo": 86.64, "hi52": 126.1}, {"mkt": "美股/指數", "code": "CL=F", "name": "WTI原油期貨", "price": 80.47, "pct": 0.37, "hi": 80.49, "lo": 80.12, "hi52": 119.48}, {"mkt": "美股/指數", "code": "GC=F", "name": "黃金期貨", "price": 3631.0, "pct": -0.56, "hi": 3641.3, "lo": 3618.5, "hi52": 5586.2}, {"mkt": "美股/指數", "code": "NVDA", "name": "輝達", "price": 165.05, "pct": 31.48, "hi": 171.5, "lo": 156.93, "hi52": 243.37}, {"mkt": "美股/指數", "code": "MU", "name": "美光", "price": 707.7, "pct": 19.04, "hi": 720.69, "lo": 666.66, "hi52": 1255.0}, {"mkt": "美股/指數", "code": "ORCL", "name": "甲骨文", "price": 113.68, "pct": 12.34, "hi": 118.69, "lo": 112.28, "hi52": 250.25}, {"mkt": "美股/指數", "code": "GOOGL", "name": "Alphabet", "price": 282.1, "pct": 6.34, "hi": 285.135, "lo": 275.36, "hi52": 408.61}, {"mkt": "美股/指數", "code": "TXN", "name": "德州儀器", "price": 291.19, "pct": 10.4, "hi": 298.23, "lo": 287.0, "hi52": 334.03}, {"mkt": "美股/指數", "code": "^SOX", "name": "費半", "price": 9588.05, "pct": 14.03, "hi": 9728.115, "lo": 9374.828, "hi52": 14655.29}, {"mkt": "美股/指數", "code": "^VIX", "name": "VIX恐慌指數", "price": 26.62, "pct": -25.83, "hi": 35.08, "lo": 15.39, "hi52": 40.03}, {"mkt": "美股/指數", "code": "HYG", "name": "高收益債ETF", "price": 76.52, "pct": 0.25, "hi": 76.735, "lo": 76.48, "hi52": 81.24}, {"mkt": "美股/指數", "code": "AMZN", "name": "亞馬遜", "price": 255.39, "pct": 3.47, "hi": 262.48, "lo": 251.25, "hi52": 287.2}, {"mkt": "美股/指數", "code": "MSFT", "name": "微軟", "price": 492.5, "pct": 1.65, "hi": 509.15, "lo": 492.02, "hi52": 559.15}, {"mkt": "美股/指數", "code": "AAPL", "name": "蘋果", "price": 349.08, "pct": 1.9, "hi": 352.6, "lo": 345.442, "hi52": 360.83}, {"mkt": "美股/指數", "code": "META", "name": "Meta", "price": 597.6, "pct": 6.55, "hi": 602.46, "lo": 579.78, "hi52": 779.82}, {"mkt": "美股/指數", "code": "TSLA", "name": "特斯拉", "price": 385.46, "pct": 11.46, "hi": 393.83, "lo": 371.99, "hi52": 498.83}];
 
   // 顯示順序：大盤 -> 美股 -> 上市 -> 上櫃（未知分類排在最後）
   const MARKET_ORDER = ['台灣大盤', '美股/指數', '台股上市', '台股上櫃'];
